@@ -1,39 +1,160 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Professor Oak's Blog
 
-Welcome,
+![Professor Oak](static/images/ENIHD2rU8AEgqZl.jpg)
 
-This is the Code Institute student template for Codeanywhere. If you are using Gitpod then you need [this template](https://github.com/Code-Institute-Org/gitpod-full-template) instead.  We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+[Click on this link to visit the blog on Heroku]()
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Codeanywhere and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **August 30th, 2023**
+<br>
 
-## Codeanywhere Reminders
 
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere, in the terminal, type:
+# Content
 
-`python3 -m http.server`
+- [Introduction](#introduction)
+    * [User experience](#user-experience)
+    * [My vision for the game](#my-vision-for-the-game)
+- [Features](#features)
+- [Future features](#future-features)
+- [Design](#design)
+- [Technologies used](#technologies-used)
+    * [Lucid Flowchart](#lucid-flowchart)
+    * [Bootstrap](#bootstrap)
+    * [Materialize](#materialize)
+    * [ElephantSQL](#elephantsql)
+    * [Cloudinary](#cloudinary)
+    * [EmailJS](#emailjs)
+    * [Libraries](#libraries)
+- [Testing](#testing)
+    * [HTML validation](#html-validation)
+    * [CSS validation](#css-validation)
+    * [JavaScript validation](#javascript-validation)
+    * [Python validation](#python-validation)
+- [Bug fixes](#bug-fixes)
+- [Deployment](#deployment)
+    * [Github deployment](#github-deployment)
+    * [Heroku deployment](#heroku-deployment)
+- [Credits](#credits)
 
-A button should appear to click: _Open Preview_ or _Open Browser_.
+<br>
 
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere with no-cache, you can use this alias for `python3 -m http.server`.
 
-`http_server`
+# Introduction
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+## User experience
 
-A button should appear to click: _Open Preview_ or _Open Browser_.
+## My vision for the game
 
-In Codeanywhere you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+<br>
 
-To log into the Heroku toolbelt CLI:
 
-1. Log in to your Heroku account and go to _Account Settings_ in the menu under your avatar.
-2. Scroll down to the _API Key_ and click _Reveal_
-3. Copy the key
-4. In Codeanywhere, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+# Features
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+<br>
 
----
 
-Happy coding!
+# Future features
+
+<br>
+
+
+# Design
+
+<br>
+
+
+# Technologies used
+
+- This project is written in Python
+- [ChatGPT](https://chat.openai.com/) helped me with articulating myself better in the readme introduction.
+- [Github](https://github.com/) was used to create a repository with the help of The Code Institute template.
+- [Heroku](https://heroku.com/) was used to deploy my game.
+- [Visual Studio Code](https://code.visualstudio.com/) is where I did all my coding.
+- [Favicon](https://favicon.io/) was used to create a unique favicon for the game.
+- [Gif](https://ezgif.com/) was used to create a gif for my README.
+
+## Lucid Flowchart
+
+## Bootstrap
+
+## Materialize
+
+## ElephantSQL
+
+## Cloudinary
+
+## EmailJS
+
+## Libraries
+
+<br>
+
+
+# Testing
+
+## HTML validation
+
+## CSS validation
+
+## JavaScript validation
+
+## Python validation
+
+<br>
+
+
+# Bug fixes
+
+<b>I have not noticed any existing bugs.</b>
+
+<br>
+
+
+# Deployment
+
+## Heroku deployment
+
+To deploy Your App to Heroku, you have to :
+- Create a Heroku account.
+- From the dashboard select create new app.
+- Enter a name for your app, it needs to be unique, and select your region then press create app.
+- Select settings at the top of your app page.
+- Press reveal config vars.
+- If the user is using google sheets in their project, you'll have to name your credentials file in the key input and copy and paste that credential file in the value input.
+- Also add PORT in key input and 8000 as value input.
+- Scroll down and press the add buildpack button.
+- From here press the Python icon and then the add buildpack button.
+- Add another builpack and press the Nodejs icon this time and then press add buildpack button again.
+- Scroll back up and select Deploy at the top of your app page.
+- Choose your deployment method, when choosing Github, you will have to connect to your account.
+- Then choose which repo you want to deploy and connect to it.
+- Choose if you want to deploy automatic or manual, and press deploy.
+
+## Github deployment
+
+To fork this repository on Github, you have to :
+  - Go to my [GitHub repository called PP4](https://github.com/ObiWanBonobi/PP4).
+  - In the top-right corner of the page, click Fork.
+  - Under "Owner," select the dropdown menu and click an owner for the forked repository.
+  - By default, forks are named the same as their upstream repositories. Optionally, to further distinguish your fork, in the "Repository name" field, type a name.
+  - Click Create fork.
+
+To clone this repository, you have to :
+  - Go to my [GitHub repository called PP4](https://github.com/ObiWanBonobi/PP4).
+  - Above the list of files, click  Code.
+  - Copy the URL for the repository.
+  - Open Git Bash.
+  - Change the current working directory to the location where you want the cloned directory.
+  - Type git clone, and then paste the URL you copied earlier.
+  - Press Enter to create your local clone.
+
+You can see the deployed blog [here]().
+
+<br>
+
+
+# Credits
+
+- <b>FlowChart</b> : I copied some of the Lucid FlowChart from my previous project [PP3](https://github.com/ObiWanBonobi/PP3).
+- <b>README</b> : I copied some of the Readme code from my previous projects [PP1](https://github.com/ObiWanBonobi/PP1), [PP2](https://github.com/ObiWanBonobi/PP2) and [PP3](https://github.com/ObiWanBonobi/PP3).
+- <b>Python code</b> : I got a better understanding about Python code from these forums, websites and people :
+
+- <b>Most of my credit goes to the Code Institute program where I made notes on every section and got most of my ideas and code from there.</b>
