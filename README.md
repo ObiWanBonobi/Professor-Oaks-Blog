@@ -164,5 +164,6 @@ You can see the deployed blog [here]().
     * https://en.wikipedia.org/wiki/Pok%C3%A9mon_(TV_series)
     * https://gamerant.com/pokemon-generation-one-popular-rumors-everyone-believed/#mew-under-the-truck
     * https://plaguevonkarmabeta.weebly.com/blog/pokemon-blue-jp-the-gen-1-game-the-west-never-got
+    * https://screenrant.com/pokemon-ash-serena-married-xyz-anime/
 
 - <b>Most of my credit goes to the Code Institute program where I made notes on every section and got most of my ideas and code from there.</b>

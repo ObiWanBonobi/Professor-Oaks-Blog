@@ -23,7 +23,7 @@ class Post(models.Model):
         ordering = ["-created_on"]
 
     def __str__(self):
-        """ This method gives our posts a title """
+        """ This method gives our posts a nicer title in the admin page """
         return f"Title: {self.title} | by: {self.author}"
 
 
@@ -40,5 +40,5 @@ class Comment(models.Model):
         ordering = ["created_on"]
 
     def __str__(self):
-        """ This method gives our comments a title """
+        """ This method gives our comments a nicer title in the admin page """
         return f"Comment: {self.body} | by: {self.author}"
