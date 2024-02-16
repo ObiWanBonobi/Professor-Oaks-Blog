@@ -1,9 +1,11 @@
 """ View for the blog """
 
 from django.shortcuts import render
-from django.http import HttpResponse
+from django.views import generic
+from .models import Post
 
 
-def poke_blog(request):
-    """ Blog """
-    return HttpResponse("Hello, Blog!")
+class PostList(generic.ListView):
+    """ class based view """
+    queryset = Post.objects.all()
+    template_name = "post_list.html"

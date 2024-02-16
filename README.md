@@ -156,5 +156,13 @@ You can see the deployed blog [here]().
 - <b>FlowChart</b> : I copied some of the Lucid FlowChart from my previous project [PP3](https://github.com/ObiWanBonobi/PP3).
 - <b>README</b> : I copied some of the Readme code from my previous projects [PP1](https://github.com/ObiWanBonobi/PP1), [PP2](https://github.com/ObiWanBonobi/PP2) and [PP3](https://github.com/ObiWanBonobi/PP3).
 - <b>Python code</b> : I got a better understanding about Python code from these forums, websites and people :
+- <b>Blogs</b> : I got all the blog content from the following websites:
+    * https://www.ign.com/articles/palworld-vs-pokmon-comparison-just-how-similar-are-the-designs
+    * https://screenrant.com/pokemon-first-created-rhydon-original-design-dinosaur/
+    * https://aminoapps.com/c/pokemon/page/blog/gen-1-competitive-battling-guide/rghe_urYEKPW2eD54G2QKj4ZxeaZa5
+    * https://pokemaniacal.com/2020/11/29/galarian-ponyta-and-rapidash/
+    * https://en.wikipedia.org/wiki/Pok%C3%A9mon_(TV_series)
+    * https://gamerant.com/pokemon-generation-one-popular-rumors-everyone-believed/#mew-under-the-truck
+    * https://plaguevonkarmabeta.weebly.com/blog/pokemon-blue-jp-the-gen-1-game-the-west-never-got
 
 - <b>Most of my credit goes to the Code Institute program where I made notes on every section and got most of my ideas and code from there.</b>

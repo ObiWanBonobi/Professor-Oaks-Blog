@@ -18,6 +18,14 @@ class Post(models.Model):
     excerpt = models.TextField(blank=True)
     updated_on = models.DateTimeField(auto_now=True)
 
+    class Meta:
+        """ This class orders our posts from newest to oldest """
+        ordering = ["-created_on"]
+
+    def __str__(self):
+        """ This method gives our posts a title """
+        return f"Title: {self.title} | by: {self.author}"
+
 
 class Comment(models.Model):
     """ Model for creating a comment on a post """
@@ -26,3 +34,11 @@ class Comment(models.Model):
     body = models.TextField()
     approved = models.BooleanField(default=False)
     created_on = models.DateTimeField(auto_now_add=True)
+
+    class Meta:
+        """ This class orders our comments from oldest to newest """
+        ordering = ["created_on"]
+
+    def __str__(self):
+        """ This method gives our comments a title """
+        return f"Comment: {self.body} | by: {self.author}"
