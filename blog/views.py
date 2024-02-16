@@ -8,4 +8,4 @@ from .models import Post
 class PostList(generic.ListView):
     """ class based view, shows only the published posts """
     queryset = Post.objects.filter(status=1)
-    template_name = "post_list.html"
+    template_name = "blog/index.html"
