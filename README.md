@@ -173,5 +173,16 @@ You can see the deployed blog [here]().
     * https://gamerant.com/pokemon-generation-one-popular-rumors-everyone-believed/#mew-under-the-truck
     * https://plaguevonkarmabeta.weebly.com/blog/pokemon-blue-jp-the-gen-1-game-the-west-never-got
     * https://screenrant.com/pokemon-ash-serena-married-xyz-anime/
+    * https://theconversation.com/pikachu-to-depart-a-brief-history-of-the-worlds-favourite-pokemon-201054
+    * https://theconversation.com/pokemons-ash-wins-world-championship-after-25-years-heres-why-the-franchise-is-still-capturing-fans-194788
+    * https://gamerant.com/best-pokemon-each-type/#fire-ndash-charizard
+    * https://gamerant.com/pokemon-games-where-ash-ketchum-could-become-champion/#paldea-league
+    * https://gamerant.com/pokemon-ash-ketchum-most-used-types/#flying---13
+    * https://www.zavvi.com/blog/gaming/the-top-10-most-powerful-pokemon/#:~:text=Arceus&text=By%20far%20the%20most%20naturally,to%20control%20other%20Legendary%20Pok%C3%A9mon.
+    * https://www.zavvi.com/blog/features/pokemon-red-and-blue-at-25-the-games-that-launched-an-empire/
+    * https://www.zavvi.com/blog/features/pokemon-game-fan-theories/
+    * https://www.wikihow.com/Is-Pokemon-Demonic
+    * https://gamerant.com/pokemon-worst-type-combinations-ranked/#bug-grass
+    * https://gamerant.com/pokemon-trainers-anime-ash-better-worse-beat/#can-39-t-beat-ash-jessie-and-james
 
 - <b>Most of my credit goes to the Code Institute program where I made notes on every section and got most of my ideas and code from there.</b>
