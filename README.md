@@ -1,6 +1,6 @@
 # Professor Oak's Blog
 
-![Professor Oak](static/images/ENIHD2rU8AEgqZl.jpg)
+![Professor Oak gif](static/gif/prof-oak.gif)
 
 [Click on this link to visit the blog on Heroku]()
 
@@ -58,6 +58,12 @@
 
 # Design
 
+images :
+- https://en.wikipedia.org/wiki/Pok%C3%A9mon
+
+gif :
+- https://www.youtube.com/watch?v=vzCAgHASh_U&list=PLT6LA7qWKxZoJJAUZgXHQ0m6UMP8cPBMX&index=25
+
 <br>
 
 
@@ -70,6 +76,8 @@
 - [Visual Studio Code](https://code.visualstudio.com/) is where I did all my coding.
 - [Favicon](https://favicon.io/) was used to create a unique favicon for the game.
 - [Gif](https://ezgif.com/) was used to create a gif for my README.
+- [Font Awesome](https://fontawesome.com/) was used to add icons to the website
+- [Pickcoloronline](https://pickcoloronline.com/) was used to get exact colour matches
 
 ## Lucid Flowchart
 
