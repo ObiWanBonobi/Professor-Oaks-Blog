@@ -1,8 +1,10 @@
 """ View for the database """
-from django.shortcuts import render
-from django.http import HttpResponse
+
+from django.views import generic
+from .models import PokeDatabase
 
 
-def poke_data(request):
-    """ Database """
-    return HttpResponse("Hello, database!")
+class PokemonList(generic.ListView):
+    """ Stores a single blog post entry related to :model:`auth.User`. """
+    queryset = PokeDatabase.objects.all()
+    template_name = "database/database.html"

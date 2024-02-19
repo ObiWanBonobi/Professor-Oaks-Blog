@@ -1,4 +1,4 @@
-""" Admin for the blog page. Connects the Post model to the admin dashboard """
+""" Admin for the user profile page """
 
 from django.contrib import admin
 from django_summernote.admin import SummernoteModelAdmin
