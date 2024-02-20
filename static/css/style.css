@@ -39,14 +39,6 @@ main {
     color: #4A4A4F;
 }
 
-.red-o {
-    color: #E84610;
-}
-
-.thin {
-    font-weight: 300;
-}
-
 .card {
     border: none;
     box-shadow: 8px 8px 5px #4566ad;
