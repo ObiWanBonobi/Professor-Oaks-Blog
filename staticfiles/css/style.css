@@ -1,12 +1,103 @@
-main {
-    margin: 0 10px 0 10px;
+body {
+    font-family: "IBM Plex Sans", sans-serif;
 }
 
-.navbar-nav .nav-link.active, 
-.navbar-nav .nav-link.show,
-.navbar-brand,
-.text-navbar {
-    color: white
+
+/* ----------------------- Colour changes ---------------------- */
+
+.navbar a,
+.navbar-nav .nav-link.active,
+.link,
+.fa-bars {
+    color: white;
+}
+
+.navbar a:hover,
+.link:hover,
+.navbar-nav .nav-link.active:hover,
+.post-link:hover {
+    color: #4566ad;
+}
+
+.post-link {
+    text-decoration: none;
+    color: white;
+}
+
+footer p a:hover {
+    color: #E84610;
+}
+
+footer p,
+footer p a {
+    color: black;
+}
+
+.h6 {
+    color: rgb(158, 158, 158);
+}
+
+.textarea.form-control {
+    background-color: rgb(228, 228, 228);
+}
+
+.page-link:hover {
+    background-color: #4566ad;
+    color: white;
+}
+
+.masthead-text {
+    background-color: #4566ad;
+    color: white;
+    position: relative;
+}
+
+.post-subtitle {
+    margin-left: 5%;
+    color: rgb(209, 209, 209);
+}
+
+.btn-delete {
+    color: white;
+    background: #E84610;
+    padding: 6px 13px;
+    border: none;
+}
+
+.btn-edit {
+    color: white;
+    background: #198754;
+    padding: 6px 22px;
+    border: none;
+}
+
+.btn-delete:hover,
+.btn-edit:hover,
+.btn-success:hover {
+    border: none;
+    background-color: #4566ad;
+    color: white;
+}
+
+.modal-content {
+    background-color: #f3d044;
+    border: #4566ad solid 10px;
+}
+
+.modal-content button:hover,
+.modal-content .btn-danger:hover {
+    background-color: #4566ad; 
+}
+
+
+/* ------------------------- Other changes ---------------------------- */
+
+main {
+    margin: 0 10px;
+}
+
+.navbar-nav .nav-link.active {
+    text-decoration: underline;
 }
 
 .navbar-brand {
@@ -16,14 +107,10 @@ main {
 
 .navbar-toggler {
     line-height: 0;
-    color: rgba(124, 22, 22, 0.466);
+    color: rgba(150, 23, 23, 0.466);
     padding-right: 15px;
     border: none;
     font-size: 100%;
-}
-
-.fa-bars:before {
-    color: white;
 }
 
 .nav-image {
@@ -32,26 +119,17 @@ main {
     margin-right: 20px;
 }
 
-.brand {
-    font-family: "IBM Plex Sans", sans-serif;
-    font-size: 1.4rem;
-    font-weight: 700;
-    color: #4A4A4F;
-}
-
-.red-o {
-    color: #E84610;
-}
-
-.thin {
-    font-weight: 300;
+.alert-dismissible,
+.badge {
+    margin-top: 10px;
 }
 
 .card {
-    border: none;
-    box-shadow: 8px 8px 5px #4566ad;
-    background-color: #f3d044;
-    margin: 20px 10px 10px 10px;
+    border: white solid 2px;
+    background-color: transparent;
+    padding: 5px;
+    margin: 10px;
+    color: white;
 }
 
 .card-title {
@@ -68,20 +146,32 @@ main {
     min-width: 30%;
     left: -2px;
     background-color: #4566ad;
-    padding: 0 5px 0 5px;
+    padding: 0 5px;
     border-radius: 5px;
+}
+
+.author {
+    color: white;
+    font-weight: 550;
+    margin: 4px;
+    text-transform: uppercase;
+}
+
+.page-link {
+    border-radius: 8px;
+    margin: 5px 15px;
+    padding: 2px 20px;
+    font-size: 130%;
+    border: none;
+}
+
+.btn {
+    border: none;
 }
 
 .scale {
     width: 100%;
     height: auto;
-}
-
-.author {
-    color: white;
-    font-weight: 600;
-    margin: 4px;
-    text-transform: uppercase;
 }
 
 .masthead {
@@ -93,100 +183,22 @@ main {
     width: 100%;
 }
 
-.masthead-text {
-    background-color: #445261;
-    color: white;
-    position: relative;
-}
-
-.masthead-image {
-    position: relative;
-    overflow: hidden;
-}
-
-.masthead-image:after {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 90%;
-    height: 100%;
-    width: 150%;
-    background: #445261;
-    -webkit-transform: skew(15deg);
-    -moz-transform: skew(15deg);
-    transform: skew(15deg);
-    z-index: 100;
-}
-
-.post-link {
-    text-decoration: none;
-    color: #000000;
-}
-
-.post-link:hover,
-.page-link {
-    color: #E84610;
-}
-
 .post-title {
     margin-top: 10%;
     margin-left: 5%;
 }
 
-.post-subtitle {
-    margin-left: 5%;
-    color: lightgray;
+.signup button {
+    margin-bottom: 20px;
 }
 
-.btn-signup,
-.btn-edit {
-    background-color: #188181;
-    color: #fff;
+.signup label {
+    display: none;
 }
 
-.btn-signup:hover,
-.btn-signup:active {
-    background-color: #fff;
-    color: #23BBBB;
+li {
+    list-style-type: none;
 }
-
-.link {
-    color: #23BBBB;
-    text-decoration: none;
-}
-
-.link:hover,
-.link:active {
-    color: #445261;
-    text-decoration: underline;
-}
-
-.btn-like {
-    color: #E84610;
-    border: none;
-    background: transparent;
-}
-
-.btn-delete {
-    color: #fff;
-    background: #E84610;
-}
-
-.btn-like:hover,
-.btn-like:active {
-    color: #E84610;
-    background: transparent;
-    border: none;
-}
-
-.faded {
-    color: rgb(172, 175, 175);
-}
-
-.approval {
-    color: rgb(222, 146, 168);
-}
-
 
 /* Media query: tablet and larger (500px and up) */
 
@@ -197,6 +209,12 @@ main {
     }
 
     .card-title {
+        font-size: 170%;
+    }
+
+    .page-link {
+        margin: 15px 25px;
+        padding: 5px 35px;
         font-size: 170%;
     }
 }

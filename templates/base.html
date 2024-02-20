@@ -79,7 +79,10 @@
                     {% endif %}
                 </ul>
                 <span>
-                    <img class="nav-image" src="/static/images/International_Pokémon_logo.svg.png" alt="Pokemon logo">
+                    <a href="{% url 'pokemon_database' %}">
+                        <img class="nav-image" src="/static/images/International_Pokémon_logo.svg.png"
+                            alt="Pokemon logo">
+                    </a>
                 </span>
             </div>
         </div>
@@ -103,11 +106,11 @@
     <!-- Main content received from other html files -->
     <main class="flex-shrink-0 main-bg bg-black">
         {% if user.is_authenticated %}
-        <div class="text-end m-3">
+        <div class="text-end">
             <p class="badge text-bg-light">You are logged in as {{ user }}</p>
         </div>
         {% else %}
-        <div class="text-end m-3">
+        <div class="text-end">
             <p class="badge text-bg-light">You are not logged in</p>
         </div>
         {% endif %}
