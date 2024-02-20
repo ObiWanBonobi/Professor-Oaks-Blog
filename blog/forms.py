@@ -5,8 +5,8 @@ from .models import Comment
 
 
 class CommentForm(forms.ModelForm):
-    """ Form """
+    """ Django's built-in class """
     class Meta:
-        """ Form """
+        """ Form for commenting on the Post_details.html page """
         model = Comment
         fields = ('body',)
