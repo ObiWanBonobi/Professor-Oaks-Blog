@@ -59,7 +59,23 @@
 # Design
 
 images :
-- https://en.wikipedia.org/wiki/Pok%C3%A9mon
+- [Pokemon logo](https://en.wikipedia.org/wiki/Pok%C3%A9mon)
+- [pokemon vs palworld](https://beebom.com/pokemon-vs-palworld-similarities/)
+- [Pokemon battle](https://www.google.com/search?sca_esv=b9615c6636962dbd&sxsrf=ACQVn0-z5K_ZEPrp_uqqxfHJYiWrLgjnUA:1708466148892&q=pokemon+battle&tbm=isch&source=lnms&sa=X&ved=2ahUKEwjygKmv9LqEAxVSXfEDHSV_BYIQ0pQJegQIEhAB&biw=2219&bih=1277&dpr=1#imgrc=Y9CMvXwmaYb7zM)
+- [Rhydon](https://twitter.com/DrLavaYT/status/1358827245930860549)
+- [Ponyta](https://danbooru.donmai.us/posts/4254972)
+- [Pokemon red and blue](https://www.pokemon.com/us/pokemon-video-games/pokemon-red-version-and-pokemon-blue-version)
+- [Legendary](https://wallpapers.com/legendary-pokemon-pictures)
+- [Ash his pokemon](https://wegotthiscovered.com/anime/all-of-ashs-pokemon-from-the-anime-listed/)
+- [Couldve won](https://www.cbr.com/ash-ketchum-worst-pokemon-league-losses/)
+- [types](https://www.deviantart.com/adeptcharon/art/Pokemon-Types-Sword-and-Shield-930187530)
+- [championship](https://www.sportskeeda.com/anime/pokemon-journeys-episode-132-breaks-internet-ash-finally-becomes-new-world-champion)
+- [pikachu](https://www.reddit.com/r/pokemon/comments/itym1f/pikachu_sprite_evolution_through_the_years/)
+- [serena](https://www.dexerto.com/pokemon/pokemon-anime-fans-think-new-protagonist-is-ash-and-serenas-daughter-2013608/)
+- [blue jp](https://lavacutcontent.com/corocoro-comic-pokemon-blue/)
+- [5 myths](https://screenrant.com/pokemon-mew-mewtwo-mewthree-clone-fossil-new-legendary/)
+- [evil](https://www.newgrounds.com/portal/view/676946)
+- [5 theroies](https://www.cbr.com/creepiest-pokemon-game-theories/)
 
 gif :
 - https://www.youtube.com/watch?v=vzCAgHASh_U&list=PLT6LA7qWKxZoJJAUZgXHQ0m6UMP8cPBMX&index=25
@@ -78,6 +94,7 @@ gif :
 - [Gif](https://ezgif.com/) was used to create a gif for my README.
 - [Font Awesome](https://fontawesome.com/) was used to add icons to the website
 - [Pickcoloronline](https://pickcoloronline.com/) was used to get exact colour matches
+- [Image Resizer](https://imageresizer.com/) was used to change all images to webp files
 
 ## Lucid Flowchart
 
