@@ -1,0 +1,1190 @@
+[
+    {
+        "model": "database.pokedatabase",
+        "pk": 1,
+        "fields": {
+            "poke_id": "001",
+            "name": "Bulbasaur",
+            "image": "http://www.serebii.net/pokemongo/pokemon/001.png",
+            "poke_type": "Grass,Poison",
+            "height": "0.71 m",
+            "weight": "6.9 kg"
+        }
+    },
+    {
+        "model": "database.pokedatabase",
+        "pk": 2,
+        "fields": {
+            "poke_id": "002",
+            "name": "Ivysaur",
+            "image": "http://www.serebii.net/pokemongo/pokemon/002.png",
+            "poke_type": "Grass,Poison",
+            "height": "0.99 m",
+            "weight": "13.0 kg"
+        }
+    },
+    {
+        "model": "database.pokedatabase",
+        "pk": 3,
+        "fields": {
+            "poke_id": "003",
+            "name": "Venusaur",
+            "image": "http://www.serebii.net/pokemongo/pokemon/003.png",
+            "poke_type": "Grass,Poison",
+            "height": "2.01 m",
+            "weight": "100.0 kg"
+        }
+    },
+    {
+        "model": "database.pokedatabase",
+        "pk": 4,
+        "fields": {
+            "poke_id": "004",
+            "name": "Charmander",
+            "image": "http://www.serebii.net/pokemongo/pokemon/004.png",
+            "poke_type": "Fire",
+            "height": "0.61 m",
+            "weight": "8.5 kg"
+        }
+    },
+    {
+        "model": "database.pokedatabase",
+        "pk": 5,
+        "fields": {
+            "poke_id": "005",
+            "name": "Charmeleon",
+            "image": "http://www.serebii.net/pokemongo/pokemon/005.png",
+            "poke_type": "Fire",
+            "height": "1.09 m",
+            "weight": "19.0 kg"
+        }
+    },
+    {
+        "model": "database.pokedatabase",
+        "pk": 6,
+        "fields": {
+            "poke_id": "006",
+            "name": "Charizard",
+            "image": "http://www.serebii.net/pokemongo/pokemon/006.png",
+            "poke_type": "Fire,Flying",
+            "height": "1.70 m",
+            "weight": "90.5 kg"
+        }
+    },
+    {
+        "model": "database.pokedatabase",
+        "pk": 7,
+        "fields": {
+            "poke_id": "007",
+            "name": "Squirtle",
+            "image": "http://www.serebii.net/pokemongo/pokemon/007.png",
+            "poke_type": "Water",
+            "height": "0.51 m",
+            "weight": "9.0 kg"
+        }
+    },
+    {
+        "model": "database.pokedatabase",
+        "pk": 8,
+        "fields": {
+            "poke_id": "008",
+            "name": "Wartortle",
+            "image": "http://www.serebii.net/pokemongo/pokemon/008.png",
+            "poke_type": "Water",
+            "height": "0.99 m",
+            "weight": "22.5 kg"
+        }
+    },
+    {
+        "model": "database.pokedatabase",
+        "pk": 9,
+        "fields": {
+            "poke_id": "009",
+            "name": "Blastoise",
+            "image": "http://www.serebii.net/pokemongo/pokemon/009.png",
+            "poke_type": "Water",
+            "height": "1.60 m",
+            "weight": "85.5 kg"
+        }
+    },
+    {
+        "model": "database.pokedatabase",
+        "pk": 10,
+        "fields": {
+            "poke_id": "010",
+            "name": "Caterpie",
+            "image": "http://www.serebii.net/pokemongo/pokemon/010.png",
+            "poke_type": "Bug",
+            "height": "0.30 m",
+            "weight": "2.9 kg"
+        }
+    },
+    {
+        "model": "database.pokedatabase",
+        "pk": 11,
+        "fields": {
+            "poke_id": "011",
+            "name": "Metapod",
+            "image": "http://www.serebii.net/pokemongo/pokemon/011.png",
+            "poke_type": "Bug",
+            "height": "0.71 m",
+            "weight": "9.9 kg"
+        }
+    },
+    {
+        "model": "database.pokedatabase",
+        "pk": 12,
+        "fields": {
+            "poke_id": "012",
+            "name": "Butterfree",
+            "image": "http://www.serebii.net/pokemongo/pokemon/012.png",
+            "poke_type": "Bug,Flying",
+            "height": "1.09 m",
+            "weight": "32.0 kg"
+        }
+    },
+    {
+        "model": "database.pokedatabase",
+        "pk": 13,
+        "fields": {
+            "poke_id": "013",
+            "name": "Weedle",
+            "image": "http://www.serebii.net/pokemongo/pokemon/013.png",
+            "poke_type": "Bug,Poison",
+            "height": "0.30 m",
+            "weight": "3.2 kg"
+        }
+    },
+    {
+        "model": "database.pokedatabase",
+        "pk": 14,
+        "fields": {
+            "poke_id": "014",
+            "name": "Kakuna",
+            "image": "http://www.serebii.net/pokemongo/pokemon/014.png",
+            "poke_type": "Bug,Poison",
+            "height": "0.61 m",
+            "weight": "10.0 kg"
+        }
+    },
+    {
+        "model": "database.pokedatabase",
+        "pk": 15,
+        "fields": {
+            "poke_id": "015",
+            "name": "Beedrill",
+            "image": "http://www.serebii.net/pokemongo/pokemon/015.png",
+            "poke_type": "Bug,Poison",
+            "height": "0.99 m",
+            "weight": "29.5 kg"
+        }
+    },
+    {
+        "model": "database.pokedatabase",
+        "pk": 16,
+        "fields": {
+            "poke_id": "016",
+            "name": "Pidgey",
+            "image": "http://www.serebii.net/pokemongo/pokemon/016.png",
+            "poke_type": "Normal,Flying",
+            "height": "0.30 m",
+            "weight": "1.8 kg"
+        }
+    },
+    {
+        "model": "database.pokedatabase",
+        "pk": 17,
+        "fields": {
+            "poke_id": "017",
+            "name": "Pidgeotto",
+            "image": "http://www.serebii.net/pokemongo/pokemon/017.png",
+            "poke_type": "Normal,Flying",
+            "height": "1.09 m",
+            "weight": "30.0 kg"
+        }
+    },
+    {
+        "model": "database.pokedatabase",
+        "pk": 18,
+        "fields": {
+            "poke_id": "018",
+            "name": "Pidgeot",
+            "image": "http://www.serebii.net/pokemongo/pokemon/018.png",
+            "poke_type": "Normal,Flying",
+            "height": "1.50 m",
+            "weight": "39.5 kg"
+        }
+    },
+    {
+        "model": "database.pokedatabase",
+        "pk": 19,
+        "fields": {
+            "poke_id": "019",
+            "name": "Rattata",
+            "image": "http://www.serebii.net/pokemongo/pokemon/019.png",
+            "poke_type": "Normal",
+            "height": "0.30 m",
+            "weight": "3.5 kg"
+        }
+    },
+    {
+        "model": "database.pokedatabase",
+        "pk": 20,
+        "fields": {
+            "poke_id": "020",
+            "name": "Raticate",
+            "image": "http://www.serebii.net/pokemongo/pokemon/020.png",
+            "poke_type": "Normal",
+            "height": "0.71 m",
+            "weight": "18.5 kg"
+        }
+    },
+    {
+        "model": "database.pokedatabase",
+        "pk": 21,
+        "fields": {
+            "poke_id": "021",
+            "name": "Spearow",
+            "image": "http://www.serebii.net/pokemongo/pokemon/021.png",
+            "poke_type": "Normal,Flying",
+            "height": "0.30 m",
+            "weight": "2.0 kg"
+        }
+    },
+    {
+        "model": "database.pokedatabase",
+        "pk": 22,
+        "fields": {
+            "poke_id": "022",
+            "name": "Fearow",
+            "image": "http://www.serebii.net/pokemongo/pokemon/022.png",
+            "poke_type": "Normal,Flying",
+            "height": "1.19 m",
+            "weight": "38.0 kg"
+        }
+    },
+    {
+        "model": "database.pokedatabase",
+        "pk": 23,
+        "fields": {
+            "poke_id": "023",
+            "name": "Ekans",
+            "image": "http://www.serebii.net/pokemongo/pokemon/023.png",
+            "poke_type": "Poison",
+            "height": "2.01 m",
+            "weight": "6.9 kg"
+        }
+    },
+    {
+        "model": "database.pokedatabase",
+        "pk": 24,
+        "fields": {
+            "poke_id": "024",
+            "name": "Arbok",
+            "image": "http://www.serebii.net/pokemongo/pokemon/024.png",
+            "poke_type": "Poison",
+            "height": "3.51 m",
+            "weight": "65.0 kg"
+        }
+    },
+    {
+        "model": "database.pokedatabase",
+        "pk": 25,
+        "fields": {
+            "poke_id": "025",
+            "name": "Pikachu",
+            "image": "http://www.serebii.net/pokemongo/pokemon/025.png",
+            "poke_type": "Electric",
+            "height": "0.41 m",
+            "weight": "6.0 kg"
+        }
+    },
+    {
+        "model": "database.pokedatabase",
+        "pk": 26,
+        "fields": {
+            "poke_id": "026",
+            "name": "Raichu",
+            "image": "http://www.serebii.net/pokemongo/pokemon/026.png",
+            "poke_type": "Electric",
+            "height": "0.79 m",
+            "weight": "30.0 kg"
+        }
+    },
+    {
+        "model": "database.pokedatabase",
+        "pk": 27,
+        "fields": {
+            "poke_id": "027",
+            "name": "Sandshrew",
+            "image": "http://www.serebii.net/pokemongo/pokemon/027.png",
+            "poke_type": "Ground",
+            "height": "0.61 m",
+            "weight": "12.0 kg"
+        }
+    },
+    {
+        "model": "database.pokedatabase",
+        "pk": 28,
+        "fields": {
+            "poke_id": "028",
+            "name": "Sandslash",
+            "image": "http://www.serebii.net/pokemongo/pokemon/028.png",
+            "poke_type": "Ground",
+            "height": "0.99 m",
+            "weight": "29.5 kg"
+        }
+    },
+    {
+        "model": "database.pokedatabase",
+        "pk": 29,
+        "fields": {
+            "poke_id": "029",
+            "name": "Nidoran ♀ (Female)",
+            "image": "http://www.serebii.net/pokemongo/pokemon/029.png",
+            "poke_type": "Poison",
+            "height": "0.41 m",
+            "weight": "7.0 kg"
+        }
+    },
+    {
+        "model": "database.pokedatabase",
+        "pk": 30,
+        "fields": {
+            "poke_id": "030",
+            "name": "Nidorina",
+            "image": "http://www.serebii.net/pokemongo/pokemon/030.png",
+            "poke_type": "Poison",
+            "height": "0.79 m",
+            "weight": "20.0 kg"
+        }
+    },
+    {
+        "model": "database.pokedatabase",
+        "pk": 31,
+        "fields": {
+            "poke_id": "031",
+            "name": "Nidoqueen",
+            "image": "http://www.serebii.net/pokemongo/pokemon/031.png",
+            "poke_type": "Poison,Ground",
+            "height": "1.30 m",
+            "weight": "60.0 kg"
+        }
+    },
+    {
+        "model": "database.pokedatabase",
+        "pk": 32,
+        "fields": {
+            "poke_id": "032",
+            "name": "Nidoran ♂ (Male)",
+            "image": "http://www.serebii.net/pokemongo/pokemon/032.png",
+            "poke_type": "Poison",
+            "height": "0.51 m",
+            "weight": "9.0 kg"
+        }
+    },
+    {
+        "model": "database.pokedatabase",
+        "pk": 33,
+        "fields": {
+            "poke_id": "033",
+            "name": "Nidorino",
+            "image": "http://www.serebii.net/pokemongo/pokemon/033.png",
+            "poke_type": "Poison",
+            "height": "0.89 m",
+            "weight": "19.5 kg"
+        }
+    },
+    {
+        "model": "database.pokedatabase",
+        "pk": 34,
+        "fields": {
+            "poke_id": "034",
+            "name": "Nidoking",
+            "image": "http://www.serebii.net/pokemongo/pokemon/034.png",
+            "poke_type": "Poison,Ground",
+            "height": "1.40 m",
+            "weight": "62.0 kg"
+        }
+    },
+    {
+        "model": "database.pokedatabase",
+        "pk": 35,
+        "fields": {
+            "poke_id": "035",
+            "name": "Clefairy",
+            "image": "http://www.serebii.net/pokemongo/pokemon/035.png",
+            "poke_type": "Normal",
+            "height": "0.61 m",
+            "weight": "7.5 kg"
+        }
+    },
+    {
+        "model": "database.pokedatabase",
+        "pk": 36,
+        "fields": {
+            "poke_id": "036",
+            "name": "Clefable",
+            "image": "http://www.serebii.net/pokemongo/pokemon/036.png",
+            "poke_type": "Normal",
+            "height": "1.30 m",
+            "weight": "40.0 kg"
+        }
+    },
+    {
+        "model": "database.pokedatabase",
+        "pk": 37,
+        "fields": {
+            "poke_id": "037",
+            "name": "Vulpix",
+            "image": "http://www.serebii.net/pokemongo/pokemon/037.png",
+            "poke_type": "Fire",
+            "height": "0.61 m",
+            "weight": "9.9 kg"
+        }
+    },
+    {
+        "model": "database.pokedatabase",
+        "pk": 38,
+        "fields": {
+            "poke_id": "038",
+            "name": "Ninetales",
+            "image": "http://www.serebii.net/pokemongo/pokemon/038.png",
+            "poke_type": "Fire",
+            "height": "1.09 m",
+            "weight": "19.9 kg"
+        }
+    },
+    {
+        "model": "database.pokedatabase",
+        "pk": 39,
+        "fields": {
+            "poke_id": "039",
+            "name": "Jigglypuff",
+            "image": "http://www.serebii.net/pokemongo/pokemon/039.png",
+            "poke_type": "Normal",
+            "height": "0.51 m",
+            "weight": "5.5 kg"
+        }
+    },
+    {
+        "model": "database.pokedatabase",
+        "pk": 40,
+        "fields": {
+            "poke_id": "040",
+            "name": "Wigglytuff",
+            "image": "http://www.serebii.net/pokemongo/pokemon/040.png",
+            "poke_type": "Normal",
+            "height": "0.99 m",
+            "weight": "12.0 kg"
+        }
+    },
+    {
+        "model": "database.pokedatabase",
+        "pk": 41,
+        "fields": {
+            "poke_id": "041",
+            "name": "Zubat",
+            "image": "http://www.serebii.net/pokemongo/pokemon/041.png",
+            "poke_type": "Poison,Flying",
+            "height": "0.79 m",
+            "weight": "7.5 kg"
+        }
+    },
+    {
+        "model": "database.pokedatabase",
+        "pk": 42,
+        "fields": {
+            "poke_id": "042",
+            "name": "Golbat",
+            "image": "http://www.serebii.net/pokemongo/pokemon/042.png",
+            "poke_type": "Poison,Flying",
+            "height": "1.60 m",
+            "weight": "55.0 kg"
+        }
+    },
+    {
+        "model": "database.pokedatabase",
+        "pk": 43,
+        "fields": {
+            "poke_id": "043",
+            "name": "Oddish",
+            "image": "http://www.serebii.net/pokemongo/pokemon/043.png",
+            "poke_type": "Grass,Poison",
+            "height": "0.51 m",
+            "weight": "5.4 kg"
+        }
+    },
+    {
+        "model": "database.pokedatabase",
+        "pk": 44,
+        "fields": {
+            "poke_id": "044",
+            "name": "Gloom",
+            "image": "http://www.serebii.net/pokemongo/pokemon/044.png",
+            "poke_type": "Grass,Poison",
+            "height": "0.79 m",
+            "weight": "8.6 kg"
+        }
+    },
+    {
+        "model": "database.pokedatabase",
+        "pk": 45,
+        "fields": {
+            "poke_id": "045",
+            "name": "Vileplume",
+            "image": "http://www.serebii.net/pokemongo/pokemon/045.png",
+            "poke_type": "Grass,Poison",
+            "height": "1.19 m",
+            "weight": "18.6 kg"
+        }
+    },
+    {
+        "model": "database.pokedatabase",
+        "pk": 46,
+        "fields": {
+            "poke_id": "046",
+            "name": "Paras",
+            "image": "http://www.serebii.net/pokemongo/pokemon/046.png",
+            "poke_type": "Bug,Grass",
+            "height": "0.30 m",
+            "weight": "5.4 kg"
+        }
+    },
+    {
+        "model": "database.pokedatabase",
+        "pk": 47,
+        "fields": {
+            "poke_id": "047",
+            "name": "Parasect",
+            "image": "http://www.serebii.net/pokemongo/pokemon/047.png",
+            "poke_type": "Bug,Grass",
+            "height": "0.99 m",
+            "weight": "29.5 kg"
+        }
+    },
+    {
+        "model": "database.pokedatabase",
+        "pk": 48,
+        "fields": {
+            "poke_id": "048",
+            "name": "Venonat",
+            "image": "http://www.serebii.net/pokemongo/pokemon/048.png",
+            "poke_type": "Bug,Poison",
+            "height": "0.99 m",
+            "weight": "30.0 kg"
+        }
+    },
+    {
+        "model": "database.pokedatabase",
+        "pk": 49,
+        "fields": {
+            "poke_id": "049",
+            "name": "Venomoth",
+            "image": "http://www.serebii.net/pokemongo/pokemon/049.png",
+            "poke_type": "Bug,Poison",
+            "height": "1.50 m",
+            "weight": "12.5 kg"
+        }
+    },
+    {
+        "model": "database.pokedatabase",
+        "pk": 50,
+        "fields": {
+            "poke_id": "050",
+            "name": "Diglett",
+            "image": "http://www.serebii.net/pokemongo/pokemon/050.png",
+            "poke_type": "Ground",
+            "height": "0.20 m",
+            "weight": "0.8 kg"
+        }
+    },
+    {
+        "model": "database.pokedatabase",
+        "pk": 51,
+        "fields": {
+            "poke_id": "051",
+            "name": "Dugtrio",
+            "image": "http://www.serebii.net/pokemongo/pokemon/051.png",
+            "poke_type": "Ground",
+            "height": "0.71 m",
+            "weight": "33.3 kg"
+        }
+    },
+    {
+        "model": "database.pokedatabase",
+        "pk": 52,
+        "fields": {
+            "poke_id": "052",
+            "name": "Meowth",
+            "image": "http://www.serebii.net/pokemongo/pokemon/052.png",
+            "poke_type": "Normal",
+            "height": "0.41 m",
+            "weight": "4.2 kg"
+        }
+    },
+    {
+        "model": "database.pokedatabase",
+        "pk": 53,
+        "fields": {
+            "poke_id": "053",
+            "name": "Persian",
+            "image": "http://www.serebii.net/pokemongo/pokemon/053.png",
+            "poke_type": "Normal",
+            "height": "0.99 m",
+            "weight": "32.0 kg"
+        }
+    },
+    {
+        "model": "database.pokedatabase",
+        "pk": 54,
+        "fields": {
+            "poke_id": "054",
+            "name": "Psyduck",
+            "image": "http://www.serebii.net/pokemongo/pokemon/054.png",
+            "poke_type": "Water",
+            "height": "0.79 m",
+            "weight": "19.6 kg"
+        }
+    },
+    {
+        "model": "database.pokedatabase",
+        "pk": 55,
+        "fields": {
+            "poke_id": "055",
+            "name": "Golduck",
+            "image": "http://www.serebii.net/pokemongo/pokemon/055.png",
+            "poke_type": "Water",
+            "height": "1.70 m",
+            "weight": "76.6 kg"
+        }
+    },
+    {
+        "model": "database.pokedatabase",
+        "pk": 56,
+        "fields": {
+            "poke_id": "056",
+            "name": "Mankey",
+            "image": "http://www.serebii.net/pokemongo/pokemon/056.png",
+            "poke_type": "Fighting",
+            "height": "0.51 m",
+            "weight": "28.0 kg"
+        }
+    },
+    {
+        "model": "database.pokedatabase",
+        "pk": 57,
+        "fields": {
+            "poke_id": "057",
+            "name": "Primeape",
+            "image": "http://www.serebii.net/pokemongo/pokemon/057.png",
+            "poke_type": "Fighting",
+            "height": "0.99 m",
+            "weight": "32.0 kg"
+        }
+    },
+    {
+        "model": "database.pokedatabase",
+        "pk": 58,
+        "fields": {
+            "poke_id": "058",
+            "name": "Growlithe",
+            "image": "http://www.serebii.net/pokemongo/pokemon/058.png",
+            "poke_type": "Fire",
+            "height": "0.71 m",
+            "weight": "19.0 kg"
+        }
+    },
+    {
+        "model": "database.pokedatabase",
+        "pk": 59,
+        "fields": {
+            "poke_id": "059",
+            "name": "Arcanine",
+            "image": "http://www.serebii.net/pokemongo/pokemon/059.png",
+            "poke_type": "Fire",
+            "height": "1.91 m",
+            "weight": "155.0 kg"
+        }
+    },
+    {
+        "model": "database.pokedatabase",
+        "pk": 60,
+        "fields": {
+            "poke_id": "060",
+            "name": "Poliwag",
+            "image": "http://www.serebii.net/pokemongo/pokemon/060.png",
+            "poke_type": "Water",
+            "height": "0.61 m",
+            "weight": "12.4 kg"
+        }
+    },
+    {
+        "model": "database.pokedatabase",
+        "pk": 61,
+        "fields": {
+            "poke_id": "061",
+            "name": "Poliwhirl",
+            "image": "http://www.serebii.net/pokemongo/pokemon/061.png",
+            "poke_type": "Water",
+            "height": "0.99 m",
+            "weight": "20.0 kg"
+        }
+    },
+    {
+        "model": "database.pokedatabase",
+        "pk": 62,
+        "fields": {
+            "poke_id": "062",
+            "name": "Poliwrath",
+            "image": "http://www.serebii.net/pokemongo/pokemon/062.png",
+            "poke_type": "Water,Fighting",
+            "height": "1.30 m",
+            "weight": "54.0 kg"
+        }
+    },
+    {
+        "model": "database.pokedatabase",
+        "pk": 63,
+        "fields": {
+            "poke_id": "063",
+            "name": "Abra",
+            "image": "http://www.serebii.net/pokemongo/pokemon/063.png",
+            "poke_type": "Psychic",
+            "height": "0.89 m",
+            "weight": "19.5 kg"
+        }
+    },
+    {
+        "model": "database.pokedatabase",
+        "pk": 64,
+        "fields": {
+            "poke_id": "064",
+            "name": "Kadabra",
+            "image": "http://www.serebii.net/pokemongo/pokemon/064.png",
+            "poke_type": "Psychic",
+            "height": "1.30 m",
+            "weight": "56.5 kg"
+        }
+    },
+    {
+        "model": "database.pokedatabase",
+        "pk": 65,
+        "fields": {
+            "poke_id": "065",
+            "name": "Alakazam",
+            "image": "http://www.serebii.net/pokemongo/pokemon/065.png",
+            "poke_type": "Psychic",
+            "height": "1.50 m",
+            "weight": "48.0 kg"
+        }
+    },
+    {
+        "model": "database.pokedatabase",
+        "pk": 66,
+        "fields": {
+            "poke_id": "066",
+            "name": "Machop",
+            "image": "http://www.serebii.net/pokemongo/pokemon/066.png",
+            "poke_type": "Fighting",
+            "height": "0.79 m",
+            "weight": "19.5 kg"
+        }
+    },
+    {
+        "model": "database.pokedatabase",
+        "pk": 67,
+        "fields": {
+            "poke_id": "067",
+            "name": "Machoke",
+            "image": "http://www.serebii.net/pokemongo/pokemon/067.png",
+            "poke_type": "Fighting",
+            "height": "1.50 m",
+            "weight": "70.5 kg"
+        }
+    },
+    {
+        "model": "database.pokedatabase",
+        "pk": 68,
+        "fields": {
+            "poke_id": "068",
+            "name": "Machamp",
+            "image": "http://www.serebii.net/pokemongo/pokemon/068.png",
+            "poke_type": "Fighting",
+            "height": "1.60 m",
+            "weight": "130.0 kg"
+        }
+    },
+    {
+        "model": "database.pokedatabase",
+        "pk": 69,
+        "fields": {
+            "poke_id": "069",
+            "name": "Bellsprout",
+            "image": "http://www.serebii.net/pokemongo/pokemon/069.png",
+            "poke_type": "Grass,Poison",
+            "height": "0.71 m",
+            "weight": "4.0 kg"
+        }
+    },
+    {
+        "model": "database.pokedatabase",
+        "pk": 70,
+        "fields": {
+            "poke_id": "070",
+            "name": "Weepinbell",
+            "image": "http://www.serebii.net/pokemongo/pokemon/070.png",
+            "poke_type": "Grass,Poison",
+            "height": "0.99 m",
+            "weight": "6.4 kg"
+        }
+    },
+    {
+        "model": "database.pokedatabase",
+        "pk": 71,
+        "fields": {
+            "poke_id": "071",
+            "name": "Victreebel",
+            "image": "http://www.serebii.net/pokemongo/pokemon/071.png",
+            "poke_type": "Grass,Poison",
+            "height": "1.70 m",
+            "weight": "15.5 kg"
+        }
+    },
+    {
+        "model": "database.pokedatabase",
+        "pk": 72,
+        "fields": {
+            "poke_id": "072",
+            "name": "Tentacool",
+            "image": "http://www.serebii.net/pokemongo/pokemon/072.png",
+            "poke_type": "Water,Poison",
+            "height": "0.89 m",
+            "weight": "45.5 kg"
+        }
+    },
+    {
+        "model": "database.pokedatabase",
+        "pk": 73,
+        "fields": {
+            "poke_id": "073",
+            "name": "Tentacruel",
+            "image": "http://www.serebii.net/pokemongo/pokemon/073.png",
+            "poke_type": "Water,Poison",
+            "height": "1.60 m",
+            "weight": "55.0 kg"
+        }
+    },
+    {
+        "model": "database.pokedatabase",
+        "pk": 74,
+        "fields": {
+            "poke_id": "074",
+            "name": "Geodude",
+            "image": "http://www.serebii.net/pokemongo/pokemon/074.png",
+            "poke_type": "Rock,Ground",
+            "height": "0.41 m",
+            "weight": "20.0 kg"
+        }
+    },
+    {
+        "model": "database.pokedatabase",
+        "pk": 75,
+        "fields": {
+            "poke_id": "075",
+            "name": "Graveler",
+            "image": "http://www.serebii.net/pokemongo/pokemon/075.png",
+            "poke_type": "Rock,Ground",
+            "height": "0.99 m",
+            "weight": "105.0 kg"
+        }
+    },
+    {
+        "model": "database.pokedatabase",
+        "pk": 76,
+        "fields": {
+            "poke_id": "076",
+            "name": "Golem",
+            "image": "http://www.serebii.net/pokemongo/pokemon/076.png",
+            "poke_type": "Rock,Ground",
+            "height": "1.40 m",
+            "weight": "300.0 kg"
+        }
+    },
+    {
+        "model": "database.pokedatabase",
+        "pk": 77,
+        "fields": {
+            "poke_id": "077",
+            "name": "Ponyta",
+            "image": "http://www.serebii.net/pokemongo/pokemon/077.png",
+            "poke_type": "Fire",
+            "height": "0.99 m",
+            "weight": "30.0 kg"
+        }
+    },
+    {
+        "model": "database.pokedatabase",
+        "pk": 78,
+        "fields": {
+            "poke_id": "078",
+            "name": "Rapidash",
+            "image": "http://www.serebii.net/pokemongo/pokemon/078.png",
+            "poke_type": "Fire",
+            "height": "1.70 m",
+            "weight": "95.0 kg"
+        }
+    },
+    {
+        "model": "database.pokedatabase",
+        "pk": 79,
+        "fields": {
+            "poke_id": "079",
+            "name": "Slowpoke",
+            "image": "http://www.serebii.net/pokemongo/pokemon/079.png",
+            "poke_type": "Water,Psychic",
+            "height": "1.19 m",
+            "weight": "36.0 kg"
+        }
+    },
+    {
+        "model": "database.pokedatabase",
+        "pk": 80,
+        "fields": {
+            "poke_id": "080",
+            "name": "Slowbro",
+            "image": "http://www.serebii.net/pokemongo/pokemon/080.png",
+            "poke_type": "Water,Psychic",
+            "height": "1.60 m",
+            "weight": "78.5 kg"
+        }
+    },
+    {
+        "model": "database.pokedatabase",
+        "pk": 81,
+        "fields": {
+            "poke_id": "081",
+            "name": "Magnemite",
+            "image": "http://www.serebii.net/pokemongo/pokemon/081.png",
+            "poke_type": "Electric",
+            "height": "0.30 m",
+            "weight": "6.0 kg"
+        }
+    },
+    {
+        "model": "database.pokedatabase",
+        "pk": 82,
+        "fields": {
+            "poke_id": "082",
+            "name": "Magneton",
+            "image": "http://www.serebii.net/pokemongo/pokemon/082.png",
+            "poke_type": "Electric",
+            "height": "0.99 m",
+            "weight": "60.0 kg"
+        }
+    },
+    {
+        "model": "database.pokedatabase",
+        "pk": 83,
+        "fields": {
+            "poke_id": "083",
+            "name": "Farfetchd",
+            "image": "http://www.serebii.net/pokemongo/pokemon/083.png",
+            "poke_type": "Normal,Flying",
+            "height": "0.79 m",
+            "weight": "15.0 kg"
+        }
+    },
+    {
+        "model": "database.pokedatabase",
+        "pk": 84,
+        "fields": {
+            "poke_id": "084",
+            "name": "Doduo",
+            "image": "http://www.serebii.net/pokemongo/pokemon/084.png",
+            "poke_type": "Normal,Flying",
+            "height": "1.40 m",
+            "weight": "39.2 kg"
+        }
+    },
+    {
+        "model": "database.pokedatabase",
+        "pk": 85,
+        "fields": {
+            "poke_id": "085",
+            "name": "Dodrio",
+            "image": "http://www.serebii.net/pokemongo/pokemon/085.png",
+            "poke_type": "Normal,Flying",
+            "height": "1.80 m",
+            "weight": "85.2 kg"
+        }
+    },
+    {
+        "model": "database.pokedatabase",
+        "pk": 86,
+        "fields": {
+            "poke_id": "086",
+            "name": "Seel",
+            "image": "http://www.serebii.net/pokemongo/pokemon/086.png",
+            "poke_type": "Water",
+            "height": "1.09 m",
+            "weight": "90.0 kg"
+        }
+    },
+    {
+        "model": "database.pokedatabase",
+        "pk": 87,
+        "fields": {
+            "poke_id": "087",
+            "name": "Dewgong",
+            "image": "http://www.serebii.net/pokemongo/pokemon/087.png",
+            "poke_type": "Water,Ice",
+            "height": "1.70 m",
+            "weight": "120.0 kg"
+        }
+    },
+    {
+        "model": "database.pokedatabase",
+        "pk": 88,
+        "fields": {
+            "poke_id": "088",
+            "name": "Grimer",
+            "image": "http://www.serebii.net/pokemongo/pokemon/088.png",
+            "poke_type": "Poison",
+            "height": "0.89 m",
+            "weight": "30.0 kg"
+        }
+    },
+    {
+        "model": "database.pokedatabase",
+        "pk": 89,
+        "fields": {
+            "poke_id": "089",
+            "name": "Muk",
+            "image": "http://www.serebii.net/pokemongo/pokemon/089.png",
+            "poke_type": "Poison",
+            "height": "1.19 m",
+            "weight": "30.0 kg"
+        }
+    },
+    {
+        "model": "database.pokedatabase",
+        "pk": 90,
+        "fields": {
+            "poke_id": "090",
+            "name": "Shellder",
+            "image": "http://www.serebii.net/pokemongo/pokemon/090.png",
+            "poke_type": "Water",
+            "height": "0.30 m",
+            "weight": "4.0 kg"
+        }
+    },
+    {
+        "model": "database.pokedatabase",
+        "pk": 91,
+        "fields": {
+            "poke_id": "091",
+            "name": "Cloyster",
+            "image": "http://www.serebii.net/pokemongo/pokemon/091.png",
+            "poke_type": "Water,Ice",
+            "height": "1.50 m",
+            "weight": "132.5 kg"
+        }
+    },
+    {
+        "model": "database.pokedatabase",
+        "pk": 92,
+        "fields": {
+            "poke_id": "092",
+            "name": "Gastly",
+            "image": "http://www.serebii.net/pokemongo/pokemon/092.png",
+            "poke_type": "Ghost,Poison",
+            "height": "1.30 m",
+            "weight": "0.1 kg"
+        }
+    },
+    {
+        "model": "database.pokedatabase",
+        "pk": 93,
+        "fields": {
+            "poke_id": "093",
+            "name": "Haunter",
+            "image": "http://www.serebii.net/pokemongo/pokemon/093.png",
+            "poke_type": "Ghost,Poison",
+            "height": "1.60 m",
+            "weight": "0.1 kg"
+        }
+    },
+    {
+        "model": "database.pokedatabase",
+        "pk": 94,
+        "fields": {
+            "poke_id": "094",
+            "name": "Gengar",
+            "image": "http://www.serebii.net/pokemongo/pokemon/094.png",
+            "poke_type": "Ghost,Poison",
+            "height": "1.50 m",
+            "weight": "40.5 kg"
+        }
+    },
+    {
+        "model": "database.pokedatabase",
+        "pk": 95,
+        "fields": {
+            "poke_id": "095",
+            "name": "Onix",
+            "image": "http://www.serebii.net/pokemongo/pokemon/095.png",
+            "poke_type": "Rock,Ground",
+            "height": "8.79 m",
+            "weight": "210.0 kg"
+        }
+    },
+    {
+        "model": "database.pokedatabase",
+        "pk": 96,
+        "fields": {
+            "poke_id": "096",
+            "name": "Drowzee",
+            "image": "http://www.serebii.net/pokemongo/pokemon/096.png",
+            "poke_type": "Psychic",
+            "height": "0.99 m",
+            "weight": "32.4 kg"
+        }
+    },
+    {
+        "model": "database.pokedatabase",
+        "pk": 97,
+        "fields": {
+            "poke_id": "097",
+            "name": "Hypno",
+            "image": "http://www.serebii.net/pokemongo/pokemon/097.png",
+            "poke_type": "Psychic",
+            "height": "1.60 m",
+            "weight": "75.6 kg"
+        }
+    },
+    {
+        "model": "database.pokedatabase",
+        "pk": 98,
+        "fields": {
+            "poke_id": "098",
+            "name": "Krabby",
+            "image": "http://www.serebii.net/pokemongo/pokemon/098.png",
+            "poke_type": "Water",
+            "height": "0.41 m",
+            "weight": "6.5 kg"
+        }
+    },
+    {
+        "model": "database.pokedatabase",
+        "pk": 99,
+        "fields": {
+            "poke_id": "099",
+            "name": "Kingler",
+            "image": "http://www.serebii.net/pokemongo/pokemon/099.png",
+            "poke_type": "Water",
+            "height": "1.30 m",
+            "weight": "60.0 kg"
+        }
+    }
+]

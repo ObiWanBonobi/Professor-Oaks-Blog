@@ -10,13 +10,18 @@
         <!-- Blog Entries Column -->
         <div class="col-12 mt-3 left">
             <div class="row">
+                {% for i in pokedatabase_list %}
                 <div class="col-md-4">
                     <div class="card mb-4">
                         <div class="card-body">
-                            {{ pokedatabase_list }}
+                            <p>{{ i.name }}</p>
+                            <p>Id : {{ i.poke_id }}</p>
+                            <p>Height : {{ i.height }}</p>
+                            <p>Weight : {{ i.weight }}</p>
                         </div>
                     </div>
                 </div>
+                {% endfor %}
             </div>
         </div>
     </div>

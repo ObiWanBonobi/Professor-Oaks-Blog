@@ -178,9 +178,7 @@ You can see the deployed blog [here]().
 
 # Credits
 
-- <b>FlowChart</b> : I copied some of the Lucid FlowChart from my previous project [PP3](https://github.com/ObiWanBonobi/PP3).
-- <b>README</b> : I copied some of the Readme code from my previous projects [PP1](https://github.com/ObiWanBonobi/PP1), [PP2](https://github.com/ObiWanBonobi/PP2) and [PP3](https://github.com/ObiWanBonobi/PP3).
-- <b>Python code</b> : I got a better understanding about Python code from these forums, websites and people :
+- <b>Json file</b> : I got the pokemon data for my json file, from this [pokemon database on github](https://github.com/sohailpervaiz/pokemon-database).
 - <b>Blogs</b> : I got all the blog content from the following websites:
     * https://www.ign.com/articles/palworld-vs-pokmon-comparison-just-how-similar-are-the-designs
     * https://screenrant.com/pokemon-first-created-rhydon-original-design-dinosaur/
