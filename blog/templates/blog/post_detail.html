@@ -22,6 +22,8 @@
     </div>
 </div>
 
+<button onclick="topFunction()" id="top-button" title="Go back to the top">Back up</button>
+
 <div class="container">
     <!-- Displaying count of comments -->
     <div class="row">
@@ -118,4 +120,5 @@
 <!-- This connects to a specific JavaScript file -->
 {% block extras %}
 <script src="{% static 'js/comments.js' %}"></script>
+<script src="{% static 'js/top_button.js' %}"></script>
 {% endblock %}

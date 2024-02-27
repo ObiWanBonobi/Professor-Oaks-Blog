@@ -17,13 +17,13 @@
                             <div class="image-container">
                                 {% if "placeholder" in i.featured_image.url %}
                                 <a href="{% url 'post_detail' i.slug %}">
-                                    <img class="card-img-top"
+                                    <img class="card-img-top post-image"
                                         src="{% static 'images/International_Pokémon_logo.svg.png' %}"
                                         alt="placeholder image">
                                 </a>
                                 {% else %}
                                 <a href="{% url 'post_detail' i.slug %}">
-                                    <img class="card-img-top" src="{{ i.featured_image.url }}" alt="{{ post.title }}">
+                                    <img class="card-img-top post-image" src="{{ i.featured_image.url }}" alt="{{ post.title }}">
                                 </a>
                                 {% endif %}
                                 <div class="image-flash">
@@ -35,7 +35,7 @@
                                 <p class="card-text">{{ i.excerpt }}</p>
                             </a>
                             <hr>
-                            <p class="card-text h6">{{ i.created_on}}</p>
+                            <p class="card-text h6">{{ i.created_on}}  |  {{ i.comments_count }} <i class="far fa-comments"></i></p>
                         </div>
                     </div>
                 </div>
