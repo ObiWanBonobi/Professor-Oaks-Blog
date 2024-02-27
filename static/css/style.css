@@ -1,9 +1,12 @@
+/* ------------------------- Base html ------------------------ */
+
 body {
     font-family: "IBM Plex Sans", sans-serif;
 }
 
-
-/* ----------------------- Colour changes ---------------------- */
+main {
+    margin: 0 10px;
+}
 
 .navbar a,
 .navbar-nav .nav-link.active,
@@ -19,9 +22,32 @@ body {
     color: #4566ad;
 }
 
-.post-link {
-    text-decoration: none;
-    color: white;
+.navbar-nav .nav-link.active {
+    text-decoration: underline;
+}
+
+.navbar-brand {
+    font-size: 100%;
+    padding: 0 15px 0 20px;
+}
+
+.navbar-toggler {
+    line-height: 0;
+    color: rgba(150, 23, 23, 0.466);
+    padding-right: 15px;
+    border: none;
+    font-size: 100%;
+}
+
+.nav-image {
+    width: 180px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.alert-dismissible,
+.badge {
+    margin-top: 10px;
 }
 
 footer p a:hover {
@@ -33,12 +59,56 @@ footer p a {
     color: black;
 }
 
+
+/* ------------------------- Index html ------------------------ */
+
+.post-link {
+    text-decoration: none;
+    color: white;
+}
+
 .h6 {
     color: rgb(158, 158, 158);
 }
 
-.textarea.form-control {
-    background-color: rgb(228, 228, 228);
+.card {
+    margin-top: 15px;
+    border: none;
+    background-color: transparent;
+    color: white;
+}
+
+.card-title {
+    font-size: 120%;
+}
+
+.image-container {
+    position: relative;
+}
+
+.image-flash {
+    position: absolute;
+    top: -10%;
+    min-width: 30%;
+    left: -10px;
+    background-color: white;
+    padding: 0 2px;
+    border-radius: 5px;
+}
+
+.author {
+    color: black;
+    font-weight: 600;
+    margin: 4px;
+    text-transform: uppercase;
+}
+
+.page-link {
+    border-radius: 8px;
+    margin: 5px 15px;
+    padding: 2px 20px;
+    font-size: 130%;
+    border: none;
 }
 
 .page-link:hover {
@@ -46,15 +116,45 @@ footer p a {
     color: white;
 }
 
+.btn {
+    border: none;
+}
+
+
+/* ---------------------- post_detail html --------------------- */
+
 .masthead-text {
     background-color: #4566ad;
     color: white;
     position: relative;
 }
 
+.masthead {
+    margin-top: 10px;
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+    height: 33vh;
+    width: 100%;
+}
+
+.post-title {
+    margin-top: 10%;
+    margin-left: 5%;
+}
+
 .post-subtitle {
     margin-left: 5%;
     color: rgb(209, 209, 209);
+}
+
+.scale {
+    width: 100%;
+    height: auto;
+}
+
+.textarea.form-control {
+    background-color: rgb(228, 228, 228);
 }
 
 .btn-delete {
@@ -90,103 +190,44 @@ footer p a {
 }
 
 
-/* ------------------------- Other changes ---------------------------- */
+/* ----------------------- database html ----------------------- */
 
-main {
-    margin: 0 10px;
-}
-
-.navbar-nav .nav-link.active {
-    text-decoration: underline;
-}
-
-.navbar-brand {
-    font-size: 100%;
-    padding: 0 15px 0 20px;
-}
-
-.navbar-toggler {
-    line-height: 0;
-    color: rgba(150, 23, 23, 0.466);
-    padding-right: 15px;
-    border: none;
-    font-size: 100%;
-}
-
-.nav-image {
-    width: 180px;
+#card-pokemon {
+    margin: 20px;
+    width: 400px;
     height: auto;
-    margin-right: 20px;
 }
 
-.alert-dismissible,
-.badge {
-    margin-top: 10px;
+#card-pokemon img {
+    width: 200px;
+    height: auto;
 }
 
-.card {
-    border: white solid 2px;
-    background-color: transparent;
-    padding: 5px;
-    margin: 10px;
-    color: white;
+.poke-name {
+    font-size: 110%;
 }
 
-.card-title {
-    font-size: 120%;
-}
-
-.image-container {
-    position: relative;
-}
-
-.image-flash {
-    position: absolute;
-    bottom: 5%;
-    min-width: 30%;
-    left: -2px;
-    background-color: #4566ad;
-    padding: 0 5px;
+#top-button {
+    background-color: #f3d044;
+    border: #4566ad solid 5px;
+    color: black;
+    font-weight: 600;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    cursor: pointer;
+    padding: 10px;
     border-radius: 5px;
 }
 
-.author {
+#top-button:hover {
+    background-color: #4566ad;
+    border: #f3d044 solid 5px;
     color: white;
-    font-weight: 550;
-    margin: 4px;
-    text-transform: uppercase;
 }
 
-.page-link {
-    border-radius: 8px;
-    margin: 5px 15px;
-    padding: 2px 20px;
-    font-size: 130%;
-    border: none;
-}
-
-.btn {
-    border: none;
-}
-
-.scale {
-    width: 100%;
-    height: auto;
-}
-
-.masthead {
-    margin-top: 10px;
-    overflow: hidden;
-    position: relative;
-    display: inline-block;
-    height: 33vh;
-    width: 100%;
-}
-
-.post-title {
-    margin-top: 10%;
-    margin-left: 5%;
-}
+/* ---------------- signin/ signup/ logout html ---------------- */
 
 .signup button {
     margin-bottom: 20px;
@@ -200,7 +241,8 @@ li {
     list-style-type: none;
 }
 
-/* Media query: tablet and larger (500px and up) */
+
+/* -------- Media query: tablet and larger (500px and up) ------*/
 
 @media screen and (min-width: 500px) {
     .navbar-brand,

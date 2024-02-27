@@ -4,7 +4,7 @@ from django.db import models
 
 
 class PokeDatabase(models.Model):
-    """database"""
+    """ Stores pokemon data """
     poke_id = models.CharField()
     name = models.CharField()
     image = models.CharField()
