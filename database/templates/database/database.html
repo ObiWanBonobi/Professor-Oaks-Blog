@@ -1,13 +1,14 @@
 {% extends "base.html" %}
 {% load static %}
 
+{% block title %}Prof Oak's Database{% endblock title %}
+
 {% block content %}
 
-<!-- database.html content starts here -->
 <div class="container text-center">
     <div class="row justify-content-md-center">
 
-        <!-- Pokedata column -->
+        <!-- Pokemon data column -->
         {% for i in pokedatabase_list %}
             <div id="card-pokemon" class="col">
                 <div class="card">
@@ -29,12 +30,12 @@
     </div>
 </div>
 
+<!-- Button that stays on the screen to go back to the top of the page -->
 <button onclick="topFunction()" id="top-button" title="Go back to the top">Back up</button>
 
-<!-- database.html content ends here -->
-{% endblock %}
+{% endblock content %}
 
 <!-- This connects to a specific JavaScript file -->
-{% block extras %}
+{% block javascript %}
 <script src="{% static 'js/top_button.js' %}"></script>
-{% endblock %}
+{% endblock javascript %}

@@ -22,6 +22,7 @@
     </div>
 </div>
 
+<!-- Button that stays on the screen to go back to the top of the page -->
 <button onclick="topFunction()" id="top-button" title="Go back to the top">Back up</button>
 
 <div class="container">
@@ -118,7 +119,7 @@
 {% endblock content %}
 
 <!-- This connects to a specific JavaScript file -->
-{% block extras %}
+{% block javascript %}
 <script src="{% static 'js/comments.js' %}"></script>
 <script src="{% static 'js/top_button.js' %}"></script>
-{% endblock %}
+{% endblock javascript %}

@@ -1,10 +1,10 @@
 """ View for the User profile """
 
-from django.views import generic
-from .models import UserProfile
+from django.shortcuts import render
+from .models import Socials
 
 
-class ProfileUserList(generic.ListView):
-    """ class based view, shows only the published posts """
-    queryset = UserProfile.objects.all()
-    template_name = "user_profile/profile.html"
+def social_profiles(request):
+    """ shows social page with all the users """
+    profiles = Socials.objects.exclude(user=request.user)
+    return render(request, "user_profile/socials.html", {"profiles": profiles})

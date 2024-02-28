@@ -17,7 +17,6 @@ class PostList(generic.ListView):
     Shows only the published posts from the :model:`blog.Post`,
     Displays on :template:`blog/index.html`
     """
-
     queryset = Post.objects.filter(status=1)
     queryset = Post.objects.annotate(
         comments_count=Count("comments", distinct=True)).filter(status=1)
