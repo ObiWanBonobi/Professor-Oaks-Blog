@@ -30,7 +30,7 @@
                                     <p class="author">Author : {{ i.author }}</p>
                                 </div>
                             </div>
-                            <a href="{% url 'post_detail' i.slug %}" class="post-link">
+                            <a href="{% url 'post_detail' i.slug %}" class="post-link white-text">
                                 <h2 class="card-title">{{ i.title }}</h2>
                                 <p class="card-text">{{ i.excerpt }}</p>
                             </a>
@@ -60,11 +60,11 @@
     <nav aria-label="Page navigation">
         <ul class="pagination justify-content-center">
             {% if page_obj.has_previous %}
-            <li><a href="?page={{ page_obj.previous_page_number }}" class="page-link"><i
+            <li><a href="?page={{ page_obj.previous_page_number }}" class="page-link blue-white"><i
                         class="fa-solid fa-left-long"></i></a></li>
             {% endif %}
             {% if page_obj.has_next %}
-            <li><a href="?page={{ page_obj.next_page_number }}" class="page-link"><i
+            <li><a href="?page={{ page_obj.next_page_number }}" class="page-link blue-white"><i
                         class="fa-solid fa-right-long"></i></a></li>
             {% endif %}
         </ul>

@@ -15,8 +15,8 @@ Oak's socials
     <div class="row">
         {% for profile in profiles %}
         <div class="col">
-            <a href="{% url 'profile' profile.pk %}">
-                <div class="card mb-3 social-card">
+            <a href="{% url 'profile' profile.pk %}" class="social-link">
+                <div class="card mb-3 social-card white-text">
                     <div class="row g-0">
                         <div class="col-md-4">
                             {% if "placeholder" in profile.user_image.url %}
@@ -24,16 +24,14 @@ Oak's socials
                                 alt="Placeholder User photo">
                             {% else %}
                             <img src="{{ profile.user_image.url }}" class="img-fluid rounded-start"
-                                alt="{{ user.username }}">
+                                alt="{{ profile.user.username }}">
                             {% endif %}
                         </div>
                         <div class="col-md-8">
                             <div class="card-body">
                                 <h5 class="card-title">{{ profile.user.username }}</h5>
-                                <p class="card-text">{{ profile.user.username }}'s favourite pokemon is : </p>
-                                <p class="card-text"><small class="text-body-secondary text-white">Professor Oak's
-                                        friend
-                                        since :</small></p>
+                                <p class="card-text fs-5">{{ profile.user.username }}'s favourite pokemon is : </p>
+                                <p class="card-text fst-italic fw-light">Professor Oak's friend since :</p>
                             </div>
                         </div>
                     </div>

@@ -1,17 +1,8 @@
-/* ------------------------- Base html ------------------------ */
-
-body {
-    font-family: "IBM Plex Sans", sans-serif;
-}
-
-main {
-    margin: 0 10px;
-}
+/* -------------------------- colors -------------------------- */
 
 .navbar a,
 .navbar-nav .nav-link.active,
-.link,
-.fa-bars {
+.white-text {
     color: white;
 }
 
@@ -20,7 +11,58 @@ main {
 .navbar-nav .nav-link.active:hover,
 .post-link:hover {
     color: #4566ad;
-    transition: all 0.2s ease-out allow-discrete;
+    transition: all 0.4s ease-out;
+}
+
+.blue-white:hover,
+.masthead-text {
+    background-color: #4566ad;
+    color: white;
+}
+
+.h6 {
+    color: rgb(158, 158, 158);
+}
+
+.textarea.form-control {
+    background-color: rgb(228, 228, 228);
+}
+
+.modal-content {
+    background-color: #f3d044;
+    border: #4566ad solid 10px;
+}
+
+#top-button:hover {
+    background-color: #4566ad;
+    border: #f3d044 solid 5px;
+    color: white;
+    transition: all 0.4s ease-out;
+}
+
+.list-group {
+    --bs-list-group-bg: transparent;
+}
+
+footer p,
+footer p a {
+    color: black;
+}
+
+footer p a:hover {
+    color: #E84610;
+    transition: all 0.2s ease-out;
+}
+
+
+/* ------------------------- Base html ------------------------ */
+
+body {
+    font-family: "IBM Plex Sans", sans-serif;
+}
+
+main {
+    margin: 0 10px;
 }
 
 .navbar-nav .nav-link.active {
@@ -56,37 +98,24 @@ main {
 }
 
 .alert-dismissible,
-.badge {
+.badge,
+.user-title {
     margin-top: 10px;
-}
-
-footer p a:hover {
-    color: #E84610;
-    transition: all 0.2s ease-out allow-discrete;
-}
-
-footer p,
-footer p a {
-    color: black;
 }
 
 
 /* ------------------------- Index html ------------------------ */
 
-.post-link {
+.post-link,
+.social-link,
+.follows {
     text-decoration: none;
-    color: white;
-}
-
-.h6 {
-    color: rgb(158, 158, 158);
 }
 
 .card {
     margin-top: 15px;
     border: none;
     background-color: transparent;
-    color: white;
 }
 
 .card-body {
@@ -126,21 +155,19 @@ footer p a {
     border: none;
 }
 
-.page-link:hover {
-    background-color: #4566ad;
-    color: white;
+.btn,
+.btn:hover {
+    border: none;
 }
 
-.btn {
-    border: none;
+.btn:hover {
+    transition: all 0.4s ease-out;
 }
 
 
 /* ---------------------- post_detail html --------------------- */
 
 .masthead-text {
-    background-color: #4566ad;
-    color: white;
     position: relative;
 }
 
@@ -169,40 +196,16 @@ footer p a {
     height: auto;
 }
 
-.textarea.form-control {
-    background-color: rgb(228, 228, 228);
-}
-
 .btn-delete {
-    color: white;
     background: #E84610;
     padding: 6px 13px;
     border: none;
 }
 
 .btn-edit {
-    color: white;
     background: #198754;
     padding: 6px 22px;
     border: none;
-}
-
-.btn-delete:hover,
-.btn-edit:hover,
-.btn-success:hover {
-    border: none;
-    background-color: #4566ad;
-    color: white;
-}
-
-.modal-content {
-    background-color: #f3d044;
-    border: #4566ad solid 10px;
-}
-
-.modal-content button:hover,
-.modal-content .btn-danger:hover {
-    background-color: #4566ad;
 }
 
 
@@ -237,12 +240,6 @@ footer p a {
     border-radius: 5px;
 }
 
-#top-button:hover {
-    background-color: #4566ad;
-    border: #f3d044 solid 5px;
-    color: white;
-}
-
 
 /* ----------------------- socials html ------------------------ */
 
@@ -251,6 +248,35 @@ footer p a {
     height: auto;
 }
 
+.social-card:hover {
+    color: #4566ad;
+    -webkit-transform: scale(0.96);
+    -ms-transform: scale(0.96);
+    transform: scale(0.96);
+    transition: 0.5s ease;
+}
+
+.user-picture {
+    height: auto;
+    max-width: 400px;
+}
+
+
+/* ----------------------- profile html ------------------------ */
+
+.all-users-button {
+    background-color: white;
+    color: #4566ad;
+    font-size: 110%;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.follows:hover {
+    border-radius: 5px;
+    padding: 3px 8px;
+    transition: all 0.1s ease-out;
+}
 
 
 /* ---------------- signin/ signup/ logout html ---------------- */

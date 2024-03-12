@@ -1,4 +1,5 @@
 {% extends "base.html" %}
+{% load static %}
 
 {% block title %}
 {{ profile.user.username }}'s page
@@ -6,26 +7,42 @@
 
 {% block content %}
 
-<div class="container-fluid">
+<div class="container">
     <div class="row">
-        <div class="col card mb-4  mt-3 left  top">
-            <div class="card-body">
-                <h1 class="card-text">
-                    {{ profile.user.username | upper }}'s page
-                </h1>
-                <h3>{{ profile.user.username }} follows :</h3>
-                <ul>
+        <div class="col-md-6">
+            <div class="card white-text">
+                {% if "placeholder" in profile.user_image.url %}
+                <img src="{% static 'images/nobody.webp' %}" class="card-img-top user-picture" alt="Placeholder User photo">
+                {% else %}
+                <img src="{{ profile.user_image.url }}" class="card-img-top user-picture" alt="{{ profile.user.username }}">
+                {% endif %}
+                <div class="card-body">
+                    <h5 class="card-title user-title">{{ profile.user.username | upper }}'s page</h5>
+                    <a href="{% url 'social_profiles' %}"><button class="btn all-users-button blue-white">All Users</button></a>
+                </div>
+            </div>
+        </div>
+        <div class="col text-center">
+            <div class="card white-text">
+                <h4>Follows :</h4>
+                <ul class="list-group list-group-flush">
                     {% for following in profile.follows.all %}
-                    <li><a href="{% url 'profile' following.pk %}">{{ following }}</a></li>
+                    <li class="list-group-item"><a class="follows white-text blue-white" href="{% url 'profile' following.pk %}">
+                            {{ following }}</a></li>
                     {% endfor %}
                 </ul>
-                <h3>{{ profile.user.username }}'s followers :</h3>
-                <ul>
+            </div>
+        </div>
+        <div class="col text-center">
+            <div class="card white-text">
+                <h4>Followers :</h4>
+                <ul class="list-group list-group-flush">
                     {% for follower in profile.followed_by.all %}
-                    <li><a href="{% url 'profile' follower.pk %}">{{ follower }}</a></li>
+                    <li class="list-group-item"><a class="follows white-text blue-white" href="{% url 'profile' follower.pk %}">
+                            {{ follower }}</a>
+                    </li>
                     {% endfor %}
                 </ul>
-                <a href="{% url 'social_profiles' %}"><button class="btn btn-edit">All Users</button></a>
             </div>
         </div>
     </div>
