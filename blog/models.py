@@ -33,7 +33,7 @@ class Post(models.Model):
 
 class Comment(models.Model):
     """
-    Model for creating a comment on a post. Connects to :model:`Post` and
+    Model for creating a comment on a post. Connects to :model:`blog.Post` and
     :model:`auth.User`
     """
     post = models.ForeignKey(Post, on_delete=models.CASCADE, related_name="comments")

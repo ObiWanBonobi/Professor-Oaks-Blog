@@ -7,6 +7,7 @@ from .models import Comment
 class CommentForm(forms.ModelForm):
     """ Django's built-in class """
     class Meta:
-        """ Form for commenting on the Post_details.html page """
+        """ Form for commenting on the Post_details.html page. No label shown """
         model = Comment
         fields = ('body',)
+        labels = {'body': '',}

@@ -2,7 +2,7 @@
 
 ![Professor Oak gif](static/gif/prof-oak.gif)
 
-[Click on this link to visit the blog on Heroku]()
+[Click on this link to visit the blog on Heroku](https://prof-oaks-blog-0421d28e5692.herokuapp.com/)
 
 <br>
 

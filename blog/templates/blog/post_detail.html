@@ -33,9 +33,6 @@
                 {{ comment_count }} <i class="far fa-comments"></i>
             </strong>
         </div>
-        <div class="col-12">
-            <hr>
-        </div>
     </div>
 
     <!-- Displays the full blog post -->
@@ -57,21 +54,18 @@
                 {% for comment in comments %}
                 <div class="p-2 comments {% if not comment.approved and comment.author == user %}
                             {% elif not comment.approved %}d-none{% endif %}">
-                    <p class="font-weight-bold">
-                        {{ comment.author }}
-                        <span class="font-weight-normal">{{ comment.created_on }}</span> wrote:
+                    <p class="fst-italic fw-light">
+                        {{ comment.author }} |
+                        {{ comment.created_on }}
                     </p>
-                    <div id="comment{{ comment.id }}">
+                    <div class="fw-medium" id="comment{{ comment.id }}">
                         {{ comment.body | linebreaks }}
                     </div>
-                    <hr>
-                    {% if not comment.approved and comment.author == user %}
-                    <p>This comment is awaiting approval</p>
-                    {% endif %}
                     {% if user.is_authenticated and comment.author == user %}
                     <button class="btn btn-delete" comment_id="{{ comment.id }}">Delete</button>
                     <button class="btn btn-edit" comment_id="{{ comment.id }}">Edit</button>
                     {% endif %}
+                    <hr>
                 </div>
                 {% endfor %}
             </div>
@@ -82,8 +76,8 @@
             <div class="card-body">
                 {% if user.is_authenticated %}
                 <h3>Leave a comment :</h3>
-                <p>Posting as: {{ user.username }}</p>
-                <form id="commentForm" method="post" style="margin-top: 1.3em;">
+                <p>Posting as : {{ user.username }}</p>
+                <form id="commentForm" method="post">
                     {{ comment_form | crispy }}
                     {% csrf_token %}
                     <button id="submitButton" type="submit" class="btn btn-success btn-lg">Submit</button>
