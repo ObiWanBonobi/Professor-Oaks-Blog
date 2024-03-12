@@ -13,7 +13,10 @@ def social_profiles(request):
     Connects to the :model:`user_profile.Socials`
     Displays on :template:`user_profile/socials.html`
     """
-    profiles = Socials.objects.exclude(user=request.user)
+    if request.user.is_authenticated:
+        profiles = Socials.objects.exclude(user=request.user)
+    else:
+        profiles = Socials.objects.all()
     return render(request, "user_profile/socials.html", {"profiles": profiles})
 
 
