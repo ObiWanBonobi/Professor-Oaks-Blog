@@ -4,6 +4,7 @@ from django.db import models
 from django.contrib.auth.models import User
 from django.db.models.signals import post_save
 from django.dispatch import receiver
+from cloudinary.models import CloudinaryField
 
 
 class Socials(models.Model):
@@ -14,6 +15,7 @@ class Socials(models.Model):
     follows = models.ManyToManyField(
         "self", related_name="followed_by", symmetrical=False, blank=True
     )
+    user_image = CloudinaryField('image', default='placeholder')
 
     def __str__(self):
         """ This method gives our posts a nicer title in the admin page """

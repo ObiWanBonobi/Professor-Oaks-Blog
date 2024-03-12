@@ -243,6 +243,16 @@ footer p a {
     color: white;
 }
 
+
+/* ----------------------- socials html ------------------------ */
+
+.social-card {
+    min-width: 400px;
+    height: auto;
+}
+
+
+
 /* ---------------- signin/ signup/ logout html ---------------- */
 
 .signup button {
