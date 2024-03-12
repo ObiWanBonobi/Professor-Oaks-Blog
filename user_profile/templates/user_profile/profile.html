@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 
 {% block title %}
-{{ user.username }}'s page
+{{ profile.user.username }}'s page
 {% endblock title %}
 
 {% block content %}
@@ -10,9 +10,22 @@
     <div class="row">
         <div class="col card mb-4  mt-3 left  top">
             <div class="card-body">
-                <p class="card-text">
-                    {{ user.username }}
-                </p>
+                <h1 class="card-text">
+                    {{ profile.user.username | upper }}'s page
+                </h1>
+                <h3>{{ profile.user.username }} follows :</h3>
+                <ul>
+                    {% for following in profile.follows.all %}
+                    <li><a href="{% url 'profile' following.pk %}">{{ following }}</a></li>
+                    {% endfor %}
+                </ul>
+                <h3>{{ profile.user.username }}'s followers :</h3>
+                <ul>
+                    {% for follower in profile.followed_by.all %}
+                    <li><a href="{% url 'profile' follower.pk %}">{{ follower }}</a></li>
+                    {% endfor %}
+                </ul>
+                <a href="{% url 'social_profiles' %}"><button class="btn btn-edit">All Users</button></a>
             </div>
         </div>
     </div>
