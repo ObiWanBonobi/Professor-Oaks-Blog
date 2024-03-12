@@ -22,8 +22,20 @@ def social_profiles(request):
 
 def profile_user(request, pk):
     """
+    Shows the user page with follow and unfollow buttons.
     Connects to the :model:`user_profile.Socials`
     Displays on :template:`user_profile/profile.html`
     """
     profile = Socials.objects.get(pk=pk)
+
+    if request.method == "POST":
+        current_user_profile = request.user.socials
+        data = request.POST
+        action = data.get("follow")
+        if action == "follow":
+            current_user_profile.follows.add(profile)
+        elif action == "unfollow":
+            current_user_profile.follows.remove(profile)
+        current_user_profile.save()
+
     return render(request, "user_profile/profile.html", {"profile": profile})

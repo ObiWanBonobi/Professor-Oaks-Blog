@@ -12,13 +12,28 @@
         <div class="col-md-6">
             <div class="card white-text">
                 {% if "placeholder" in profile.user_image.url %}
-                <img src="{% static 'images/nobody.webp' %}" class="card-img-top user-picture" alt="Placeholder User photo">
+                <img src="{% static 'images/nobody.webp' %}" class="card-img-top user-picture"
+                    alt="Placeholder User photo">
                 {% else %}
-                <img src="{{ profile.user_image.url }}" class="card-img-top user-picture" alt="{{ profile.user.username }}">
+                <img src="{{ profile.user_image.url }}" class="card-img-top user-picture"
+                    alt="{{ profile.user.username }}">
                 {% endif %}
                 <div class="card-body">
                     <h5 class="card-title user-title">{{ profile.user.username | upper }}'s page</h5>
-                    <a href="{% url 'social_profiles' %}"><button class="btn all-users-button blue-white">All Users</button></a>
+                    <div>
+                        <form method="post">
+                            {% csrf_token %}
+                            {% if profile in user.socials.follows.all %}
+                            <button class="btn all-users-button blue-white" name="follow"
+                                value="unfollow">Unfollow</button>
+                            {% else %}
+                            <button class="btn all-users-button blue-white" name="follow" 
+                                value="follow">Follow</button>
+                            {% endif %}
+                        </form>
+                        <a href="{% url 'social_profiles' %}"><button class="btn all-users-button blue-white">
+                                User List</button></a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -27,7 +42,8 @@
                 <h4>Follows :</h4>
                 <ul class="list-group list-group-flush">
                     {% for following in profile.follows.all %}
-                    <li class="list-group-item"><a class="follows white-text blue-white" href="{% url 'profile' following.pk %}">
+                    <li class="list-group-item"><a class="follows white-text blue-white"
+                            href="{% url 'profile' following.pk %}">
                             {{ following }}</a></li>
                     {% endfor %}
                 </ul>
@@ -38,7 +54,8 @@
                 <h4>Followers :</h4>
                 <ul class="list-group list-group-flush">
                     {% for follower in profile.followed_by.all %}
-                    <li class="list-group-item"><a class="follows white-text blue-white" href="{% url 'profile' follower.pk %}">
+                    <li class="list-group-item"><a class="follows white-text blue-white"
+                            href="{% url 'profile' follower.pk %}">
                             {{ follower }}</a>
                     </li>
                     {% endfor %}
