@@ -5,30 +5,28 @@
 {% block head_title %}{% trans "Signup" %}{% endblock %}
 
 {% block content %}
-<div class="container">
-  <div class="row">
-    <div class="col-md-8 mt-3 offset-md-2">
-      <div class="card white-text">
-        <div class="card-body">
-          <div class="image-container text-center">
-            <h3>{% trans "Sign Up" %}</h3>
 
-            <p>{% blocktrans %}
-              Welcome to Professor Oak's blog. Do you already have an account? Then please
-              <a class="link white-text" href="{{ login_url }}">sign in</a> instead.
-              {% endblocktrans %}
-            </p>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-8 mt-3 offset-md-2">
+<div class="container margin-top">
+  <div class="row gy-4">
+    <div class="col">
+      <div class="text-center white-text">
+        <h3>{% trans "Sign Up" %}</h3>
+        <p>{% blocktrans %}
+          Welcome to Professor Oak's blog. Do you already have an account? Then please
+          <a class="link white-text" href="{{ login_url }}">sign in</a> instead.
+          {% endblocktrans %}
+        </p>
+        <hr>
+        <p class="fw-bold fst-italic margin-top">Username is case sensitive</p>
+        <div class="row gy-4">
+          <div class="col">
             <form class="signup text-center" id="signup_form" method="post" action="{% url 'account_signup' %}">
               {% csrf_token %}
               {{ form.as_p }}
               {% if redirect_field_value %}
               <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
               {% endif %}
-              <button class="btn btn-success blue-white right" type="submit">{% trans "Sign Up" %}
+              <button class="btn btn-success blue-white right margin-top" type="submit">{% trans "Sign Up" %}
               </button>
             </form>
           </div>
@@ -38,4 +36,4 @@
   </div>
 </div>
 
-{% endblock %}
+{% endblock content %}

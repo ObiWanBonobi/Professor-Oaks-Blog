@@ -7,40 +7,34 @@
 
 {% block content %}
 
-<div class="container">
-  <div class="row">
+<div class="container margin-top">
+  <div class="row gy-4">
     <div class="col-md-8 mt-3 offset-md-2">
-      <div class="card white-text">
-        <div class="card-body">
-          <div class="image-container text-center">
-            <h3>{% trans "Sign In" %}</h3>
-
-            <p>{% blocktrans %}Welcome back to Professor Oak's blog. To leave a comment or like a post, please log in. If
-              you
-              have not created an account yet, then <a class="link white-text" href="{{ signup_url }}">sign up</a>
-              first.{% endblocktrans %}</p>
-          </div>
-        </div>
+      <div class="text-center white-text">
+        <h3>{% trans "Sign In" %}</h3>
+        <p>{% blocktrans %}Welcome back to Professor Oak's blog. To leave a comment or like a post, please log in.
+          If
+          you have not created an account yet, then <a class="link white-text" href="{{ signup_url }}">sign up</a>
+          first.{% endblocktrans %}</p>
+        <hr>
+        <p class="fw-bold fst-italic margin-top">Username is case sensitive</p>
       </div>
     </div>
-    <div class="row">
+    <div class="row gy-4">
       <div class="col-md-8 mt-3 offset-md-2">
-        <div class="card white-text">
-          <div class="card-body">
-            <div class="image-container text-center">
-              <form class="login" method="POST" action="{% url 'account_login' %}">
-                {% csrf_token %}
-                {{ form.as_p }}
-                {% if redirect_field_value %}
-                <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
-                {% endif %}
-                <button class="btn btn-success blue-white right" type="submit">{% trans "Sign In" %}</button>
-              </form>
-            </div>
-          </div>
+        <div class="text-center white-text">
+          <form class="login" method="POST" action="{% url 'account_login' %}">
+            {% csrf_token %}
+            {{ form.as_p }}
+            {% if redirect_field_value %}
+            <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
+            {% endif %}
+            <button class="btn btn-success blue-white right margin-top" type="submit">{% trans "Sign In" %}</button>
+          </form>
         </div>
       </div>
     </div>
   </div>
 </div>
-{% endblock %}
+
+{% endblock content %}

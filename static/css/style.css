@@ -284,16 +284,16 @@ main {
 
 /* ---------------- signin/ signup/ logout html ---------------- */
 
-.signup button {
-    margin-bottom: 20px;
-}
-
 .signup label {
     display: none;
 }
 
 li {
     list-style-type: none;
+}
+
+.margin-top {
+    margin-top: 40px;
 }
 
 
