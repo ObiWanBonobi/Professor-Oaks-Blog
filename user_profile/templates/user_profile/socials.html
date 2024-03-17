@@ -15,7 +15,7 @@ Oak's socials
     <div class="row">
         {% for profile in profiles %}
         <div class="col">
-            <a href="{% url 'profile' profile.pk %}" class="social-link">
+            <a href="{% url 'profile' profile.user.pk %}" class="social-link">
                 <div class="card mb-3 social-card white-text">
                     <div class="row g-0">
                         <div class="col-md-4">

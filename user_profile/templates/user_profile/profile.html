@@ -50,7 +50,7 @@
                 <ul class="list-group list-group-flush">
                     {% for following in profile.follows.all %}
                     <li class="list-group-item"><a class="follows white-text blue-white"
-                            href="{% url 'profile' following.pk %}">{{ following }}</a></li>
+                            href="{% url 'profile' following.user.pk %}">{{ following }}</a></li>
                     {% endfor %}
                 </ul>
             </div>
@@ -61,7 +61,7 @@
                 <ul class="list-group list-group-flush">
                     {% for follower in profile.followed_by.all %}
                     <li class="list-group-item"><a class="follows white-text blue-white"
-                            href="{% url 'profile' follower.pk %}">{{ follower }}</a></li>
+                            href="{% url 'profile' follower.user.pk %}">{{ follower }}</a></li>
                     {% endfor %}
                 </ul>
             </div>
@@ -70,15 +70,22 @@
     <div class="row">
         <div class="col text-center">
             <div class="card white-text">
+                <h4><u>Comments :</u></h4>
+                {% if profile.user.commenter.exists %}
                 {% for comment in profile.user.commenter.all %}
-                <a href="{% url 'post_detail' comment.post.slug %}" class="white-text comment-link">
-                    <div class="fw-bold">{{ comment.post.slug }}</div>
+                <a href="{% url 'post_detail' comment.post.slug %}" class="white-text comment-link p-3">
+                    <div class="fw-bold">{{ comment.post.title }}</div>
                     <div class="p-3">
                         {{ comment.body }} | <span class="fst-italic">{{ comment.created_on }}</span>
                     </div>
                 </a>
                 <hr>
                 {% endfor %}
+                {% else %}
+                <div class="fw-bold p-3">
+                    <p>{{ profile.user.username }} hasn't commented yet</p>
+                </div>
+                {% endif %}
             </div>
         </div>
     </div>

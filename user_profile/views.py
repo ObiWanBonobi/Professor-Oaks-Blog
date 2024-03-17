@@ -26,7 +26,7 @@ def profile_user(request, pk):
     Connects to the :model:`user_profile.Socials`
     Displays on :template:`user_profile/profile.html`
     """
-    profile = Socials.objects.get(pk=pk)
+    profile = Socials.objects.get(user=pk)
 
     if request.method == "POST":
         current_user_profile = request.user.socials

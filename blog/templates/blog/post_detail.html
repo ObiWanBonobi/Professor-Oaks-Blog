@@ -55,13 +55,15 @@
                 {% for comment in comments %}
                 <div class="p-2 comments {% if not comment.approved and comment.author == user %}
                             {% elif not comment.approved %}d-none{% endif %}">
-                    <p class="fst-italic fw-light">
-                        {{ comment.author }} |
-                        {{ comment.created_on }}
-                    </p>
-                    <div class="fw-medium" id="comment{{ comment. }}">
-                        {{ comment.body | linebreaks }}
-                    </div>
+                    <a href="{% url 'profile' comment.author.pk %}" class="white-text comment-link">
+                        <p class="fst-italic fw-light">
+                            {{ comment.author }} |
+                            {{ comment.created_on }}
+                        </p>
+                        <div class="fw-medium" id="comment{{ comment. }}">
+                            {{ comment.body | linebreaks }}
+                        </div>
+                    </a>
                     {% if user.is_authenticated and comment.author == user %}
                     <button class="btn btn-delete blue-white white-text" comment_id="{{ comment.id }}">Delete</button>
                     <button class="btn btn-edit blue-white white-text" comment_id="{{ comment.id }}">Edit</button>
