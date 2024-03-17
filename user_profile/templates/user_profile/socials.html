@@ -31,7 +31,7 @@ Oak's socials
                             <div class="card-body">
                                 <h5 class="card-title"><u>{{ profile.user.username }}</u></h5>
                                 <p class="card-text fs-5">{{ profile.user.username }}'s favourite pokemon is : </p>
-                                <p class="card-text fst-italic fw-light">Professor Oak's friend since :</p>
+                                <p>Follows : {{ profile.follows.count }} | Followers : {{ profile.followed_by.count }}</p>
                             </div>
                         </div>
                     </div>

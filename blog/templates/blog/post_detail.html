@@ -13,7 +13,8 @@
             </div>
             <div class="d-none d-md-block col-md-6">
                 {% if "placeholder" in post.featured_image.url %}
-                <img src="{% static 'images/International_Pokémon_logo.svg.png' %}" class="scale" alt="placeholder image">
+                <img src="{% static 'images/International_Pokémon_logo.svg.png' %}" class="scale"
+                    alt="placeholder image">
                 {% else %}
                 <img src="{{ post.featured_image.url }}" class="scale" alt="{{ post.title }}">
                 {% endif %}
@@ -58,7 +59,7 @@
                         {{ comment.author }} |
                         {{ comment.created_on }}
                     </p>
-                    <div class="fw-medium" id="comment{{ comment.id }}">
+                    <div class="fw-medium" id="comment{{ comment. }}">
                         {{ comment.body | linebreaks }}
                     </div>
                     {% if user.is_authenticated and comment.author == user %}
