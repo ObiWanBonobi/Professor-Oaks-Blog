@@ -76,6 +76,21 @@ images :
 - [5 myths](https://screenrant.com/pokemon-mew-mewtwo-mewthree-clone-fossil-new-legendary/)
 - [evil](https://www.newgrounds.com/portal/view/676946)
 - [5 theroies](https://www.cbr.com/creepiest-pokemon-game-theories/)
+- [person?](https://9gag.com/gag/aM4wexM)
+- [pokemon?](https://www.polygon.com/2017/2/15/14615360/whos-that-pokemon-meme-creator)
+- [Ash](https://mynintendonews.com/2023/10/07/pokemon-pays-tribute-to-ash-ketchums-25-year-journey/)
+- [Misty](https://gamerant.com/pokemon-misty-anime-full-lore-history/)
+- [Brock](https://www.reddit.com/r/MyHeroAcadamia/comments/17840ts/will_they_get_along_brock_pokemon/)
+- [Oak](https://screenrant.com/pokemon-things-you-did-not-know-about-professor-oak-willow/)
+- [Dennis](https://www.reddit.com/r/cars/comments/6y5a7v/what_year_and_model_range_rover_is_this_dennis/)
+- [Dee](https://www.reddit.com/r/IASIP/comments/sl7bjs/sweet_dee_with_her_gorgeous_flojo_nails_10_years/)
+- [Frank](https://www.joe.co.uk/entertainment/11-times-frank-reynolds-was-the-most-disgustingly-hilarious-man-on-television-208751)
+- [Charlie](https://hellyeahcharlieday.tumblr.com/post/170055955219/charilework-which-charlie-kelly-are-you)
+- [Mac](https://www.thewrap.com/rob-mcelhenney-fat-weight-always-sunny/)
+- [Rick](https://tvtropes.org/pmwiki/pmwiki.php/Characters/RickAndMortyRickSanchez)
+- [Morty](https://tvtropes.org/pmwiki/pmwiki.php/Characters/RickAndMortyMortySmith)
+- [Jerry](https://ricksanchez.fandom.com/wiki/Jerry_Smith)
+
 
 gif :
 - https://www.youtube.com/watch?v=vzCAgHASh_U&list=PLT6LA7qWKxZoJJAUZgXHQ0m6UMP8cPBMX&index=25

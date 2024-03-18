@@ -259,19 +259,14 @@ main {
     transition: 0.5s ease;
 }
 
-.user-picture {
-    height: auto;
-    max-width: 550px;
-}
-
 
 /* ----------------------- profile html ------------------------ */
 
 .all-users-button {
     background-color: white;
     color: #4566ad;
-    font-size: 110%;
-    font-weight: 600;
+    font-size: 100%;
+    font-weight: 500;
     margin-top: 10px;
 }
 
@@ -279,6 +274,16 @@ main {
     border-radius: 5px;
     padding: 3px 8px;
     transition: all 0.1s ease-out;
+}
+
+.profile-image {
+    max-width: 400px;
+    height: auto;
+}
+
+.default-pokemon {
+    max-height: 115px;
+    width: auto;
 }
 
 
@@ -314,5 +319,10 @@ li {
         margin: 15px 25px;
         padding: 5px 35px;
         font-size: 170%;
+    }
+
+    .all-users-button {
+        font-size: 110%;
+        font-weight: 600;
     }
 }

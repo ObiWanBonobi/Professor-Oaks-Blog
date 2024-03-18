@@ -1810,5 +1810,17 @@
             "height": "0.41 m",
             "weight": "4.0 kg"
         }
+    },
+    {
+        "model": "database.pokedatabase",
+        "pk": 152,
+        "fields": {
+            "poke_id": "152",
+            "name": "???",
+            "image": "../static/images/who_pokemon.webp",
+            "poke_type": "???",
+            "height": "? m",
+            "weight": "? kg"
+        }
     }
 ]

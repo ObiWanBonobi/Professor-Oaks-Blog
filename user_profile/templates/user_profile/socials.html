@@ -20,7 +20,7 @@ Oak's socials
                     <div class="row g-0">
                         <div class="col-md-4">
                             {% if "placeholder" in profile.user_image.url %}
-                            <img src="{% static 'images/nobody.webp' %}" class="img-fluid rounded-start"
+                            <img src="{% static 'images/who_person.webp' %}" class="img-fluid rounded-start"
                                 alt="Placeholder User photo">
                             {% else %}
                             <img src="{{ profile.user_image.url }}" class="img-fluid rounded-start"
@@ -31,6 +31,7 @@ Oak's socials
                             <div class="card-body">
                                 <h5 class="card-title"><u>{{ profile.user.username }}</u></h5>
                                 <p class="card-text fs-5">{{ profile.user.username }}'s favourite pokemon is : </p>
+                                <p class="card-text">{{ profile.fav_pokemon.name }}</p>
                                 <p>Follows : {{ profile.follows.count }} | Followers : {{ profile.followed_by.count }}</p>
                             </div>
                         </div>
