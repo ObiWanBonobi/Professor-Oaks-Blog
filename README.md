@@ -178,6 +178,8 @@ You can see the deployed blog [here]().
 
 # Credits
 
+- <b>Inspiration and code</b> : I got most of my code and inspiration from 2 different walkthroughs that I combined, [Code Institute Blog](https://github.com/Code-Institute-Solutions/blog) and [Django Social Network](https://realpython.com/django-social-network-1/).
+
 - <b>Json file</b> : I got the pokemon data for my json file, from this [pokemon database on github](https://github.com/sohailpervaiz/pokemon-database).
 - <b>Blogs</b> : I got all the blog content from the following websites:
     * https://www.ign.com/articles/palworld-vs-pokmon-comparison-just-how-similar-are-the-designs

@@ -3,6 +3,7 @@
 {% url 'home' as home_url %}
 {% url 'pokemon_database' as database_url %}
 {% url 'social_profiles' as social_url %}
+{% url 'profile' user.pk as profile_url %}
 {% url 'account_login' as login_url %}
 {% url 'account_signup' as signup_url %}
 {% url 'account_logout' as logout_url %}
@@ -63,6 +64,10 @@
                             href="{% url 'social_profiles' %}">Socials</a>
                     </li>
                     {% if user.is_authenticated %}
+                    <li class="nav-item">
+                        <a class="nav-link {% if request.path == profile_url %}active{% endif %}" aria-current="page"
+                            href="{% url 'profile' user.pk %}">My profile</a>
+                    </li>
                     <li class="nav-item">
                         <a class="nav-link {% if request.path == logout_url %}active{% endif %}" aria-current="page"
                             href="{% url 'account_logout' %}">Logout</a>

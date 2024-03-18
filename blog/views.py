@@ -44,7 +44,8 @@ def post_detail(request, slug):
             comment.author = request.user
             comment.post = post
             comment.save()
-            messages.add_message(request, messages.SUCCESS, "You posted a comment")
+            messages.add_message(request, messages.SUCCESS, "Comment posted!")
+            return HttpResponseRedirect(reverse("post_detail", args=[slug]))
 
     comment_form = CommentForm()
 
