@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% load crispy_forms_tags %}
+
+{% block title %}
+{{ profile.user.username }}'s page
+{% endblock title %}
+
+{% block content %}
+
+<div class="container">
+    <div class="white-text text-center">
+        <h3><u>Update your profile</u></h3>
+        <form method="POST" enctype="multipart/form-data" class="margin-top">
+            {% csrf_token %}
+            {{ form | crispy }}
+            <button class="btn all-users-button blue-white margin-top">Update Profile</button>
+        </form>
+    </div>
+</div>
+
+{% endblock content %}

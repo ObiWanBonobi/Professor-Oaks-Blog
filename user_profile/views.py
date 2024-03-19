@@ -3,6 +3,9 @@ View for the socials page. It shows all the users in a list. When one is clicked
 the user can see that users page.
 """
 
+from django.urls import reverse_lazy
+from django.contrib.auth.mixins import UserPassesTestMixin, LoginRequiredMixin
+from django.views.generic.edit import UpdateView
 from django.shortcuts import render
 from .models import Socials
 
@@ -39,3 +42,18 @@ def profile_user(request, pk):
         current_user_profile.save()
 
     return render(request, "user_profile/profile.html", {"profile": profile})
+
+
+class ProfileUpdate(LoginRequiredMixin, UserPassesTestMixin, UpdateView):
+    """ s """
+    model = Socials
+    fields = ["user_image", "fav_pokemon",]
+    template_name = "user_profile/update_profile.html"
+
+    def get_success_url(self):
+        pk = self.kwargs['pk']
+        return reverse_lazy('profile', kwargs={'pk': pk})
+
+    def test_func(self):
+        profile = self.get_object()
+        return self.request.user == profile.user

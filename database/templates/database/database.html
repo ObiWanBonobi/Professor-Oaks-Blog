@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 {% load static %}
 
-{% block title %}Prof Oak's Database{% endblock title %}
+{% block title %}Pokémon{% endblock title %}
 
 {% block content %}
 
@@ -9,7 +9,7 @@
     <div class="row justify-content-md-center">
 
         <!-- Pokemon data column -->
-        {% for i in pokedatabase_list %}
+        {% for i in pokedatabase_list|slice:":151" %}
             <div id="card-pokemon" class="col">
                 <div class="card white-text">
                     <img class="mx-auto d-block" src="{{ i.image }}" alt="{{ i.name }}">
