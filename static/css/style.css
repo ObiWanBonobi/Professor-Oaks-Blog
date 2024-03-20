@@ -289,7 +289,10 @@ main {
 
 /* ---------------- signin/ signup/ logout html ---------------- */
 
-.signup label {
+.signup label,
+.signup p #id_email,
+#div_id_user_image .input-group,
+.asteriskField {
     display: none;
 }
 

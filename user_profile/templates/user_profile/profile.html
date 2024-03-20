@@ -25,6 +25,12 @@
                         <h5 class="card-title user-title"><u>{{ profile.user.username | upper }}'s
                                 page</u></h5>
                     </div>
+                    {% if request.user == profile.user %}
+                    <div class="col p-2">
+                        <a href="{% url 'update_profile' profile.pk %}"><button class="btn all-users-button blue-white">
+                                Update Profile</button></a>
+                    </div>
+                    {% else %}
                     <div class="col p-2">
                         <form method="post">
                             {% csrf_token %}
@@ -35,17 +41,11 @@
                             {% endif %}
                         </form>
                     </div>
-                    {% if request.user == profile.user %}
-                    <div class="col p-2">
-                        <a href="{% url 'update_profile' profile.pk %}"><button class="btn all-users-button blue-white">
-                                Update Profile</button></a>
-                    </div>
-                    {% else %}
+                    {% endif %}
                     <div class="col p-2">
                         <a href="{% url 'social_profiles' %}"><button class="btn all-users-button blue-white">
                                 User List</button></a>
                     </div>
-                    {% endif %}
                 </div>
             </div>
             <hr>
