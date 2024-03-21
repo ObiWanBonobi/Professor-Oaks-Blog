@@ -4,8 +4,9 @@ the user can see that users page.
 """
 
 from django.urls import reverse_lazy
-from django.contrib.auth.mixins import UserPassesTestMixin, LoginRequiredMixin
+from django.contrib.auth.mixins import LoginRequiredMixin
 from django.views.generic.edit import UpdateView
+from django.contrib import messages
 from django.shortcuts import render
 from .models import Socials
 
@@ -37,23 +38,25 @@ def profile_user(request, pk):
         action = data.get("follow")
         if action == "follow":
             current_user_profile.follows.add(profile)
+            messages.add_message(request, messages.SUCCESS, "You're now following this user!")
         elif action == "unfollow":
             current_user_profile.follows.remove(profile)
+            messages.add_message(request, messages.SUCCESS, "You stopped following this user!")
         current_user_profile.save()
 
     return render(request, "user_profile/profile.html", {"profile": profile})
 
 
-class ProfileUpdate(LoginRequiredMixin, UserPassesTestMixin, UpdateView):
-    """ s """
+class ProfileUpdate(LoginRequiredMixin, UpdateView):
+    """
+    Updates the user profile image and favourite pokemon.
+    Connects to the :model:`user_profile.Socials`
+    Displays on :template:`user_profile/update_profile.html`
+    """
     model = Socials
     fields = ["user_image", "fav_pokemon",]
     template_name = "user_profile/update_profile.html"
 
     def get_success_url(self):
-        pk = self.kwargs['pk']
+        pk = self.get_object().user.pk
         return reverse_lazy('profile', kwargs={'pk': pk})
-
-    def test_func(self):
-        profile = self.get_object()
-        return self.request.user == profile.user

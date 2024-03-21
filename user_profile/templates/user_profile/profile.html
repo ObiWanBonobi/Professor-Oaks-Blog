@@ -62,23 +62,31 @@
         <div class="col text-center">
             <div class="card white-text">
                 <h4><u>Follows:</u></h4>
+                {% if profile.follows.count == 0 %}
+                <p class="fw-bold p-3">Start Following</p>
+                {% else %}
                 <ul class="list-group list-group-flush">
                     {% for following in profile.follows.all %}
                     <li class="list-group-item"><a class="follows white-text blue-white"
                             href="{% url 'profile' following.user.pk %}">{{ following }}</a></li>
                     {% endfor %}
                 </ul>
+                {% endif %}
             </div>
         </div>
         <div class="col text-center">
             <div class="card white-text">
                 <h4><u>Followers:</u></h4>
+                {% if profile.followed_by.count == 0 %}
+                <p class="fw-bold p-3">No Followers</p>
+                {% else %}
                 <ul class="list-group list-group-flush">
                     {% for follower in profile.followed_by.all %}
                     <li class="list-group-item"><a class="follows white-text blue-white"
                             href="{% url 'profile' follower.user.pk %}">{{ follower }}</a></li>
                     {% endfor %}
                 </ul>
+                {% endif %}
             </div>
         </div>
         <div class="col-md-6 text-center">
