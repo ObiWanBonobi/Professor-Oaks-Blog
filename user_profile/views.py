@@ -8,6 +8,7 @@ from django.contrib.auth.mixins import LoginRequiredMixin
 from django.views.generic.edit import UpdateView
 from django.contrib import messages
 from django.shortcuts import render
+from blog.models import Comment
 from .models import Socials
 
 
@@ -19,9 +20,12 @@ def social_profiles(request):
     """
     if request.user.is_authenticated:
         profiles = Socials.objects.exclude(user=request.user)
+        comments = Comment.objects.all()
     else:
         profiles = Socials.objects.all()
-    return render(request, "user_profile/socials.html", {"profiles": profiles})
+    return render(request, "user_profile/socials.html",
+                  {"profiles": profiles,
+                   "comments": comments,},)
 
 
 def profile_user(request, pk):

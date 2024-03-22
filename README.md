@@ -16,12 +16,11 @@
 - [Future features](#future-features)
 - [Design](#design)
 - [Technologies used](#technologies-used)
+    * [Balsemiq](#balsemiq)
     * [Lucid Flowchart](#lucid-flowchart)
     * [Bootstrap](#bootstrap)
-    * [Materialize](#materialize)
     * [ElephantSQL](#elephantsql)
     * [Cloudinary](#cloudinary)
-    * [EmailJS](#emailjs)
     * [Libraries](#libraries)
 - [Testing](#testing)
     * [HTML validation](#html-validation)
@@ -41,7 +40,7 @@
 
 ## User experience
 
-## My vision for the game
+## My vision for the blog
 
 <br>
 
@@ -58,24 +57,25 @@
 
 # Design
 
-images :
+### Colour scheme
+
+I wanted to keep the colours fun and matching with the pokemon theme. The main pages follow the design of a pokeball, red - black - white. Other features like the back up button and the delete modal follow the pokemon logo colours, blue - yellow
+
+<img src="static/images/pokeball.webp" width="200px">
+<img src="static/images/International_Pokémon_logo.svg.png" width="540px">
+
+<br>
+
+![Colour Palette](static/images/readme/colour-palette.png)
+
+### Images
+
+The images from the posts come from the websites that I got the post content from. They are linked in the credits section.
+
+<details>
+<summary>images and gif :</summary>
+
 - [Pokemon logo](https://en.wikipedia.org/wiki/Pok%C3%A9mon)
-- [pokemon vs palworld](https://beebom.com/pokemon-vs-palworld-similarities/)
-- [Pokemon battle](https://www.google.com/search?sca_esv=b9615c6636962dbd&sxsrf=ACQVn0-z5K_ZEPrp_uqqxfHJYiWrLgjnUA:1708466148892&q=pokemon+battle&tbm=isch&source=lnms&sa=X&ved=2ahUKEwjygKmv9LqEAxVSXfEDHSV_BYIQ0pQJegQIEhAB&biw=2219&bih=1277&dpr=1#imgrc=Y9CMvXwmaYb7zM)
-- [Rhydon](https://twitter.com/DrLavaYT/status/1358827245930860549)
-- [Ponyta](https://danbooru.donmai.us/posts/4254972)
-- [Pokemon red and blue](https://www.pokemon.com/us/pokemon-video-games/pokemon-red-version-and-pokemon-blue-version)
-- [Legendary](https://wallpapers.com/legendary-pokemon-pictures)
-- [Ash his pokemon](https://wegotthiscovered.com/anime/all-of-ashs-pokemon-from-the-anime-listed/)
-- [Couldve won](https://www.cbr.com/ash-ketchum-worst-pokemon-league-losses/)
-- [types](https://www.deviantart.com/adeptcharon/art/Pokemon-Types-Sword-and-Shield-930187530)
-- [championship](https://www.sportskeeda.com/anime/pokemon-journeys-episode-132-breaks-internet-ash-finally-becomes-new-world-champion)
-- [pikachu](https://www.reddit.com/r/pokemon/comments/itym1f/pikachu_sprite_evolution_through_the_years/)
-- [serena](https://www.dexerto.com/pokemon/pokemon-anime-fans-think-new-protagonist-is-ash-and-serenas-daughter-2013608/)
-- [blue jp](https://lavacutcontent.com/corocoro-comic-pokemon-blue/)
-- [5 myths](https://screenrant.com/pokemon-mew-mewtwo-mewthree-clone-fossil-new-legendary/)
-- [evil](https://www.newgrounds.com/portal/view/676946)
-- [5 theroies](https://www.cbr.com/creepiest-pokemon-game-theories/)
 - [person?](https://9gag.com/gag/aM4wexM)
 - [pokemon?](https://www.polygon.com/2017/2/15/14615360/whos-that-pokemon-meme-creator)
 - [Ash](https://mynintendonews.com/2023/10/07/pokemon-pays-tribute-to-ash-ketchums-25-year-journey/)
@@ -90,10 +90,9 @@ images :
 - [Rick](https://tvtropes.org/pmwiki/pmwiki.php/Characters/RickAndMortyRickSanchez)
 - [Morty](https://tvtropes.org/pmwiki/pmwiki.php/Characters/RickAndMortyMortySmith)
 - [Jerry](https://ricksanchez.fandom.com/wiki/Jerry_Smith)
+- [Gif](https://www.youtube.com/watch?v=vzCAgHASh_U&list=PLT6LA7qWKxZoJJAUZgXHQ0m6UMP8cPBMX&index=25)
 
-
-gif :
-- https://www.youtube.com/watch?v=vzCAgHASh_U&list=PLT6LA7qWKxZoJJAUZgXHQ0m6UMP8cPBMX&index=25
+</details>
 
 <br>
 
@@ -105,23 +104,21 @@ gif :
 - [Github](https://github.com/) was used to create a repository with the help of The Code Institute template.
 - [Heroku](https://heroku.com/) was used to deploy my game.
 - [Visual Studio Code](https://code.visualstudio.com/) is where I did all my coding.
-- [Favicon](https://favicon.io/) was used to create a unique favicon for the game.
+- [Favicon](https://favicon.io/) was used to create a unique favicon for this blog.
 - [Gif](https://ezgif.com/) was used to create a gif for my README.
-- [Font Awesome](https://fontawesome.com/) was used to add icons to the website
-- [Pickcoloronline](https://pickcoloronline.com/) was used to get exact colour matches
-- [Image Resizer](https://imageresizer.com/) was used to change all images to webp files
+- [Pickcoloronline](https://pickcoloronline.com/) was used to get exact colour matches.
+- [Coolers](https://coolors.co/) was used to create a colour pallate.
+- [Image Resizer](https://imageresizer.com/) was used to change all images to webp files.
+
+## balsemiq
 
 ## Lucid Flowchart
 
 ## Bootstrap
 
-## Materialize
-
 ## ElephantSQL
 
 ## Cloudinary
-
-## EmailJS
 
 ## Libraries
 
@@ -142,6 +139,11 @@ gif :
 
 
 # Bug fixes
+
+- I had accidentally added the path to the post_detail page outside of the urlpatterns brackets.
+- There was a bug that would throw an error when the socials page is clicked when a user isn't logged in. That got fixed with an if else statement.
+- If a user would comment on a post and then refresh, the comment would duplicate. I had to add HttpResponseRedirect to the comment form.
+- After I would update my profile picture it would return me to the incorrect user profile. I had to return the correct user pk.
 
 <b>I have not noticed any existing bugs.</b>
 
@@ -194,24 +196,17 @@ You can see the deployed blog [here]().
 # Credits
 
 - <b>Inspiration and code</b> : I got most of my code and inspiration from 2 different walkthroughs that I combined, [Code Institute Blog](https://github.com/Code-Institute-Solutions/blog) and [Django Social Network](https://realpython.com/django-social-network-1/).
-
+- <b>Django</b> : I learned a lot from the [official Django website](https://www.djangoproject.com/).
 - <b>Json file</b> : I got the pokemon data for my json file, from this [pokemon database on github](https://github.com/sohailpervaiz/pokemon-database).
 - <b>Blogs</b> : I got all the blog content from the following websites:
     * https://www.ign.com/articles/palworld-vs-pokmon-comparison-just-how-similar-are-the-designs
     * https://screenrant.com/pokemon-first-created-rhydon-original-design-dinosaur/
-    * https://aminoapps.com/c/pokemon/page/blog/gen-1-competitive-battling-guide/rghe_urYEKPW2eD54G2QKj4ZxeaZa5
-    * https://pokemaniacal.com/2020/11/29/galarian-ponyta-and-rapidash/
-    * https://en.wikipedia.org/wiki/Pok%C3%A9mon_(TV_series)
     * https://gamerant.com/pokemon-generation-one-popular-rumors-everyone-believed/#mew-under-the-truck
-    * https://plaguevonkarmabeta.weebly.com/blog/pokemon-blue-jp-the-gen-1-game-the-west-never-got
     * https://screenrant.com/pokemon-ash-serena-married-xyz-anime/
-    * https://theconversation.com/pikachu-to-depart-a-brief-history-of-the-worlds-favourite-pokemon-201054
     * https://theconversation.com/pokemons-ash-wins-world-championship-after-25-years-heres-why-the-franchise-is-still-capturing-fans-194788
     * https://gamerant.com/best-pokemon-each-type/#fire-ndash-charizard
-    * https://gamerant.com/pokemon-games-where-ash-ketchum-could-become-champion/#paldea-league
     * https://gamerant.com/pokemon-ash-ketchum-most-used-types/#flying---13
     * https://www.zavvi.com/blog/gaming/the-top-10-most-powerful-pokemon/#:~:text=Arceus&text=By%20far%20the%20most%20naturally,to%20control%20other%20Legendary%20Pok%C3%A9mon.
-    * https://www.zavvi.com/blog/features/pokemon-red-and-blue-at-25-the-games-that-launched-an-empire/
     * https://www.zavvi.com/blog/features/pokemon-game-fan-theories/
     * https://www.wikihow.com/Is-Pokemon-Demonic
     * https://gamerant.com/pokemon-worst-type-combinations-ranked/#bug-grass

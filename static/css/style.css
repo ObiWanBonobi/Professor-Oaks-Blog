@@ -51,7 +51,7 @@ footer p a {
 }
 
 footer p a:hover {
-    color: #E84610;
+    color: #C34C48;
     transition: all 0.2s ease-out;
 }
 
@@ -64,6 +64,14 @@ body {
 
 main {
     margin: 0 10px;
+}
+
+.margin-top {
+    margin-top: 40px;
+}
+
+.margin-bottom {
+    margin-bottom: 40px;
 }
 
 .navbar-nav .nav-link.active {
@@ -199,7 +207,7 @@ main {
 }
 
 .btn-delete {
-    background: #E84610;
+    background: #C34C48;
     padding: 6px 13px;
     border: none;
 }
@@ -298,10 +306,6 @@ main {
 
 li {
     list-style-type: none;
-}
-
-.margin-top {
-    margin-top: 40px;
 }
 
 
