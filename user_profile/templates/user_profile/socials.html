@@ -14,10 +14,10 @@ Oak's socials
 <!-- Button that stays on the screen to go back to the top of the page -->
 <button onclick="topFunction()" id="top-button" title="Go back to the top">Back up</button>
 
-<div class="container-fluid">
-    <div class="row">
-        <div class="col">
-            <h3 class="text-center white-text margin-bottom"><u>All user profiles :</u></h3>
+<div class="container-fluid z-index-first">
+    <div class="row row-reverse">
+        <div class="col-sm-6">
+            <h3 class="text-center white-text margin-bottom"><u>All user profiles:</u></h3>
             {% for profile in profiles %}
             <a href="{% url 'profile' profile.user.pk %}" class="social-link">
                 <div class="card mb-3 social-card white-text">
@@ -44,10 +44,10 @@ Oak's socials
             </a>
             {% endfor %}
         </div>
-        <div class="col text-center">
-            <h3 class="text-center white-text margin-bottom"><u>Comments by users you follow :</u></h3>
-            <div class="card white-text">
-                {% if user.follows.count == 0 %}
+        <div class="col-sm-6 text-center white-text">
+            <h3 class="margin-bottom"><u>Comments from users you follow:</u></h3>
+            <div class="card">
+                {% if followed_users.count != 0 %}
                 {% for comment in comments %}
                 <a href="{% url 'post_detail' comment.post.slug %}" class="white-text comment-link p-3">
                     <div class="fw-bold">{{ comment.post.title }}</div>

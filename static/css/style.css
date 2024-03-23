@@ -253,18 +253,16 @@ main {
 
 /* ----------------------- socials html ------------------------ */
 
-.social-card {
-    min-width: 500px;
-    max-width: 550px;
-    height: auto;
-}
-
 .social-card:hover {
     color: #4566ad;
     -webkit-transform: scale(0.96);
     -ms-transform: scale(0.96);
     transform: scale(0.96);
     transition: 0.5s ease;
+}
+
+.row-reverse {
+    flex-direction: column-reverse;
 }
 
 
@@ -331,5 +329,14 @@ li {
     .all-users-button {
         font-size: 110%;
         font-weight: 600;
+    }
+}
+
+
+/* -------- Media query: tablet and larger (500px and up) ------*/
+
+@media screen and (min-width: 575px) {
+    .row-reverse {
+        flex-direction: row;
     }
 }
