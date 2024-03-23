@@ -12,9 +12,9 @@
         <div class="col">
             <div class="card white-text text-center">
                 {% if "placeholder" in profile.user_image.url %}
-                <img src="{% static 'images/who_person.webp' %}" class="profile-image" alt="Placeholder User photo">
+                <img src="{% static 'images/who_person.webp' %}" class="profile-image rounded" alt="Placeholder User photo">
                 {% else %}
-                <img src="{{ profile.user_image.url }}" class="profile-image" alt="{{ profile.user.username }}">
+                <img src="{{ profile.user_image.url }}" class="profile-image rounded" alt="{{ profile.user.username }}">
                 {% endif %}
             </div>
         </div>
@@ -51,7 +51,7 @@
             <hr>
             <h4><u>Favourite Pokémon:</u></h4>
             {% if profile.fav_pokemon.name == "???" %}
-            <img class="default-pokemon" src="{% static 'images/who_pokemon.webp' %}" alt="Pokémon placeholder">
+            <img class="default-pokemon rounded" src="{% static 'images/who_pokemon.webp' %}" alt="Pokémon placeholder">
             {% else %}
             <p class="margin-top">{{ profile.fav_pokemon.name }}</p>
             <img class="" src="{{ profile.fav_pokemon.image }}" alt="Favourite Pokémon">

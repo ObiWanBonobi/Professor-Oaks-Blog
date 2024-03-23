@@ -253,6 +253,12 @@ main {
 
 /* ----------------------- socials html ------------------------ */
 
+.social-cards {
+    min-width: 500px;
+    max-width: 550px;
+    height: auto;
+}
+
 .social-card:hover {
     color: #4566ad;
     -webkit-transform: scale(0.96);

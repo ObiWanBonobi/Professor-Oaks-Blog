@@ -23,14 +23,15 @@ def social_profiles(request):
         followed_users = request.user.socials.follows.all()
         followed_usernames = followed_users.values_list('user__username', flat=True)
         comments = Comment.objects.filter(author__username__in=followed_usernames)
-    else:
-        profiles = Socials.objects.all()
-        followed_users = request.user.Socials.follows.none()
-        comments = Comment.objects.none()
-    return render(request, "user_profile/socials.html",
+
+        return render(request, "user_profile/socials.html",
                   {"profiles": profiles,
                    "comments": comments,
                    "followed_users": followed_users,},)
+    else:
+        profiles = Socials.objects.all()
+        return render(request, "user_profile/socials.html",
+                  {"profiles": profiles},)
 
 
 def profile_user(request, pk):
