@@ -61,8 +61,7 @@
 
 I wanted to keep the colours fun and matching with the pokemon theme. The main pages follow the design of a pokeball, red - black - white. Other features like the back up button and the delete modal follow the pokemon logo colours, blue - yellow
 
-<img src="static/images/pokeball.webp" width="200px">
-<img src="static/images/International_Pokémon_logo.svg.png" width="540px">
+<img src="static/images/pokeball.webp" width="200px"><img src="static/images/International_Pokémon_logo.svg.png" width="540px">
 
 <br>
 
@@ -144,6 +143,8 @@ The images from the posts come from the websites that I got the post content fro
 - There was a bug that would throw an error when the socials page is clicked when a user isn't logged in. That got fixed with an if else statement.
 - If a user would comment on a post and then refresh, the comment would duplicate. I had to add HttpResponseRedirect to the comment form.
 - After I would update my profile picture it would return me to the incorrect user profile. I had to return the correct user pk.
+- The update profile message wans't showing, I had placed the message code in the wrong section.
+- The edit comment button stopped working, because I had accidentally deleted the .id in the comment.
 
 <b>I have not noticed any existing bugs.</b>
 
@@ -188,7 +189,7 @@ To clone this repository, you have to :
   - Type git clone, and then paste the URL you copied earlier.
   - Press Enter to create your local clone.
 
-You can see the deployed blog [here]().
+You can see the deployed blog [here](https://prof-oaks-blog-0421d28e5692.herokuapp.com/).
 
 <br>
 

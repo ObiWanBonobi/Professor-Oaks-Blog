@@ -5,13 +5,18 @@
 
 {% block content %}
 
+<h3 class="text-center white-text margin-top">Click on a Pokémon to learn more about them on the <a href="https://pokemondb.net/"
+        target="_blank" rel="noopener" class="link white-text">pokemondb website</a></h3>
+
 <div class="container text-center">
     <div class="row justify-content-md-center">
 
         <!-- Pokemon data column -->
         {% for i in pokedatabase_list|slice:":151" %}
-            <div id="card-pokemon" class="col">
-                <div class="card white-text">
+        <div id="card-pokemon" class="col">
+            <div class="card white-text post-image">
+                <a href="https://pokemondb.net/pokedex/{{ i.name }}" target="_blank" rel="noopener"
+                    class="post-link white-text">
                     <img class="mx-auto d-block" src="{{ i.image }}" alt="{{ i.name }}">
                     <div class="card-body">
                         <div>
@@ -24,8 +29,9 @@
                             Weight : {{ i.weight }}
                         </p>
                     </div>
-                </div>
+                </a>
             </div>
+        </div>
         {% endfor %}
     </div>
 </div>
