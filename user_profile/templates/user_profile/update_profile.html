@@ -1,5 +1,6 @@
 {% extends "base.html" %}
 {% load crispy_forms_tags %}
+{% load static %}
 
 {% block title %}
 Update Profile
@@ -7,6 +8,7 @@ Update Profile
 
 {% block content %}
 
+<!-- Form where the logged in user can update their own profile picture and favourite pokemon -->
 <div class="container">
     <div class="white-text text-center row justify-content-md-center">
         <div class="col-md-6">
@@ -14,10 +16,17 @@ Update Profile
             <form method="POST" enctype="multipart/form-data" class="margin-top">
                 {% csrf_token %}
                 {{ form | crispy }}
-                <button class="btn all-users-button blue-white margin-top">Update Profile</button>
+                <button id="message-button" class="btn all-users-button blue-white margin-top">
+                    Update Profile
+                </button>
             </form>
         </div>
     </div>
 </div>
 
 {% endblock content %}
+
+<!-- This connects to a specific JavaScript file -->
+{% block javascript %}
+<script src="{% static 'js/message.js' %}"></script>
+{% endblock javascript %}

@@ -14,10 +14,13 @@ Oak's socials
 <!-- Button that stays on the screen to go back to the top of the page -->
 <button onclick="topFunction()" id="top-button" title="Go back to the top">Back up</button>
 
+<!-- If user is logged in, it'll show the users and the comments from users the user follows -->
 {% if request.user.is_authenticated %}
 <div class="container-fluid">
     <div class="row row-reverse">
         <div class="col-sm-6">
+
+            <!-- Shows all user profiles -->
             <h3 class="text-center white-text margin-bottom"><u>All user profiles:</u></h3>
             {% for profile in profiles %}
             <a href="{% url 'profile' profile.user.pk %}" class="social-link">
@@ -37,7 +40,8 @@ Oak's socials
                                 <h5 class="card-title"><u>{{ profile.user.username }}</u></h5>
                                 <p class="card-text fs-5">{{ profile.user.username }}'s favourite pokemon: </p>
                                 <p class="card-text">{{ profile.fav_pokemon.name }}</p>
-                                <p>Follows : {{ profile.follows.count }} | Followers : {{ profile.followed_by.count }}
+                                <p>
+                                    Follows : {{ profile.follows.count }} | Followers : {{ profile.followed_by.count }}
                                 </p>
                             </div>
                         </div>
@@ -46,11 +50,13 @@ Oak's socials
             </a>
             {% endfor %}
         </div>
+
+        <!-- Comments that are made by the people that the user is following sorted by newest first. -->
         <div class="col-sm-6 text-center white-text">
             <h3 class="margin-bottom"><u>Comments from users you follow:</u></h3>
             <div class="card">
                 {% if followed_users.count != 0 %}
-                {% for comment in comments %}
+                {% for comment in comments|dictsortreversed:"created_on" %}
                 <a href="{% url 'post_detail' comment.post.slug %}" class="white-text comment-link p-3">
                     <div class="fw-bold">{{ comment.post.title }}</div>
                     <div class="p-3">
@@ -68,10 +74,15 @@ Oak's socials
         </div>
     </div>
 </div>
+
+<!-- If the user isnt logged in, it'll show a message that the user should log in. And shows all users -->
 {% else %}
 <div class="container-fluid">
     <div class="row">
-        <h3 class="text-center white-text margin-bottom">Create a profile to follow all the comments from your friends</h3>
+        <h3 class="text-center white-text margin-bottom">
+            <a class="link white-text" href="{{ signup_url }}">Create a profile</a> or 
+            <a class="link white-text" href="{{ login_url }}">sign in</a> to follow all comments from your friends
+        </h3>
         <h3 class="text-center white-text margin-bottom"><u>All user profiles:</u></h3>
         {% for profile in profiles %}
         <div class="col">
@@ -92,7 +103,8 @@ Oak's socials
                                 <h5 class="card-title"><u>{{ profile.user.username }}</u></h5>
                                 <p class="card-text fs-5">{{ profile.user.username }}'s favourite pokemon: </p>
                                 <p class="card-text">{{ profile.fav_pokemon.name }}</p>
-                                <p>Follows : {{ profile.follows.count }} | Followers : {{ profile.followed_by.count }}
+                                <p>
+                                    Follows : {{ profile.follows.count }} | Followers : {{ profile.followed_by.count }}
                                 </p>
                             </div>
                         </div>

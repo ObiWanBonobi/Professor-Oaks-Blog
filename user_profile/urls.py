@@ -1,4 +1,4 @@
-""" Urls for user profile, connects to the CommentList class in the views.py file """
+""" Urls for user profile app """
 
 from django.urls import path
 from . import views

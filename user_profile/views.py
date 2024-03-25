@@ -1,10 +1,8 @@
-"""
-View for the socials page. It shows all the users in a list. When one is clicked,
-the user can see that users page.
-"""
+""" Views for the socials app """
 
 from django.urls import reverse_lazy
 from django.contrib.auth.mixins import LoginRequiredMixin
+from django.contrib.messages.views import SuccessMessageMixin
 from django.views.generic.edit import UpdateView
 from django.contrib import messages
 from django.shortcuts import render
@@ -14,8 +12,12 @@ from .models import Socials
 
 def social_profiles(request):
     """
-    Shows social page with all the users, exept the user thats logged in.
-    Connects to the :model:`user_profile.Socials`
+    Shows social page with all the users, exept the user thats logged in. And
+    all the comments from the users that the user is following (if the user is
+    following someone). If the user isn't logged in it'll show all users and no
+    comment section.
+
+    Connects to the :model:`user_profile.Socials` and :model:`blog.Comment`
     Displays on :template:`user_profile/socials.html`
     """
     if request.user.is_authenticated:
@@ -36,7 +38,10 @@ def social_profiles(request):
 
 def profile_user(request, pk):
     """
-    Shows the user page with follow and unfollow buttons.
+    Shows the profile page of a user where the logged in user can follow or
+    unfollow this users profile, if the user isn't logged in it won't show
+    these follow and unfollow buttons.
+
     Connects to the :model:`user_profile.Socials`
     Displays on :template:`user_profile/profile.html`
     """
@@ -57,15 +62,17 @@ def profile_user(request, pk):
     return render(request, "user_profile/profile.html", {"profile": profile})
 
 
-class ProfileUpdate(LoginRequiredMixin, UpdateView):
+class ProfileUpdate(LoginRequiredMixin, UpdateView, SuccessMessageMixin):
     """
     Updates the user profile image and favourite pokemon.
+
     Connects to the :model:`user_profile.Socials`
     Displays on :template:`user_profile/update_profile.html`
     """
     model = Socials
     fields = ["user_image", "fav_pokemon",]
     template_name = "user_profile/update_profile.html"
+    success_message = "Your profile is updated!"
 
     def get_success_url(self):
         pk = self.get_object().user.pk

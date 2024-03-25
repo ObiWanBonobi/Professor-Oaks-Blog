@@ -259,7 +259,8 @@ main {
     height: auto;
 }
 
-.social-card:hover {
+.social-card:hover,
+.social-cards:hover {
     color: #4566ad;
     -webkit-transform: scale(0.96);
     -ms-transform: scale(0.96);

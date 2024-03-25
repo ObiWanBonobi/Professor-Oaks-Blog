@@ -10,6 +10,8 @@
 <div class="container">
     <div class="row">
         <div class="col">
+
+            <!-- user profile picture that can be updated -->
             <div class="card white-text text-center">
                 {% if "placeholder" in profile.user_image.url %}
                 <img src="{% static 'images/who_person.webp' %}" class="profile-image rounded" alt="Placeholder User photo">
@@ -22,14 +24,24 @@
             <div class="card-body text-center">
                 <div class="row row-gap-3">
                     <div class="col-4 p-2">
-                        <h5 class="card-title user-title"><u>{{ profile.user.username | upper }}'s
-                                page</u></h5>
+                        <h5 class="card-title user-title">
+                            <u>{{ profile.user.username | upper }}'s page</u>
+                        </h5>
                     </div>
+
+                    <!-- If the user is logged in it'll show these buttons, if not it'll only show
+                        the user list button -->
+                    {% if request.user.is_authenticated %}
+                    <!-- If the logged in user is on their own page they see the update button -->
                     {% if request.user == profile.user %}
                     <div class="col p-2">
-                        <a href="{% url 'update_profile' profile.pk %}"><button class="btn all-users-button blue-white">
-                                Update Profile</button></a>
+                        <a href="{% url 'update_profile' profile.pk %}">
+                            <button class="btn all-users-button blue-white">Update Profile</button>
+                        </a>
                     </div>
+
+                    <!-- If the user is on another persons profile, it will show the follow or unfollow button
+                        and the user list button -->
                     {% else %}
                     <div class="col p-2">
                         <form method="post">
@@ -43,12 +55,22 @@
                     </div>
                     {% endif %}
                     <div class="col p-2">
-                        <a href="{% url 'social_profiles' %}"><button class="btn all-users-button blue-white">
-                                User List</button></a>
+                        <a href="{% url 'social_profiles' %}">
+                            <button class="btn all-users-button blue-white">User List</button>
+                        </a>
                     </div>
+                    {% else %}
+                    <div class="col p-2">
+                        <a href="{% url 'social_profiles' %}">
+                            <button class="btn all-users-button blue-white">User List</button>
+                        </a>
+                    </div>
+                    {% endif %}
                 </div>
             </div>
             <hr>
+
+            <!-- Shows the users favourite pokemon that the user can update on their own profile -->
             <h4><u>Favourite Pokémon:</u></h4>
             {% if profile.fav_pokemon.name == "???" %}
             <img class="default-pokemon rounded" src="{% static 'images/who_pokemon.webp' %}" alt="Pokémon placeholder">
@@ -58,6 +80,9 @@
             {% endif %}
         </div>
     </div>
+
+    <!-- Shows the 2 lists of the people that follows the user and people that the user follows. If the user
+        doesn't follow anyone or has no followers, it'll show a message instead -->
     <div class="row margin-top">
         <div class="col text-center">
             <div class="card white-text">
@@ -68,7 +93,8 @@
                 <ul class="list-group list-group-flush">
                     {% for following in profile.follows.all %}
                     <li class="list-group-item"><a class="follows white-text blue-white"
-                            href="{% url 'profile' following.user.pk %}">{{ following }}</a></li>
+                            href="{% url 'profile' following.user.pk %}">{{ following }}</a>
+                    </li>
                     {% endfor %}
                 </ul>
                 {% endif %}
@@ -83,12 +109,15 @@
                 <ul class="list-group list-group-flush">
                     {% for follower in profile.followed_by.all %}
                     <li class="list-group-item"><a class="follows white-text blue-white"
-                            href="{% url 'profile' follower.user.pk %}">{{ follower }}</a></li>
+                            href="{% url 'profile' follower.user.pk %}">{{ follower }}</a>
+                    </li>
                     {% endfor %}
                 </ul>
                 {% endif %}
             </div>
         </div>
+
+        <!-- Shows all the comments that the user has made, and a message if the user hasn't yet -->
         <div class="col-md-6 text-center">
             <div class="card white-text">
                 <h4><u>Comments:</u></h4>
@@ -113,3 +142,8 @@
 </div>
 
 {% endblock content %}
+
+<!-- This connects to a specific JavaScript file -->
+{% block javascript %}
+<script src="{% static 'js/message.js' %}"></script>
+{% endblock javascript %}

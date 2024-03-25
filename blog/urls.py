@@ -1,4 +1,4 @@
-""" Urls for blog page, connects to the PostList class in the views.py file """
+""" Urls for the blog app """
 
 from django.urls import path
 from . import views

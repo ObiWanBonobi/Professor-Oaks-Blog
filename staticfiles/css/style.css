@@ -1,36 +1,24 @@
-body {
-    font-family: "IBM Plex Sans", sans-serif;
-}
-
-
-/* ----------------------- Colour changes ---------------------- */
+/* -------------------------- colors -------------------------- */
 
 .navbar a,
 .navbar-nav .nav-link.active,
-.link,
-.fa-bars {
+.white-text {
     color: white;
 }
 
 .navbar a:hover,
 .link:hover,
 .navbar-nav .nav-link.active:hover,
-.post-link:hover {
+.post-link:hover,
+.comment-link:hover {
     color: #4566ad;
+    transition: all 0.4s ease-out;
 }
 
-.post-link {
-    text-decoration: none;
+.blue-white:hover,
+.masthead-text {
+    background-color: #4566ad;
     color: white;
-}
-
-footer p a:hover {
-    color: #E84610;
-}
-
-footer p,
-footer p a {
-    color: black;
 }
 
 .h6 {
@@ -41,59 +29,49 @@ footer p a {
     background-color: rgb(228, 228, 228);
 }
 
-.page-link:hover {
-    background-color: #4566ad;
-    color: white;
-}
-
-.masthead-text {
-    background-color: #4566ad;
-    color: white;
-    position: relative;
-}
-
-.post-subtitle {
-    margin-left: 5%;
-    color: rgb(209, 209, 209);
-}
-
-.btn-delete {
-    color: white;
-    background: #E84610;
-    padding: 6px 13px;
-    border: none;
-}
-
-.btn-edit {
-    color: white;
-    background: #198754;
-    padding: 6px 22px;
-    border: none;
-}
-
-.btn-delete:hover,
-.btn-edit:hover,
-.btn-success:hover {
-    border: none;
-    background-color: #4566ad;
-    color: white;
-}
-
 .modal-content {
     background-color: #f3d044;
     border: #4566ad solid 10px;
 }
 
-.modal-content button:hover,
-.modal-content .btn-danger:hover {
-    background-color: #4566ad; 
+#top-button:hover {
+    background-color: #4566ad;
+    border: #f3d044 solid 5px;
+    color: white;
+    transition: all 0.4s ease-out;
+}
+
+.list-group {
+    --bs-list-group-bg: transparent;
+}
+
+footer p,
+footer p a {
+    color: black;
+}
+
+footer p a:hover {
+    color: #C34C48;
+    transition: all 0.2s ease-out;
 }
 
 
-/* ------------------------- Other changes ---------------------------- */
+/* ------------------------- Base html ------------------------ */
+
+body {
+    font-family: "IBM Plex Sans", sans-serif;
+}
 
 main {
     margin: 0 10px;
+}
+
+.margin-top {
+    margin-top: 40px;
+}
+
+.margin-bottom {
+    margin-bottom: 40px;
 }
 
 .navbar-nav .nav-link.active {
@@ -117,19 +95,41 @@ main {
     width: 180px;
     height: auto;
     margin-right: 20px;
+    transition: 1s ease;
+}
+
+.nav-image:hover,
+.post-image:hover {
+    -webkit-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    transform: scale(0.9);
+    transition: 1s ease;
 }
 
 .alert-dismissible,
-.badge {
+.badge,
+.user-title {
     margin-top: 10px;
 }
 
+
+/* ------------------------- Index html ------------------------ */
+
+.post-link,
+.social-link,
+.follows,
+.comment-link {
+    text-decoration: none;
+}
+
 .card {
-    border: white solid 2px;
+    margin-top: 15px;
+    border: none;
     background-color: transparent;
-    padding: 5px;
-    margin: 10px;
-    color: white;
+}
+
+.card-body {
+    padding-top: 0;
 }
 
 .card-title {
@@ -142,17 +142,17 @@ main {
 
 .image-flash {
     position: absolute;
-    bottom: 5%;
-    min-width: 30%;
-    left: -2px;
-    background-color: #4566ad;
-    padding: 0 5px;
+    top: -5%;
+    left: -15px;
+    background-color: white;
+    padding: 0 2px;
     border-radius: 5px;
+    font-size: 90%;
 }
 
 .author {
-    color: white;
-    font-weight: 550;
+    color: black;
+    font-weight: 600;
     margin: 4px;
     text-transform: uppercase;
 }
@@ -165,13 +165,20 @@ main {
     border: none;
 }
 
-.btn {
+.btn,
+.btn:hover {
     border: none;
 }
 
-.scale {
-    width: 100%;
-    height: auto;
+.btn:hover {
+    transition: all 0.4s ease-out;
+}
+
+
+/* ---------------------- post_detail html --------------------- */
+
+.masthead-text {
+    position: relative;
 }
 
 .masthead {
@@ -179,8 +186,9 @@ main {
     overflow: hidden;
     position: relative;
     display: inline-block;
-    height: 33vh;
+    height: auto;
     width: 100%;
+    margin-bottom: 15px;
 }
 
 .post-title {
@@ -188,11 +196,116 @@ main {
     margin-left: 5%;
 }
 
-.signup button {
-    margin-bottom: 20px;
+.post-subtitle {
+    margin-left: 5%;
+    color: rgb(209, 209, 209);
 }
 
-.signup label {
+.scale {
+    width: 100%;
+    height: auto;
+}
+
+.btn-delete {
+    background: #C34C48;
+    padding: 6px 13px;
+    border: none;
+}
+
+.btn-edit {
+    background: #198754;
+    padding: 6px 22px;
+    border: none;
+}
+
+
+/* ----------------------- database html ----------------------- */
+
+#card-pokemon {
+    margin: 20px;
+    width: 400px;
+    height: auto;
+}
+
+#card-pokemon img {
+    width: 200px;
+    height: auto;
+}
+
+.poke-name {
+    font-size: 110%;
+}
+
+#top-button {
+    background-color: #f3d044;
+    border: #4566ad solid 5px;
+    color: black;
+    font-weight: 600;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+
+/* ----------------------- socials html ------------------------ */
+
+.social-cards {
+    min-width: 500px;
+    max-width: 550px;
+    height: auto;
+}
+
+.social-card:hover,
+.social-cards:hover {
+    color: #4566ad;
+    -webkit-transform: scale(0.96);
+    -ms-transform: scale(0.96);
+    transform: scale(0.96);
+    transition: 0.5s ease;
+}
+
+.row-reverse {
+    flex-direction: column-reverse;
+}
+
+
+/* ----------------------- profile html ------------------------ */
+
+.all-users-button {
+    background-color: white;
+    color: #4566ad;
+    font-size: 100%;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+.follows:hover {
+    border-radius: 5px;
+    padding: 3px 8px;
+    transition: all 0.1s ease-out;
+}
+
+.profile-image {
+    max-width: 400px;
+    height: auto;
+}
+
+.default-pokemon {
+    max-height: 115px;
+    width: auto;
+}
+
+
+/* ---------------- signin/ signup/ logout html ---------------- */
+
+.signup label,
+.signup p #id_email,
+#div_id_user_image .input-group,
+.asteriskField {
     display: none;
 }
 
@@ -200,9 +313,11 @@ li {
     list-style-type: none;
 }
 
-/* Media query: tablet and larger (500px and up) */
+
+/* -------- Media query: tablet and larger (500px and up) ------*/
 
 @media screen and (min-width: 500px) {
+
     .navbar-brand,
     .navbar-toggler {
         font-size: 2.5vmin;
@@ -216,5 +331,19 @@ li {
         margin: 15px 25px;
         padding: 5px 35px;
         font-size: 170%;
+    }
+
+    .all-users-button {
+        font-size: 110%;
+        font-weight: 600;
+    }
+}
+
+
+/* -------- Media query: tablet and larger (500px and up) ------*/
+
+@media screen and (min-width: 575px) {
+    .row-reverse {
+        flex-direction: row;
     }
 }

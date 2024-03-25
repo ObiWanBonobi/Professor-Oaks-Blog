@@ -1,10 +1,12 @@
-""" Models for the database page """
+""" Models for the database app """
 
 from django.db import models
 
 
 class PokeDatabase(models.Model):
-    """ Stores pokemon data from the pokedata.json file """
+    """
+    Stores pokemon data from the pokedata.json file
+    """
     poke_id = models.CharField()
     name = models.CharField()
     image = models.CharField()

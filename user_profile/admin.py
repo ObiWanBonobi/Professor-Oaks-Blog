@@ -1,4 +1,4 @@
-""" Admin for the user profile page """
+""" Admin for the user_profile app, connects to the Socials model """
 
 from django.contrib import admin
 from .models import Socials

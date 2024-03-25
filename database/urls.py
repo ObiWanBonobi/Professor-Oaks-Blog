@@ -1,4 +1,4 @@
-""" Urls for database, connects to the PokemonList class in the views.py file """
+""" Urls for database app """
 
 from django.urls import path
 from . import views

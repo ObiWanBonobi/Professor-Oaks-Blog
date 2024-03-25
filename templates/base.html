@@ -40,6 +40,7 @@
     <link rel="icon" type="image/png" sizes="16x16" href="/static/favicon/favicon-16x16.png">
     <link rel="manifest" href="/static/favicon/site.webmanifest">
 
+    <!-- Title that changes when other pages are clicked -->
     <title>{% block title %}Prof Oak's Blog{% endblock title %}</title>
 </head>
 
@@ -67,6 +68,7 @@
                         <a class="nav-link {% if request.path == social_url %}active{% endif %}" aria-current="page"
                             href="{% url 'social_profiles' %}">Socials</a>
                     </li>
+                    <!-- If the user is logged in, it'll show these 2 options -->
                     {% if user.is_authenticated %}
                     <li class="nav-item">
                         <a class="nav-link {% if request.path == profile_url %}active{% endif %}" aria-current="page"
@@ -76,6 +78,7 @@
                         <a class="nav-link {% if request.path == logout_url %}active{% endif %}" aria-current="page"
                             href="{% url 'account_logout' %}">Logout</a>
                     </li>
+                    <!-- If the user isn't logged in, it'll show these 2 options -->
                     {% else %}
                     <li class="nav-item">
                         <a class="nav-link {% if request.path == signup_url %}active{% endif %}" aria-current="page"
@@ -97,7 +100,7 @@
         </div>
     </nav>
 
-    <!-- displaying Django messages -->
+    <!-- Displaying Django messages -->
     <div class="container">
         <div class="row">
             <div class="col-md-8 offset-md-2">
@@ -125,9 +128,8 @@
         {% endif %}
 
         {% block content %}
-        <!-- Content Goes here -->
+        <!-- Content from other html files goes here -->
         {% endblock content %}
-
     </main>
 
     <!-- Footer -->

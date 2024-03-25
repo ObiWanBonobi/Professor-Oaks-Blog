@@ -7,14 +7,14 @@
 
 {% block content %}
 
+<!-- Shows a log in form, for users who have already registered -->
 <div class="container margin-top">
   <div class="row gy-4">
     <div class="col-md-8 mt-3 offset-md-2">
       <div class="text-center white-text">
         <h3>{% trans "Sign In" %}</h3>
-        <p>{% blocktrans %}Welcome back to Professor Oak's blog. To leave a comment or like a post, please log in.
-          If
-          you have not created an account yet, then <a class="link white-text" href="{{ signup_url }}">sign up</a>
+        <p>{% blocktrans %}Welcome back to Professor Oak's blog. To post comments, please log in. If you
+          have not created an account yet, then <a class="link white-text" href="{{ signup_url }}">sign up</a>
           first.{% endblocktrans %}</p>
         <hr>
         <p class="fw-bold fst-italic margin-top">Username is case sensitive</p>

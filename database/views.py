@@ -1,4 +1,4 @@
-""" View for the database, connects to the  """
+""" View for the database """
 
 from django.views import generic
 from .models import PokeDatabase
@@ -6,7 +6,9 @@ from .models import PokeDatabase
 
 class PokemonList(generic.ListView):
     """
-    Shows pokemon data from the :model:`database.PokeDatabase`
+    Shows all the pokemon data.
+    
+    Connects to the :model:`database.PokeDatabase`
     Displays on :template:`database/database.html`
     """
     queryset = PokeDatabase.objects.all()

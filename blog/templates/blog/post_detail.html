@@ -4,6 +4,7 @@
 
 {% block content %}
 
+<!-- Post main image and title -->
 <div class="masthead">
     <div class="container">
         <div class="row g-0">
@@ -86,7 +87,8 @@
                     <button id="submitButton" type="submit" class="btn btn-success blue-white btn-lg">Submit</button>
                 </form>
                 {% else %}
-                <p>Log in to leave a comment</p>
+                <p><a class="link white-text" href="{{ login_url }}">Sign in</a> or 
+                    <a class="link white-text" href="{{ signup_url }}">sign up</a> to leave a comment</p>
                 {% endif %}
             </div>
         </div>

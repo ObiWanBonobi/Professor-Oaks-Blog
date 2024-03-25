@@ -1,7 +1,4 @@
-"""
-View for the blog. It shows 6 posts on the main page. And when one is clicked,
-will show that full post.
-"""
+""" Views for the blog app """
 
 from django.shortcuts import render, get_object_or_404, reverse
 from django.views import generic
@@ -14,7 +11,9 @@ from .forms import CommentForm
 
 class PostList(generic.ListView):
     """
-    Shows only the published posts from the :model:`blog.Post`,
+    Shows all the published posts and displays them in a page of 6 posts.
+
+    Connects to the :model:`blog.Post` and :model:`blog.Comment`
     Displays on :template:`blog/index.html`
     """
     queryset = Post.objects.filter(status=1)
@@ -26,17 +25,18 @@ class PostList(generic.ListView):
 
 def post_detail(request, slug):
     """
-    Display an individual :model:`blog.Post`.
+    Display an individual post with its details. Also shows the comments made
+    by users on the post that is clicked. And shows a comment form where a
+    logged in user can comment on the post.
+
+    Connects to the :model:`blog.Post` and :form:`blog.CommentForm`.
     Displays on :template:`blog/post_detail.html`
     """
-    # Shows the post
     queryset = Post.objects.filter(status=1)
     post = get_object_or_404(queryset, slug=slug)
-    # Shows the comments
     comments = post.comments.all().order_by("created_on")
     comment_count = post.comments.filter(approved=True).count()
 
-    # Shows the form for commenting
     if request.method == "POST":
         comment_form = CommentForm(data=request.POST)
         if comment_form.is_valid():
@@ -63,11 +63,13 @@ def post_detail(request, slug):
 
 def comment_edit(request, slug, comment_id):
     """
-    view to edit comments, connects to the :model:`blog.Post`, and :model:`blog.Comment`
-    displays on :template:`blog/post_detail.html`
+    View to edit comments that the logged in user posted.
+
+    Connects to the :model:`blog.Post`, :model:`blog.Comment` and
+    :form:`blog.CommentForm`.
+    Displays on :template:`blog/post_detail.html`
     """
     if request.method == "POST":
-
         queryset = Post.objects.filter(status=1)
         post = get_object_or_404(queryset, slug=slug)
         comment = get_object_or_404(Comment, pk=comment_id)
@@ -87,8 +89,11 @@ def comment_edit(request, slug, comment_id):
 
 def comment_delete(request, slug, comment_id):
     """
-    view to delete comment, connects to the :model:`blog.Post`, and :model:`blog.Comment`
-    displays on :template:`blog/post_detail.html`
+    View to delete comments that the logged in user posted.
+
+    Connects to the :model:`blog.Post`, :model:`blog.Comment` and
+    :form:`blog.CommentForm`
+    Displays on :template:`blog/post_detail.html`
     """
     comment = get_object_or_404(Comment, pk=comment_id)
 
