@@ -62,7 +62,7 @@ def profile_user(request, pk):
     return render(request, "user_profile/profile.html", {"profile": profile})
 
 
-class ProfileUpdate(LoginRequiredMixin, UpdateView, SuccessMessageMixin):
+class ProfileUpdate(LoginRequiredMixin, UpdateView):
     """
     Updates the user profile image and favourite pokemon.
 
@@ -72,8 +72,8 @@ class ProfileUpdate(LoginRequiredMixin, UpdateView, SuccessMessageMixin):
     model = Socials
     fields = ["user_image", "fav_pokemon",]
     template_name = "user_profile/update_profile.html"
-    success_message = "Your profile is updated!"
 
     def get_success_url(self):
         pk = self.get_object().user.pk
+        messages.success(self.request, 'Profile updated!')
         return reverse_lazy('profile', kwargs={'pk': pk})

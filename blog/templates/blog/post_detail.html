@@ -50,8 +50,8 @@
 
     <!-- Displaying Comments -->
     <div class="row">
-        <div class="col card mb-4 mt-3 text-center white-text">
-            <h3>Comments :</h3>
+        <div class="col-sm-6 card mb-4 mt-3 text-center white-text">
+            <h3>Comments:</h3>
             <div class="card-body">
                 {% for comment in comments %}
                 <div class="p-2 comments {% if not comment.approved and comment.author == user %}
@@ -76,10 +76,10 @@
         </div>
 
         <!-- Creating New Comments -->
-        <div class="col card mb-4 mt-3 white-text">
+        <div class="col-sm-6 card mb-4 mt-3 white-text">
             <div class="card-body">
                 {% if user.is_authenticated %}
-                <h3>Leave a comment :</h3>
+                <h3>Leave a comment:</h3>
                 <p>Posting as : {{ user.username }}</p>
                 <form id="commentForm" method="post">
                     {{ comment_form | crispy }}
