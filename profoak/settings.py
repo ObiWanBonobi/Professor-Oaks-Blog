@@ -2,6 +2,7 @@
 
 from pathlib import Path
 import os
+import sys
 import dj_database_url
 
 if os.path.isfile("env.py"):
@@ -23,7 +24,7 @@ DEBUG = True
 ALLOWED_HOSTS = [
     "127.0.0.1",
     ".herokuapp.com",
-    "8000-obiwanbonobi-pp4-61a9dddpllw.ws-eu110.gitpod.io",
+    "8000-obiwanbonobi-pp4-0zlokdxc23p.ws-eu110.gitpod.io",
 ]
 
 
@@ -90,7 +91,16 @@ WSGI_APPLICATION = "profoak.wsgi.application"
 
 
 # Database
-DATABASES = {"default": dj_database_url.parse(os.environ.get("DATABASE_URL"))}
+#DATABASES = {"default": dj_database_url.parse(os.environ.get("DATABASE_URL"))}
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
+    }
+}
+
+if "test" in sys.argv:
+    DATABASES["default"]["ENGINE"] = "django.db.backends.sqlite3"
 
 
 # A list of the trusted origins for requests

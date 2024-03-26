@@ -7,12 +7,12 @@ class PokeDatabase(models.Model):
     """
     Stores pokemon data from the pokedata.json file
     """
-    poke_id = models.CharField()
-    name = models.CharField()
-    image = models.CharField()
-    poke_type = models.CharField()
-    height = models.CharField()
-    weight = models.CharField()
+    poke_id = models.CharField(max_length=50)
+    name = models.CharField(max_length=50)
+    image = models.CharField(max_length=50)
+    poke_type = models.CharField(max_length=50)
+    height = models.CharField(max_length=50)
+    weight = models.CharField(max_length=50)
 
     class Meta:
         """ This class orders our posts from the pokemon id """
