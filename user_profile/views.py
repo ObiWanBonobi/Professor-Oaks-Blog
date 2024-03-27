@@ -3,8 +3,10 @@
 from django.urls import reverse_lazy
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.views.generic.edit import UpdateView
+from django.http import HttpResponseRedirect
 from django.contrib import messages
-from django.shortcuts import render
+from django.shortcuts import render, get_object_or_404, reverse
+from django.contrib.auth.models import User
 from blog.models import Comment
 from .models import Socials
 
@@ -76,3 +78,18 @@ class ProfileUpdate(LoginRequiredMixin, UpdateView):
         pk = self.get_object().user.pk
         messages.success(self.request, 'Profile updated!')
         return reverse_lazy('profile', kwargs={'pk': pk})
+
+
+def delete_user(request, user_id):
+    """ Deletes user profile """
+    user_profile = get_object_or_404(User, pk=user_id)
+
+    if user_profile == request.user:
+        user_profile.delete()
+        messages.add_message(request, messages.SUCCESS, "Profile deleted!")
+    else:
+        messages.add_message(
+            request, messages.ERROR, "You can only delete your own profile!"
+        )
+
+    return HttpResponseRedirect(reverse("social_profiles"))

@@ -83,7 +83,7 @@
         </div>
     </div>
 
-    <!-- Shows the 2 lists of the people that follows the user and people that the user follows. If the user
+    <!-- Shows 2 lists of people that follows the user and people that the user follows. If the user
         doesn't follow anyone or has no followers, it'll show a message instead -->
     <div class="row margin-top">
         <div class="col text-center">
@@ -141,11 +141,40 @@
             </div>
         </div>
     </div>
+    <!-- Button to delete user profile -->
+    {% if request.user == profile.user %}
+    <div class="text-center margin-top">
+        <button class="btn btn-delete blue-white white-text" user_id="{{ profile.user.pk }}">
+            Delete Your Profile?
+        </button>
+    </div>
+    {% else %}
+    {% endif %}
+</div>
+
+<!-- Delete confirmation modal -->
+<div class="modal fade" id="deleteModal" tabindex="-1" aria-labelledby="deleteModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="deleteModalLabel">Delete your profile?</h5>
+                <button type="button" class="btn-close blue-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                Are you sure you want to delete your profile?
+                This action cannot be undone.
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary blue-white" data-bs-dismiss="modal">Close</button>
+                <a id="deleteConfirm" href="#" class="btn btn-danger blue-white">Delete</a>
+            </div>
+        </div>
+    </div>
 </div>
 
 {% endblock content %}
 
 <!-- This connects to a specific JavaScript file -->
 {% block javascript %}
-<script src="{% static 'js/message.js' %}"></script>
+<script src="{% static 'js/delete_profile.js' %}"></script>
 {% endblock javascript %}
