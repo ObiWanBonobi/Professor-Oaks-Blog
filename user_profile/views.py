@@ -2,7 +2,6 @@
 
 from django.urls import reverse_lazy
 from django.contrib.auth.mixins import LoginRequiredMixin
-from django.contrib.messages.views import SuccessMessageMixin
 from django.views.generic.edit import UpdateView
 from django.contrib import messages
 from django.shortcuts import render
@@ -64,7 +63,7 @@ def profile_user(request, pk):
 
 class ProfileUpdate(LoginRequiredMixin, UpdateView):
     """
-    Updates the user profile image and favourite pokemon.
+    Updates the user profile image and favourite pokemon for a logged in user.
 
     Connects to the :model:`user_profile.Socials`
     Displays on :template:`user_profile/update_profile.html`
