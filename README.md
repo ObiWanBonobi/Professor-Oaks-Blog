@@ -48,6 +48,306 @@ As a user I can :
 <br>
 
 
+# Features
+
+## Main
+
+<details>
+<summary>Navigation :</summary>
+
+When the title is clicked, the user will be navigated to the blog page. When the user clicks on the pokemon logo, the user will be navigated to the pokemon database page. The nav bar shows different navigations if the user is logged in or not.
+
+- On large screens will show the full nav bar.
+
+![Larger screen nav menu logged in](static/images/readme/navbar-full.png)
+![Larger screen nav menu logged out](static/images/readme/navbar-full-loggedout.png)
+
+- On smaller screens the burger icon will show.
+
+![Small screen nav menu closed](static/images/readme/navbar-small.png)
+![Small Screen nav menu opened](static/images/readme/small-menu.png)
+
+</details>
+
+<details>
+<summary>User message :</summary>
+
+- Shows a little badge underneath the pokemon logo in the nav bar, if a user is logged in or not.
+
+![User is logged in](static/images/readme/logged-in-message.png)
+![User is not logged in](static/images/readme/not-loggin.png)
+
+</details>
+
+<details>
+<summary>Footer :</summary>
+
+- Footer contains three links that direct to other pokemon websites.
+
+![Footer](static/images/readme/footer.png)
+
+</details>
+
+## Blog
+
+<details>
+<summary>Blog :</summary>
+
+- The main page is the blog page. It shows blogs in sets of 6 or less. Each blog card links to that blog post details.
+
+![Main blog page](static/images/readme/blog.png)
+
+- One post contains the post details, and at the bottom shows how many comments have been posted on this post.
+
+![One post details](static/images/readme/one-post.png)
+
+</details>
+
+<details>
+<summary>Blog navigation :</summary>
+
+- Blog post navigation. If there are no more posts, the next button dissapears and vice versa.
+
+![Navigation for blog page](static/images/readme/blog-navigation.png)
+
+</details>
+
+## Post details
+
+<details>
+<summary>Post :</summary>
+
+- Shows all the details from a post.
+
+![Post details](static/images/readme/post-detail.png)
+
+- Under the masthead, is a icon with how many comments have been posted on the post.
+
+![Comment count](static/images/readme/comment-count.png)
+
+- A back to the top button shows as soon as the user starts scrolling, when clicked the screen will go to the top of the page.
+
+![Back to top button](static/images/readme/back-top.png)
+
+</details>
+
+<details>
+<summary>Comments :</summary>
+
+- Shows a list of all comments made on this post. Each post links to that users profile
+
+![Comments on a post](static/images/readme/comments-post.png)
+
+- If no comments have been posted yet, a message is shown.
+
+![Post without comments](static/images/readme/no-comments.png)
+
+- Each post contains as form where logged in users can post comments.
+
+![Comment form](static/images/readme/leave-a-comment.png)
+
+- If the user isn't logged in, a message is shown with links to the sign up and sign in page.
+
+![Log in to leave a comment](static/images/readme/log-in-for-comment.png)
+
+- After a post is submitted a success message is shown.
+
+![Comment message](static/images/readme/comment-message.png)
+
+- A user can delete or edit their own comments.
+
+![Comment of logged in user](static/images/readme/message-user.png)
+
+- When a user clicks the delete button, a modal pops up.
+
+![Comment delete modal](static/images/readme/comment-delete.png)
+
+- Then when delete is clicked once more a success message is shown.
+
+![Delete message](static/images/readme/comment-delete-message.png)
+
+- When the user updates their comment, the form will be filled out with this comment and is ready for editing.
+
+![Comment edit form](static/images/readme/message-edit.png)
+
+- When the comment is updated a success message is shown.
+
+![Update message](static/images/readme/comment-update.png)
+
+</details>
+
+## Pokemon
+
+<details>
+<summary>Pokemon database :</summary>
+
+- Shows all generation 1 pokemon that when clicked link to their corresponding website links in the pokemondb website.
+
+![Pokemon database](static/images/readme/pokemon-database.png)
+
+- A back to the top button shows as soon as the user starts scrolling, when clicked the screen will go to the top of the page.
+
+![Back to top button](static/images/readme/back-top.png)
+
+</details>
+
+## Socials
+
+<details>
+<summary>Socials :</summary>
+
+- Each user card shows details of their favourite pokemon and how many users follow them and how many users they follow.
+
+![User card](static/images/readme/user-card.png)
+
+- A back to the top button shows as soon as the user starts scrolling, when clicked the screen will go to the top of the page. Each user card links to that users profile and each comment links to that post where the comment was posted.
+
+![Back to top button](static/images/readme/back-top.png)
+
+</details>
+
+<details>
+<summary>Socials not logged in :</summary>
+
+- When a user isn't logged in, they only see all users and a message on the top that links to the sign up and sign in pages.
+
+![Socials not logged in](static/images/readme/socials-not-logged-in.png)
+
+</details>
+
+<details>
+<summary>Socials logged in :</summary>
+
+- When the user is logged in the socials page will show all users and all comments posted by users you follow.
+
+![Socials logged in](static/images/readme/socials-logged-ion.png)
+
+- If the logged in user doesn't follow anyone, it'll show a message.
+
+![User doesn't follow anyone](static/images/readme/socials-no-follows.png)
+
+</details>
+
+## Profiles
+
+<details>
+<summary>User profiles :</summary>
+
+- When the user list button is clicked, the user will be directed back to the socials page. Each user has their image and favourite pokemon shown on their profile.
+
+![User profile](static/images/readme/user-profile.png)
+
+- Each profile has a follows and followers list.
+
+![Follows followers](static/images/readme/follow-followers.png)
+
+- If a user doesn't follow anyone or noone follows the user, a message is shown.
+
+![No followers](static/images/readme/no-followers.png)
+![No following](static/images/readme/not-following.png)
+
+- Each profile shows all comments posted by that user.
+
+![Comments from user](static/images/readme/user-comments.png)
+
+- If the user hasn't commented yet, a message is shown.
+
+![No comments](static/images/readme/no-user-comments.png)
+
+</details>
+
+<details>
+<summary>Friend profile :</summary>
+
+- When a user is logged in and looks at another users profile, the follow or unfollow button is shown. When a user isn't logged in, the follow or unfollow button dissapear.
+
+![User profile](static/images/readme/friends-page.png)
+
+![Follow button](static/images/readme/friends-page-follow.png)
+![Unfollow button](static/images/readme/friends-page-buttons.png)
+
+- When a logged in user follow or unfollows a user, a message is shown.
+
+![Following message](static/images/readme/follow-message.png)
+![Unfollowed message](static/images/readme/unfollow-message.png)
+
+</details>
+
+<details>
+<summary>My profile :</summary>
+
+- The profile of a logged in user shows an update button and a delete profile button.
+
+![Logged in user profile](static/images/readme/logged-user-profile.png)
+
+- When a user clicks the update button, the user will be directed to another page where the user can update their image and favourite pokemon.
+
+![Update button](static/images/readme/own-page-buttons.png)
+![Update profile form](static/images/readme/update-profile.png)
+
+- After the user updates their profile, a success message is shown.
+
+![Update message](static/images/readme/profile-updated-message.png)
+
+- When the delete your profile button is clicked a delete modal will pop up.
+
+![Delete button](static/images/readme/delete-profile.png)
+![Delete modal](static/images/readme/delete-profile-modal.png)
+
+- After the user deleted their profile a message will be shown.
+
+![Delete message](static/images/readme/profile-deleted-message.png)
+
+</details>
+
+## Sign in, sign out and sign up
+
+<details>
+<summary>Sign in :</summary>
+
+- If the user already has a profile, they can sign in.
+
+![Sign in page](static/images/readme/sign-in-page.png)
+
+- After the user is signed in, a success message is shown.
+
+![Sign in message](static/images/readme/sign-in-message.png)
+
+</details>
+
+<details>
+<summary>Sign up :</summary>
+
+- When the user wants to create a profile, they'll have to click on the register link in the nav bar. When they fill out the form and press sign up, a profile is automatically made and they will be signed in.
+
+![Sign up form](static/images/readme/sign-up.png)
+
+- After the user is signed up, a success message is shown.
+
+![Sign up message](static/images/readme/register-message.png)
+
+- The profile that is created gets the default profile image and default favourite pokemon.
+
+![User profile new](static/images/readme/user-first-made.png)
+
+</details>
+
+<details>
+<summary>Sign out :</summary>
+
+- When the logged in user clicks log out in the nav bar, they'll be navigated to the sign out page. The user is signed out and redirected to the blog when the sign out button is clicked
+
+![Sign out](static/images/readme/sign-out.png)
+
+- After the user is signed out, a success message is shown.
+
+![Sign out message](static/images/readme/log-out-message.png)
+
+</details>
+
+<br>
+
+
 # Future features
 
 Main :
