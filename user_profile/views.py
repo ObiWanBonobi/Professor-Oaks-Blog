@@ -1,7 +1,7 @@
 """ Views for the socials app """
 
 from django.urls import reverse_lazy
-from django.contrib.auth.mixins import LoginRequiredMixin
+from django.contrib.auth.mixins import LoginRequiredMixin, UserPassesTestMixin
 from django.views.generic.edit import UpdateView
 from django.http import HttpResponseRedirect
 from django.contrib import messages
@@ -63,7 +63,7 @@ def profile_user(request, pk):
     return render(request, "user_profile/profile.html", {"profile": profile})
 
 
-class ProfileUpdate(LoginRequiredMixin, UpdateView):
+class ProfileUpdate(LoginRequiredMixin, UserPassesTestMixin, UpdateView):
     """
     Updates the user profile image and favourite pokemon for a logged in user.
 
@@ -79,9 +79,17 @@ class ProfileUpdate(LoginRequiredMixin, UpdateView):
         messages.success(self.request, 'Profile updated!')
         return reverse_lazy('profile', kwargs={'pk': pk})
 
+    def test_func(self):
+        return self.request.user == self.get_object().user
+
 
 def delete_user(request, user_id):
-    """ Deletes user profile """
+    """
+    Deletes profile of logged in user
+
+    Connects to the :model:`auth.User`
+    Returns to :template:`user_profile/socials.html` after deletion
+    """
     user_profile = get_object_or_404(User, pk=user_id)
 
     if user_profile == request.user:

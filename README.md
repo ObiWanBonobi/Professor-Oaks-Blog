@@ -146,6 +146,7 @@ The images from the posts come from the websites that I got the post content fro
 - The update profile message wans't showing, I had placed the message code in the wrong section.
 - The edit comment button stopped working, because I had accidentally deleted the .id in the comment.
 - I wasn't able to test the first time, with the help of a tutor from the code institute. We figured out it was an migration issue and a database issue.
+- A user could update other peoples profiles when adding /update_profile/(user pk number). I had deleted a previous solution to this, because it wasn't working on VS Code. Turns out I had placed the UserPassesTestMixin in the wrong order. So I added it back in.
 
 <b>I have not noticed any existing bugs.</b>
 
