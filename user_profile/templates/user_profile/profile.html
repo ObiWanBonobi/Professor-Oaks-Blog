@@ -90,7 +90,7 @@
             <div class="card white-text">
                 <h4><u>Follows:</u></h4>
                 {% if profile.follows.count == 0 %}
-                <p class="fw-bold p-3">Start Following</p>
+                <p class="fw-bold p-3">{{ profile.user.username }} isn't following anyone</p>
                 {% else %}
                 <ul class="list-group list-group-flush">
                     {% for following in profile.follows.all %}
@@ -106,7 +106,7 @@
             <div class="card white-text">
                 <h4><u>Followers:</u></h4>
                 {% if profile.followed_by.count == 0 %}
-                <p class="fw-bold p-3">No Followers</p>
+                <p class="fw-bold p-3">{{ profile.user.username }} has no followers</p>
                 {% else %}
                 <ul class="list-group list-group-flush">
                     {% for follower in profile.followed_by.all %}
@@ -165,7 +165,7 @@
                 This action cannot be undone.
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-secondary blue-white" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-secondary blue-white" data-bs-dismiss="modal">Cancel</button>
                 <a id="deleteConfirm" href="#" class="btn btn-danger blue-white">Delete</a>
             </div>
         </div>
