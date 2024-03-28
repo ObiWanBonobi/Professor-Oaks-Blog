@@ -1,5 +1,6 @@
 """
-Admin for the blog app. Connects the Post and Comment model to the admin dashboard
+Admin for the blog app. Connects the Post and Comment model to the admin
+dashboard
 """
 
 from django.contrib import admin

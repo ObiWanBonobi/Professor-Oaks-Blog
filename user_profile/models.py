@@ -15,13 +15,17 @@ class Socials(models.Model):
     Connects to :model:`auth.User` and :model:`database.PokeDatabase`, then
     connects to itself through the ManyToManyField in follows.
     """
+
     user = models.OneToOneField(User, on_delete=models.CASCADE)
     follows = models.ManyToManyField(
         "self", related_name="followed_by", symmetrical=False, blank=True
     )
     user_image = CloudinaryField("image", default="placeholder")
     fav_pokemon = models.ForeignKey(
-        PokeDatabase, on_delete=models.CASCADE, related_name="fav_pokemon", default='152'
+        PokeDatabase,
+        on_delete=models.CASCADE,
+        related_name="fav_pokemon",
+        default="152",
     )
 
     def __str__(self):

@@ -23,10 +23,6 @@
     * [Cloudinary](#cloudinary)
     * [Libraries](#libraries)
 - [Testing](#testing)
-    * [HTML validation](#html-validation)
-    * [CSS validation](#css-validation)
-    * [JavaScript validation](#javascript-validation)
-    * [Python validation](#python-validation)
 - [Bug fixes](#bug-fixes)
 - [Deployment](#deployment)
     * [Github deployment](#github-deployment)
@@ -126,13 +122,8 @@ The images from the posts come from the websites that I got the post content fro
 
 # Testing
 
-## HTML validation
+All the tests are in the [TEST.md](TEST.md) file.
 
-## CSS validation
-
-## JavaScript validation
-
-## Python validation
 
 <br>
 

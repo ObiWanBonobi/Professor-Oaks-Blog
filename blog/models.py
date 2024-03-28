@@ -14,10 +14,13 @@ class Post(models.Model):
 
     Connects to the :model:`auth.User`
     """
+
     title = models.CharField(max_length=200, unique=True)
     slug = models.SlugField(max_length=200, unique=True)
-    author = models.ForeignKey(User, on_delete=models.CASCADE, related_name="blog_posts")
-    featured_image = CloudinaryField('image', default='placeholder')
+    author = models.ForeignKey(
+        User, on_delete=models.CASCADE, related_name="blog_posts"
+    )
+    featured_image = CloudinaryField("image", default="placeholder")
     content = models.TextField()
     created_on = models.DateTimeField(auto_now_add=True)
     status = models.IntegerField(choices=STATUS, default=0)
@@ -25,30 +28,37 @@ class Post(models.Model):
     updated_on = models.DateTimeField(auto_now=True)
 
     class Meta:
-        """ This class orders our posts from newest to oldest """
+        """This class orders our posts from newest to oldest"""
+
         ordering = ["-created_on"]
 
     def __str__(self):
-        """ This method gives our posts a nicer title in the admin page """
+        """This method gives our posts a nicer title in the admin page"""
         return f"Title: {self.title} | by: {self.author}"
 
 
 class Comment(models.Model):
     """
     Model for creating a comment on a post.
-    
+
     Connects to :model:`blog.Post` and :model:`auth.User`
     """
-    post = models.ForeignKey(Post, on_delete=models.CASCADE, related_name="comments")
-    author = models.ForeignKey(User, on_delete=models.CASCADE, related_name="commenter")
+
+    post = models.ForeignKey(
+        Post, on_delete=models.CASCADE, related_name="comments"
+        )
+    author = models.ForeignKey(
+        User, on_delete=models.CASCADE, related_name="commenter"
+        )
     body = models.TextField()
     approved = models.BooleanField(default=True)
     created_on = models.DateTimeField(auto_now_add=True)
 
     class Meta:
-        """ This class orders our comments from oldest to newest """
+        """This class orders our comments from oldest to newest"""
+
         ordering = ["created_on"]
 
     def __str__(self):
-        """ This method gives our comments a nicer title in the admin page """
+        """This method gives our comments a nicer title in the admin page"""
         return f"Comment: {self.body} | by: {self.author}"

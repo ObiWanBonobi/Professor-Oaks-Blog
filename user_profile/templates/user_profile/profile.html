@@ -36,7 +36,7 @@
                     {% if request.user == profile.user %}
                     <div class="col p-2">
                         <a href="{% url 'update_profile' profile.pk %}">
-                            <button class="btn all-users-button blue-white">Update Profile</button>
+                            <div class="btn all-users-button blue-white">Update Profile</div>
                         </a>
                     </div>
 
@@ -56,13 +56,13 @@
                     {% endif %}
                     <div class="col p-2">
                         <a href="{% url 'social_profiles' %}">
-                            <button class="btn all-users-button blue-white">User List</button>
+                            <div class="btn all-users-button blue-white">User List</div>
                         </a>
                     </div>
                     {% else %}
                     <div class="col p-2">
                         <a href="{% url 'social_profiles' %}">
-                            <button class="btn all-users-button blue-white">User List</button>
+                            <div class="btn all-users-button blue-white">User List</div>
                         </a>
                     </div>
                     {% endif %}
@@ -144,7 +144,7 @@
     <!-- Button to delete user profile -->
     {% if request.user == profile.user %}
     <div class="text-center margin-top">
-        <button class="btn btn-delete blue-white white-text" user_id="{{ profile.user.pk }}">
+        <button class="btn btn-delete blue-white white-text margin-top" user_id="{{ profile.user.pk }}">
             Delete Your Profile?
         </button>
     </div>

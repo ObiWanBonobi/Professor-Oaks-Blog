@@ -15,8 +15,8 @@ def social_profiles(request):
     """
     Shows social page with all the users, exept the user thats logged in. And
     all the comments from the users that the user is following (if the user is
-    following someone). If the user isn't logged in it'll show all users and no
-    comment section.
+    following someone). If the user isn't logged in it'll show all users and
+    no comment section.
 
     Connects to the :model:`user_profile.Socials` and :model:`blog.Comment`
     Displays on :template:`user_profile/socials.html`
@@ -24,17 +24,29 @@ def social_profiles(request):
     if request.user.is_authenticated:
         profiles = Socials.objects.exclude(user=request.user)
         followed_users = request.user.socials.follows.all()
-        followed_usernames = followed_users.values_list('user__username', flat=True)
-        comments = Comment.objects.filter(author__username__in=followed_usernames)
+        followed_usernames = followed_users.values_list(
+            "user__username", flat=True
+            )
+        comments = Comment.objects.filter(
+            author__username__in=followed_usernames
+            )
 
-        return render(request, "user_profile/socials.html",
-                  {"profiles": profiles,
-                   "comments": comments,
-                   "followed_users": followed_users,},)
+        return render(
+            request,
+            "user_profile/socials.html",
+            {
+                "profiles": profiles,
+                "comments": comments,
+                "followed_users": followed_users,
+            },
+        )
     else:
         profiles = Socials.objects.all()
-        return render(request, "user_profile/socials.html",
-                  {"profiles": profiles},)
+        return render(
+            request,
+            "user_profile/socials.html",
+            {"profiles": profiles},
+        )
 
 
 def profile_user(request, pk):
@@ -54,10 +66,14 @@ def profile_user(request, pk):
         action = data.get("follow")
         if action == "follow":
             current_user_profile.follows.add(profile)
-            messages.add_message(request, messages.SUCCESS, "You're now following this user!")
+            messages.add_message(
+                request, messages.SUCCESS, "You're now following this user!"
+            )
         elif action == "unfollow":
             current_user_profile.follows.remove(profile)
-            messages.add_message(request, messages.SUCCESS, "You stopped following this user!")
+            messages.add_message(
+                request, messages.SUCCESS, "You stopped following this user!"
+            )
         current_user_profile.save()
 
     return render(request, "user_profile/profile.html", {"profile": profile})
@@ -70,14 +86,18 @@ class ProfileUpdate(LoginRequiredMixin, UserPassesTestMixin, UpdateView):
     Connects to the :model:`user_profile.Socials`
     Displays on :template:`user_profile/update_profile.html`
     """
+
     model = Socials
-    fields = ["user_image", "fav_pokemon",]
+    fields = [
+        "user_image",
+        "fav_pokemon",
+    ]
     template_name = "user_profile/update_profile.html"
 
     def get_success_url(self):
         pk = self.get_object().user.pk
-        messages.success(self.request, 'Profile updated!')
-        return reverse_lazy('profile', kwargs={'pk': pk})
+        messages.success(self.request, "Profile updated!")
+        return reverse_lazy("profile", kwargs={"pk": pk})
 
     def test_func(self):
         return self.request.user == self.get_object().user

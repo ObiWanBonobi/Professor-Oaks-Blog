@@ -7,7 +7,7 @@ from .models import PokeDatabase
 class PokemonList(generic.ListView):
     """
     Shows all the pokemon data.
-    
+
     Connects to the :model:`database.PokeDatabase`
     Displays on :template:`database/database.html`
     """
