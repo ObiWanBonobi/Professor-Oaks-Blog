@@ -11,6 +11,14 @@ Click [here](README.md) to go back to the README.md file.
     * [Python Validation](#css-validation)
     * [CSS Validation](#css-validation)
 - [Manual Testing](#manual-testing)
+    * [Test base](#tests-for-the-basehtml-file-these-features-are-in-every-page)
+    * [Test blog](#tests-for-the-blog-indexhtml-page-containing-all-the-published-blog-posts)
+    * [Test post](#tests-for-the-blog-post_detailhtml-page-containing-the-blog-posts-details)
+    * [Test pokemon](#tests-for-the-pokemon-databasehtml-page-this-contains-all-pokemon)
+    * [Test socials](#tests-the-socialshtml-page-contains-all-users-and-when-logged-in-user-following-comments)
+    * [Test profiles](#tests-for-user-profilehtml-page-contains-the-users-details)
+    * [Test sign options](#tests-the-signuphtml-signinhtml-and-logouthtml-page-here-the-logged-in-user-will-sign-out)
+    * [Test admin](#tests-admin-page)
 
 <br>
 
@@ -127,7 +135,7 @@ Click [here](README.md) to go back to the README.md file.
 
 | **Test** | **Expected** | **Result** |
 |---|---|---|
-| Click on Prof's Oak's Blog title | When clicked navigates the user to the blog page | &#10004; |
+| Click on Prof's Oak's Blog title | When clicked navigates the user to the Blog page | &#10004; |
 | Click on Blog navigation link | When clicked navigates the user to the Blog page | &#10004; |
 | Click on Pokemon navigation link | When clicked navigates the user to the Pokemon Database page | &#10004; |
 | Click on Socials navigation link | When clicked navigates the user to the Socials page | &#10004; |

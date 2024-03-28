@@ -34,19 +34,40 @@
 
 # Introduction
 
+I wanted to create a fun blog with a social aspect to it. My vision for this blog was a social place where people who enjoy pokemon can read fun blog posts and connect with fellow pokemon lovers. I wanted the website to be visually pleasing, that is intuitive and easy to navigate.
+
 ## User experience
 
-## My vision for the blog
-
-<br>
-
-
-# Features
+As a user I can :
+- Enjoy reading fun blog posts
+- Enjoy the pokemon database and learn more about my favourite pokemons
+- Create my own profile
+- Communicate with friends
+- Follow friends
 
 <br>
 
 
 # Future features
+
+Main :
+- I want to add a search bar in the nav bar, that searches blogs and users
+
+Blog :
+- I want users to like and dislike blog posts.
+- Users can like and dislike comments.
+
+Database :
+- I want the pokemon database to show all pokemon, not just generation 1.
+- If a pokemon in the pokemon database is clicked, a modal with more info will show instead of a link to a different website.
+- I want all the pokemon in the pokemon database that are favourited have a little loveheart, that can then be clicked to show all people who favourited this pokemon.
+- Users can like and dislike pokemon.
+- Users can comment on pokemons to start discussions.
+
+Socials :
+- I want users to be able to comment on each others profiles
+- These comments will show in the socials page as well as the users own page.
+- The users likes and dislikes are shown on their profile
 
 <br>
 
@@ -94,13 +115,11 @@ The images from the posts come from the websites that I got the post content fro
 
 # Technologies used
 
-- This project is written in Python
-- [ChatGPT](https://chat.openai.com/) helped me with articulating myself better in the readme introduction.
+- This project is written with Python, Django, JavaScript, CSS and HTML.
 - [Github](https://github.com/) was used to create a repository with the help of The Code Institute template.
-- [Heroku](https://heroku.com/) was used to deploy my game.
+- [Heroku](https://heroku.com/) was used to deploy my blog.
 - [Visual Studio Code](https://code.visualstudio.com/) is where I did all my coding.
 - [Favicon](https://favicon.io/) was used to create a unique favicon for this blog.
-- [Gif](https://ezgif.com/) was used to create a gif for my README.
 - [Pickcoloronline](https://pickcoloronline.com/) was used to get exact colour matches.
 - [Coolers](https://coolors.co/) was used to create a colour pallate.
 - [Image Resizer](https://imageresizer.com/) was used to change all images to webp files.
