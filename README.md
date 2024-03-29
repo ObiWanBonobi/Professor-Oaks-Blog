@@ -13,6 +13,13 @@
     * [User experience](#user-experience)
     * [My vision for the game](#my-vision-for-the-game)
 - [Features](#features)
+    * [Main](#main)
+    * [Blog](#blog)
+    * [Post details](#post-details)
+    * [Pokemon](#pokemon)
+    * [Socials](#socials)
+    * [Profiles](#profiles)
+    * [Sign in, out and up](#sign-in-sign-out-and-sign-up)
 - [Future features](#future-features)
 - [Design](#design)
 - [Technologies used](#technologies-used)
@@ -44,6 +51,8 @@ As a user I can :
 - Create my own profile
 - Communicate with friends
 - Follow friends
+
+[Back to Top](#professor-oaks-blog)
 
 <br>
 
@@ -88,6 +97,8 @@ When the title is clicked, the user will be navigated to the blog page. When the
 
 </details>
 
+[Back to Top](#professor-oaks-blog)
+
 ## Blog
 
 <details>
@@ -97,7 +108,7 @@ When the title is clicked, the user will be navigated to the blog page. When the
 
 ![Main blog page](static/images/readme/blog.png)
 
-- One post contains the post details, and at the bottom shows how many comments have been posted on this post.
+- Each post contains that post details, and at the bottom shows how many comments have been posted on this post.
 
 ![One post details](static/images/readme/one-post.png)
 
@@ -106,11 +117,13 @@ When the title is clicked, the user will be navigated to the blog page. When the
 <details>
 <summary>Blog navigation :</summary>
 
-- Blog post navigation. If there are no more posts, the next button dissapears and vice versa.
+- Blog post navigation. If the user is on the last page, the next button dissapears and vice versa.
 
 ![Navigation for blog page](static/images/readme/blog-navigation.png)
 
 </details>
+
+[Back to Top](#professor-oaks-blog)
 
 ## Post details
 
@@ -134,7 +147,7 @@ When the title is clicked, the user will be navigated to the blog page. When the
 <details>
 <summary>Comments :</summary>
 
-- Shows a list of all comments made on this post. Each post links to that users profile
+- Shows a list of all comments made on this post. Each post links to that users profile.
 
 ![Comments on a post](static/images/readme/comments-post.png)
 
@@ -176,12 +189,14 @@ When the title is clicked, the user will be navigated to the blog page. When the
 
 </details>
 
+[Back to Top](#professor-oaks-blog)
+
 ## Pokemon
 
 <details>
 <summary>Pokemon database :</summary>
 
-- Shows all generation 1 pokemon that when clicked link to their corresponding website links in the pokemondb website.
+- Shows all generation 1 pokemon that when clicked, link to their corresponding website page in the pokemondb website.
 
 ![Pokemon database](static/images/readme/pokemon-database.png)
 
@@ -190,6 +205,8 @@ When the title is clicked, the user will be navigated to the blog page. When the
 ![Back to top button](static/images/readme/back-top.png)
 
 </details>
+
+[Back to Top](#professor-oaks-blog)
 
 ## Socials
 
@@ -218,7 +235,7 @@ When the title is clicked, the user will be navigated to the blog page. When the
 <details>
 <summary>Socials logged in :</summary>
 
-- When the user is logged in the socials page will show all users and all comments posted by users you follow.
+- When the user is logged in, the socials page will show all users and all comments posted by users the logged in user follows.
 
 ![Socials logged in](static/images/readme/socials-logged-ion.png)
 
@@ -227,6 +244,8 @@ When the title is clicked, the user will be navigated to the blog page. When the
 ![User doesn't follow anyone](static/images/readme/socials-no-follows.png)
 
 </details>
+
+[Back to Top](#professor-oaks-blog)
 
 ## Profiles
 
@@ -294,18 +313,20 @@ When the title is clicked, the user will be navigated to the blog page. When the
 ![Delete button](static/images/readme/delete-profile.png)
 ![Delete modal](static/images/readme/delete-profile-modal.png)
 
-- After the user deleted their profile a message will be shown.
+- After the user clicked the delete button in the delete profile modal, a message will be shown.
 
 ![Delete message](static/images/readme/profile-deleted-message.png)
 
 </details>
+
+[Back to Top](#professor-oaks-blog)
 
 ## Sign in, sign out and sign up
 
 <details>
 <summary>Sign in :</summary>
 
-- If the user already has a profile, they can sign in.
+- If the user already has a profile, they can click on the sign in link in the nave bar and sign in.
 
 ![Sign in page](static/images/readme/sign-in-page.png)
 
@@ -345,6 +366,8 @@ When the title is clicked, the user will be navigated to the blog page. When the
 
 </details>
 
+[Back to Top](#professor-oaks-blog)
+
 <br>
 
 
@@ -368,6 +391,8 @@ Socials :
 - I want users to be able to comment on each others profiles
 - These comments will show in the socials page as well as the users own page.
 - The users likes and dislikes are shown on their profile
+
+[Back to Top](#professor-oaks-blog)
 
 <br>
 
@@ -410,6 +435,8 @@ The images from the posts come from the websites that I got the post content fro
 
 </details>
 
+[Back to Top](#professor-oaks-blog)
+
 <br>
 
 
@@ -436,13 +463,14 @@ The images from the posts come from the websites that I got the post content fro
 
 ## Libraries
 
+[Back to Top](#professor-oaks-blog)
+
 <br>
 
 
 # Testing
 
 All the tests are in the [TEST.md](TEST.md) file.
-
 
 <br>
 
@@ -459,6 +487,8 @@ All the tests are in the [TEST.md](TEST.md) file.
 - A user could update other peoples profiles when adding /update_profile/(user pk number). I had deleted a previous solution to this, because it wasn't working on VS Code. Turns out I had placed the UserPassesTestMixin in the wrong order. So I added it back in.
 
 <b>I have not noticed any existing bugs.</b>
+
+[Back to Top](#professor-oaks-blog)
 
 <br>
 
@@ -503,6 +533,8 @@ To clone this repository, you have to :
 
 You can see the deployed blog [here](https://prof-oaks-blog-0421d28e5692.herokuapp.com/).
 
+[Back to Top](#professor-oaks-blog)
+
 <br>
 
 
@@ -526,3 +558,5 @@ You can see the deployed blog [here](https://prof-oaks-blog-0421d28e5692.herokua
     * https://gamerant.com/pokemon-trainers-anime-ash-better-worse-beat/#can-39-t-beat-ash-jessie-and-james
 
 - <b>Most of my credit goes to the Code Institute program where I made notes on every section and got most of my ideas and code from there.</b>
+
+[Back to Top](#professor-oaks-blog)
