@@ -140,23 +140,6 @@ main {
     position: relative;
 }
 
-.image-flash {
-    position: absolute;
-    top: -5%;
-    left: -15px;
-    background-color: white;
-    padding: 0 2px;
-    border-radius: 5px;
-    font-size: 90%;
-}
-
-.author {
-    color: black;
-    font-weight: 600;
-    margin: 4px;
-    text-transform: uppercase;
-}
-
 .page-link {
     border-radius: 8px;
     margin: 5px 15px;
