@@ -19,6 +19,7 @@ Click [here](README.md) to go back to the README.md file.
     * [Test profiles](#tests-for-user-profilehtml-page-contains-the-users-details)
     * [Test sign options](#tests-the-signuphtml-signinhtml-and-logouthtml-page-here-the-logged-in-user-will-sign-out)
     * [Test admin](#tests-admin-page)
+- [Lighthouse Testing](#lighthouse-testing)
 
 <br>
 
@@ -422,3 +423,6 @@ Click [here](README.md) to go back to the README.md file.
 | Create comments | The superuser can create comments on blog posts | &#10004; |
 
 </details>
+
+
+# Lighthouse Testing

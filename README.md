@@ -442,7 +442,10 @@ The images from the posts come from the websites that I got the post content fro
 
 # Technologies used
 
-- This project is written with Python, Django, JavaScript, CSS and HTML.
+- This project is written with Python, JavaScript, CSS and HTML.
+- [Django](https://www.djangoproject.com/) and [Bootstrap](https://getbootstrap.com/) were used as a framework.
+- [ElephantSQL](https://customer.elephantsql.com/) was used to store my databases to.
+- [Cloudinary](https://cloudinary.com/) was used to for storing the websites images.
 - [Github](https://github.com/) was used to create a repository with the help of The Code Institute template.
 - [Heroku](https://heroku.com/) was used to deploy my blog.
 - [Visual Studio Code](https://code.visualstudio.com/) is where I did all my coding.
@@ -453,15 +456,71 @@ The images from the posts come from the websites that I got the post content fro
 
 ## balsemiq
 
+I ended up slightly veering away from the original design, only because I miscalculated the time I needed for each feature. I have placed these features into the future features list, seeing as that I still want to add these features in the future.
+
+<details>
+<summary>Home page :</summary>
+
+![Home page](static/images/readme/home-page.png)
+
+</details>
+
+<details>
+<summary>Pokemon Database :</summary>
+
+![Pokemon Database](static/images/readme/database.png)
+
+</details>
+
+<details>
+<summary>Socials profiles :</summary>
+
+![Socials profiles](static/images/readme/profiles.png)
+
+</details>
+
 ## Lucid Flowchart
 
-## Bootstrap
+<details>
+<summary>Post model diagram :</summary>
 
-## ElephantSQL
+![Socials profiles](static/images/readme/post-diagram.png)
 
-## Cloudinary
+</details>
+
+<details>
+<summary>Comment model diagram :</summary>
+
+![Socials profiles](static/images/readme/comment-model.png)
+
+</details>
+
+<details>
+<summary>PokeDatabase model diagram :</summary>
+
+![Socials profiles](static/images/readme/pokedatabase-diagram.png)
+
+</details>
+
+<details>
+<summary>Socials model diagram :</summary>
+
+![Socials profiles](static/images/readme/user-diagram.png)
+
+</details>
 
 ## Libraries
+
+- [bleach](https://pypi.org/project/django-bleach/) was used as a Python module that takes any HTML input, and returns valid, sanitised HTML.
+- [crispy-bootstrap4](https://pypi.org/project/crispy-bootstrap4/) was used as a template pack for the comment form.
+- [dj-database-url](https://pypi.org/project/dj-database-url/) was used to utilize the DATABASE_URL environment variable.
+- [django-allauth](https://docs.allauth.org/en/latest/) was used for authentication, registration and account management.
+- [gunicorn](https://gunicorn.org/) was used for the Python WSGI HTTP Server for UNIX.
+- [psycopg2](https://pypi.org/project/psycopg2/) was used as a PostgreSQL database adapter.
+- [Requests](https://requests.readthedocs.io/en/latest/) was used as HTTP library for Python.
+- [sqlparse](https://pypi.org/project/sqlparse/) was used as a non-validating SQL parser for Python.
+- [summernote](https://summernote.org/) was used as a WYSIWYG editor with Bootstrap.
+- [whitenoise](https://pypi.org/project/whitenoise/) was used as a simplified static file serving for Python web apps.
 
 [Back to Top](#professor-oaks-blog)
 
