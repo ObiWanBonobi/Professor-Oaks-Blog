@@ -144,7 +144,7 @@
     <!-- Button to delete user profile -->
     {% if request.user == profile.user %}
     <div class="text-center margin-top">
-        <button class="btn btn-delete blue-white white-text margin-top" user_id="{{ profile.user.pk }}">
+        <button class="btn btn-delete blue-white white-text margin-top margin-bottom" user_id="{{ profile.user.pk }}">
             Delete Your Profile?
         </button>
     </div>

@@ -52,6 +52,7 @@
 footer p,
 footer p a {
     color: black;
+    font-size: 85%;
 }
 
 footer p a:hover {
@@ -324,6 +325,11 @@ li {
         font-size: 110%;
         font-weight: 600;
     }
+
+    footer p,
+    footer p a {
+        font-size: 100%;
+}
 }
 
 
