@@ -4,7 +4,7 @@ const deleteButtons = document.getElementsByClassName("btn-delete");
 const deleteConfirm = document.getElementById("deleteConfirm");
 
 
-// Initializes deletion functionality for the provided delete button on profile.
+// Delete user profile button
 for (let button of deleteButtons) {
     button.addEventListener("click", (e) => {
       let userId = e.target.getAttribute("user_id");

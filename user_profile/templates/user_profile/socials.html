@@ -17,11 +17,11 @@ Oak's socials
 <!-- If user is logged in, it'll show the users and the comments from users the user follows -->
 {% if request.user.is_authenticated %}
 <div class="container-fluid margin-top">
-    <div class="row row-reverse">
+    <div class="row row-reverse white-text">
         <div class="col-sm-6">
 
             <!-- Shows all user profiles -->
-            <h3 class="text-center white-text margin-bottom"><u>All user profiles:</u></h3>
+            <h3 class="text-center margin-bottom"><u>All user profiles:</u></h3>
             {% for profile in profiles %}
             <a href="{% url 'profile' profile.user.pk %}" class="social-link">
                 <div class="card mb-3 social-card white-text">
@@ -52,7 +52,7 @@ Oak's socials
         </div>
 
         <!-- Comments that are made by the people that the user is following sorted by newest first. -->
-        <div class="col-sm-6 text-center white-text">
+        <div class="col-sm-6 text-center">
             <h3 class="margin-bottom"><u>Comments from users you follow:</u></h3>
             <div class="card">
                 {% if followed_users.count != 0 %}
@@ -78,16 +78,16 @@ Oak's socials
 <!-- If the user isnt logged in, it'll show a message that the user should log in. And shows all users -->
 {% else %}
 <div class="container-fluid margin-top">
-    <div class="row">
-        <h3 class="text-center white-text margin-bottom">
+    <div class="row white-text">
+        <h3 class="text-center margin-bottom">
             <a class="link white-text" href="{{ signup_url }}">Create a profile</a> or 
             <a class="link white-text" href="{{ login_url }}">sign in</a> to follow all comments from your friends
         </h3>
-        <h3 class="text-center white-text margin-bottom"><u>All user profiles:</u></h3>
+        <h3 class="text-center margin-bottom"><u>All user profiles:</u></h3>
         {% for profile in profiles %}
-        <div class="col">
+        <div class="col-sm-6 col-lg-4">
             <a href="{% url 'profile' profile.user.pk %}" class="social-link">
-                <div class="card mb-3 social-cards white-text">
+                <div class="card mb-3 social-card white-text">
                     <div class="row g-0">
                         <div class="col-md-4">
                             {% if "placeholder" in profile.user_image.url %}

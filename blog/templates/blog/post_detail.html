@@ -80,7 +80,7 @@
         </div>
 
         <!-- Creating New Comments -->
-        <div class="col-sm-6 card mb-4 mt-3 white-text">
+        <div class="col-sm-6 card mb-4 mt-3 white-text text-center">
             <h1 class="fs-3">Leave a comment:</h1>
             <div class="card-body">
                 {% if user.is_authenticated %}
@@ -91,7 +91,7 @@
                     <button id="submitButton" type="submit" class="btn btn-success blue-white btn-lg">Submit</button>
                 </form>
                 {% else %}
-                <h1 class="text-center fs-4"><a class="link white-text" href="{{ login_url }}">Sign in</a> or 
+                <h1 class="fs-4"><a class="link white-text" href="{{ login_url }}">Sign in</a> or 
                     <a class="link white-text" href="{{ signup_url }}">sign up</a> to leave a comment</h1>
                 {% endif %}
             </div>
