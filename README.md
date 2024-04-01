@@ -12,6 +12,7 @@
 - [Introduction](#introduction)
     * [User experience](#user-experience)
     * [My vision for the game](#my-vision-for-the-game)
+    * [Agile planning](#agile-planning)
 - [Features](#features)
     * [Main](#main)
     * [Blog](#blog)
@@ -54,7 +55,12 @@ As a user I can :
 
 [Back to Top](#professor-oaks-blog)
 
-<br>
+
+## Agile planning
+
+The agile planning for this website can be found on my profile in the projects tab : [Agile planning](https://github.com/users/ObiWanBonobi/projects/3)
+
+[Back to Top](#professor-oaks-blog)
 
 
 # Features
@@ -403,7 +409,7 @@ Socials :
 
 I wanted to keep the colours fun and matching with the pokemon theme. The main pages follow the design of a pokeball, red - black - white. Other features like the back up button and the delete modal follow the pokemon logo colours, blue - yellow
 
-<img src="static/images/pokeball.webp" width="200px"><img src="static/images/International_Pokémon_logo.svg.png" width="540px">
+<img src="static/images/readme/pokeball.webp" width="150px"><img src="static/images/International_Pokémon_logo.webp" width="450px">
 
 <br>
 
@@ -479,6 +485,8 @@ I ended up slightly veering away from the original design, only because I miscal
 
 </details>
 
+[Back to Top](#professor-oaks-blog)
+
 ## Lucid Flowchart
 
 <details>
@@ -508,6 +516,8 @@ I ended up slightly veering away from the original design, only because I miscal
 ![Socials profiles](static/images/readme/user-diagram.png)
 
 </details>
+
+[Back to Top](#professor-oaks-blog)
 
 ## Libraries
 

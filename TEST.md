@@ -51,6 +51,9 @@ Click [here](README.md) to go back to the README.md file.
 
 </details>
 
+[Back to Top](#professor-oaks-tests)
+
+
 ## CSS Validation
 
 [Jigsaw W3C validator](https://jigsaw.w3.org/css-validator/) was used to check the CSS file. No errors were found.
@@ -63,6 +66,9 @@ Click [here](README.md) to go back to the README.md file.
 | static | style.css | &#10004; |
 
 </details>
+
+[Back to Top](#professor-oaks-tests)
+
 
 ## JavaScript Validation
 
@@ -78,6 +84,9 @@ Click [here](README.md) to go back to the README.md file.
 | static | top_button.js | &#10004; |
 
 </details>
+
+[Back to Top](#professor-oaks-tests)
+
 
 ## Python Validation
 
@@ -109,7 +118,7 @@ Click [here](README.md) to go back to the README.md file.
 
 </details>
 
-<br>
+[Back to Top](#professor-oaks-tests)
 
 
 # Manual Testing
@@ -167,7 +176,8 @@ Click [here](README.md) to go back to the README.md file.
 
 </details>
 
-<br>
+[Back to Top](#professor-oaks-tests)
+
 
 ### Tests for the blog index.html page containing all the published blog posts.
 
@@ -194,7 +204,8 @@ Click [here](README.md) to go back to the README.md file.
 
 </details>
 
-<br>
+[Back to Top](#professor-oaks-tests)
+
 
 ### Tests for the blog post_detail.html page containing the blog posts details.
 
@@ -239,7 +250,8 @@ Click [here](README.md) to go back to the README.md file.
 
 </details>
 
-<br>
+[Back to Top](#professor-oaks-tests)
+
 
 ### Tests for the Pokemon database.html page, this contains all pokemon.
 
@@ -255,7 +267,8 @@ Click [here](README.md) to go back to the README.md file.
 
 </details>
 
-<br>
+[Back to Top](#professor-oaks-tests)
+
 
 ### Tests the socials.html page, contains all users and when logged in user following comments
 
@@ -292,7 +305,8 @@ Click [here](README.md) to go back to the README.md file.
 
 </details>
 
-<br>
+[Back to Top](#professor-oaks-tests)
+
 
 ### Tests for user profile.html page, contains the users details
 
@@ -373,7 +387,8 @@ Click [here](README.md) to go back to the README.md file.
 
 </details>
 
-<br>
+[Back to Top](#professor-oaks-tests)
+
 
 ### Tests the signup.html, signin.html and logout.html page, here the logged in user will sign out
 
@@ -409,7 +424,8 @@ Click [here](README.md) to go back to the README.md file.
 
 </details>
 
-<br>
+[Back to Top](#professor-oaks-tests)
+
 
 ### Tests admin page
 
@@ -424,7 +440,8 @@ Click [here](README.md) to go back to the README.md file.
 
 </details>
 
-<br>
+[Back to Top](#professor-oaks-tests)
+
 
 # Lighthouse Testing
 
@@ -504,3 +521,5 @@ Click [here](README.md) to go back to the README.md file.
 ![page](static/images/readme/lighthouse-signout.png)
 
 </details>
+
+[Back to Top](#professor-oaks-tests)
