@@ -424,5 +424,83 @@ Click [here](README.md) to go back to the README.md file.
 
 </details>
 
+<br>
 
 # Lighthouse Testing
+
+<details>
+<summary>Blog page</summary>
+
+![page](static/images/readme/lighthouse-home.png)
+
+</details>
+
+<details>
+<summary>Blog details page</summary>
+
+![page](static/images/readme/lighthouse-blogpost.png)
+
+</details>
+
+<details>
+<summary>Pokemon page</summary>
+
+![page](static/images/readme/lighthouse-database.png)
+
+</details>
+
+<details>
+<summary>Socials page</summary>
+
+![page](static/images/readme/lighthouse-socials.png)
+
+</details>
+
+<details>
+<summary>Socials page logged in</summary>
+
+![page](static/images/readme/lighthouse-socials-loggedin.png)
+
+</details>
+
+<details>
+<summary>Profile page</summary>
+
+![page](static/images/readme/lighthouse-profile.png)
+
+</details>
+
+<details>
+<summary>Profile page logged in</summary>
+
+![page](static/images/readme/lighthouse-profile-loggedin.png)
+
+</details>
+
+<details>
+<summary>Profile update page</summary>
+
+![page](static/images/readme/lighthouse-update.png)
+
+</details>
+
+<details>
+<summary>Sign up page</summary>
+
+![page](static/images/readme/lighthouse-register.png)
+
+</details>
+
+<details>
+<summary>Sign in page</summary>
+
+![page](static/images/readme/lighthouse-signin.png)
+
+</details>
+
+<details>
+<summary>Sign out page</summary>
+
+![page](static/images/readme/lighthouse-signout.png)
+
+</details>

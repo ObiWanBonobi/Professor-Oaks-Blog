@@ -51,7 +51,7 @@
     <!-- Displaying Comments -->
     <div class="row">
         <div class="col-sm-6 card mb-4 mt-3 text-center white-text">
-            <h3>Comments:</h3>
+            <h1 class="fs-3">Comments:</h1>
             <div class="card-body">
                 {% if comments.count != 0 %}
                 {% for comment in comments %}
@@ -81,9 +81,9 @@
 
         <!-- Creating New Comments -->
         <div class="col-sm-6 card mb-4 mt-3 white-text">
+            <h1 class="fs-3">Leave a comment:</h1>
             <div class="card-body">
                 {% if user.is_authenticated %}
-                <h3>Leave a comment:</h3>
                 <p>Posting as : {{ user.username }}</p>
                 <form id="commentForm" method="post">
                     {{ comment_form | crispy }}
@@ -91,8 +91,8 @@
                     <button id="submitButton" type="submit" class="btn btn-success blue-white btn-lg">Submit</button>
                 </form>
                 {% else %}
-                <h4 class="text-center"><a class="link white-text" href="{{ login_url }}">Sign in</a> or 
-                    <a class="link white-text" href="{{ signup_url }}">sign up</a> to leave a comment</h4>
+                <h1 class="text-center fs-4"><a class="link white-text" href="{{ login_url }}">Sign in</a> or 
+                    <a class="link white-text" href="{{ signup_url }}">sign up</a> to leave a comment</h1>
                 {% endif %}
             </div>
         </div>
