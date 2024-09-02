@@ -585,14 +585,14 @@ To deploy Your App to Heroku, you have to :
 ## Github deployment
 
 To fork this repository on Github, you have to :
-  - Go to my [GitHub repository called PP4](https://github.com/ObiWanBonobi/PP4).
+  - Go to my [GitHub repository called Professor-Oaks-Blog](https://github.com/ObiWanBonobi/Professor-Oaks-Blog).
   - In the top-right corner of the page, click Fork.
   - Under "Owner," select the dropdown menu and click an owner for the forked repository.
   - By default, forks are named the same as their upstream repositories. Optionally, to further distinguish your fork, in the "Repository name" field, type a name.
   - Click Create fork.
 
 To clone this repository, you have to :
-  - Go to my [GitHub repository called PP4](https://github.com/ObiWanBonobi/PP4).
+  - Go to my [GitHub repository called Professor-Oaks-Blog](https://github.com/ObiWanBonobi/Professor-Oaks-Blog).
   - Above the list of files, click  Code.
   - Copy the URL for the repository.
   - Open Git Bash.
